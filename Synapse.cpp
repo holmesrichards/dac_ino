@@ -6,7 +6,6 @@
 ##########      ############################################################# shaduzlabs.com #####*/
 
 #include "Synapse.h"
-#include "digitalWriteFast.h" // --> https://github.com/watterott/Arduino-Libs/
 
 //--------------------------------------------------------------------------------------------------
 
@@ -14,16 +13,6 @@ namespace
 {
   static constexpr uint8_t  k_writeChannelA = 0b01010000;
   static constexpr uint8_t  k_writeChannelB = 0b11010000;
-
-  static constexpr unsigned k_pinChipSelectDAC = 10;
-
-  static constexpr uint8_t  k_pinGateInA = 3;
-  static constexpr uint8_t  k_pinGateInB = 2;
-  static constexpr uint8_t  k_pinGateOutA = 5;
-  static constexpr uint8_t  k_pinGateOutB = 4;
-
-  static constexpr uint8_t  k_pinCVOutConfA = 6;
-  static constexpr uint8_t  k_pinCVOutConfB = 7;
 
   static constexpr uint8_t  k_pinCVInA = A0;
   static constexpr uint8_t  k_pinCVInB = A1;
@@ -38,21 +27,12 @@ namespace sl
 
 Synapse::Synapse(unsigned spiDivider_)
 {
-  pinModeFast(k_pinGateInA, INPUT);
-  pinModeFast(k_pinGateInB, INPUT);
-  pinModeFast(k_pinGateOutA, OUTPUT);
-  pinModeFast(k_pinGateOutB, OUTPUT);
+  pinMode(k_pinCVInA, INPUT);
+  pinMode(k_pinCVInB, INPUT);
 
-  pinModeFast(k_pinCVInA, INPUT);
-  pinModeFast(k_pinCVInB, INPUT);
-  pinModeFast(k_pinCVOutConfA, OUTPUT);
-  pinModeFast(k_pinCVOutConfB, OUTPUT);
-
-  digitalWriteFast(k_pinCVOutConfA, LOW);
-  digitalWriteFast(k_pinCVOutConfB, LOW);
-
-  pinModeFast(k_pinChipSelectDAC, OUTPUT);
-  digitalWriteFast(k_pinChipSelectDAC, HIGH);
+  m_outputChipSelectDAC = HIGH;
+  m_outputCVOutConfA = LOW;
+  m_outputCVOutConfB = LOW;
 
   SPI.begin();
   SPI.setBitOrder(MSBFIRST);
@@ -105,11 +85,10 @@ void Synapse::writeCV(CVChannel channel_, unsigned value_)
       return;
     }
   }
-
-  digitalWriteFast(k_pinChipSelectDAC, LOW);
+  m_outputChipSelectDAC = LOW;
   SPI.transfer(msg1);
   SPI.transfer(msg2);
-  digitalWriteFast(k_pinChipSelectDAC, HIGH);
+  m_outputChipSelectDAC = HIGH;
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -164,11 +143,11 @@ bool Synapse::readGate(GateChannel channel_)
   {
     case GateChannel::A:
     {
-      return digitalReadFast(k_pinGateInA);
+      return m_inputGateA;
     }
     case GateChannel::B:
     {
-      return digitalReadFast(k_pinGateInB);
+      return m_inputGateB;
     }
     default:
     {
@@ -185,11 +164,11 @@ void Synapse::writeGate(GateChannel channel_, bool state_)
   {
     case GateChannel::A:
     {
-      digitalWriteFast(k_pinGateOutA, state_);
+      m_outputGateA = LOW;
     }
     case GateChannel::B:
     {
-      digitalWriteFast(k_pinGateOutB, state_);
+      m_outputGateB = LOW;
     }
     default:
     {
@@ -258,12 +237,26 @@ void Synapse::updateCVRanges()
     {
       case Range::ZeroToTenVolts:
       {
-        digitalWriteFast( (channel > 0 ? k_pinCVOutConfB : k_pinCVOutConfA), LOW);
+        if(channel==0)
+        {
+          m_outputCVOutConfA = LOW;
+        }
+        else
+        {
+          m_outputCVOutConfB = LOW;
+        }
         break;
       }
       case Range::MinusFiveToFiveVolts:
       {
-        digitalWriteFast( (channel > 0 ? k_pinCVOutConfB : k_pinCVOutConfA), HIGH);
+        if(channel==0)
+        {
+          m_outputCVOutConfA = HIGH;
+        }
+        else
+        {
+          m_outputCVOutConfB = HIGH;
+        }
         break;
       }
       case Range::Unknown:

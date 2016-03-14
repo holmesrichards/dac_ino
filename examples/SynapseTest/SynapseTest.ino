@@ -3,6 +3,8 @@
 using namespace sl;
 
 Synapse synapse;
+
+bool gate{false};
 unsigned val{0};
 
 void setup() {
@@ -19,7 +21,7 @@ void loop() {
   {
     val=0;
     gate = !gate;
-    cvg.writeGate(Synapse::GateChannel::A, gate);
-    cvg.writeGate(Synapse::GateChannel::B, gate);
+    synapse.writeGate(Synapse::GateChannel::A, gate);
+    synapse.writeGate(Synapse::GateChannel::B, gate);
   }
 }

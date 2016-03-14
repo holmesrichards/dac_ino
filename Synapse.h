@@ -8,6 +8,7 @@
 #pragma once
 
 #include <SPI.h>
+#include <DirectIO.h> // --> https://github.com/mmarchetti/DirectIO.git
 
 //--------------------------------------------------------------------------------------------------
 
@@ -109,12 +110,32 @@ public:
   void gateInputInterrupt(GateChannel channel_,
     void (*callback_)(void),
     GateInterrupt mode_ = GateInterrupt::ValueChange);
- 
+
 private:
   static constexpr unsigned k_numCVOutputs = 2;
 
+  static constexpr unsigned k_pinChipSelectDAC = 10;
+
+  static constexpr uint8_t  k_pinGateInA = 3;
+  static constexpr uint8_t  k_pinGateInB = 2;
+  static constexpr uint8_t  k_pinGateOutA = 5;
+  static constexpr uint8_t  k_pinGateOutB = 4;
+
+  static constexpr uint8_t  k_pinCVOutConfA = 6;
+  static constexpr uint8_t  k_pinCVOutConfB = 7;
+
+
   void setSPIDivider(unsigned spiDivider_);
   void updateCVRanges();
+
+  Input<k_pinGateInA> m_inputGateA;
+  Input<k_pinGateInB> m_inputGateB;
+
+  Output<k_pinChipSelectDAC>  m_outputChipSelectDAC;
+  Output<k_pinGateOutA>       m_outputGateA;
+  Output<k_pinGateOutB>       m_outputGateB;
+  Output<k_pinCVOutConfA>     m_outputCVOutConfA;
+  Output<k_pinCVOutConfB>     m_outputCVOutConfB;
 
   Range m_channelRange[k_numCVOutputs]{Range::MinusFiveToFiveVolts, Range::MinusFiveToFiveVolts};
   unsigned m_spiDivider;
