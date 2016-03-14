@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For Synapse
+#######################################
+# Class
+#######################################
+
+Synapse  KEYWORD1
+
+#######################################
+# Methods and Functions
+#######################################
+
+readCV              KEYWORD2
+writeCV             KEYWORD2
+getCVRange          KEYWORD2
+setCVRange          KEYWORD2
+readGate            KEYWORD2
+writeGate           KEYWORD2
+gateInputInterrupt  KEYWORD2
+setSPIDivider       KEYWORD2
+
+#######################################
+# Constants
+#######################################
+
+ZeroToTenVolts        LITERAL1
+MinusFiveToFiveVolts  LITERAL1
