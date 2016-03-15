@@ -25,7 +25,11 @@ namespace sl
 
 //--------------------------------------------------------------------------------------------------
 
-Synapse::Synapse(unsigned spiDivider_)
+Synapse SynapseShield;
+
+//--------------------------------------------------------------------------------------------------
+
+void Synapse::begin(unsigned spiDivider_)
 {
   pinMode(k_pinCVInA, INPUT);
   pinMode(k_pinCVInB, INPUT);

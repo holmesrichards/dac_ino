@@ -18,12 +18,13 @@ namespace sl
 //--------------------------------------------------------------------------------------------------
 
 /**
-  \class Synapse
+  \class SynapseBoard
   \brief This class is used to configure and handle the Synapse shield for Arduino
 */
 class Synapse
 {
 public:
+
   enum class Range : uint8_t
   {
     ZeroToTenVolts,       //!< CV output is 0 to 10V
@@ -54,11 +55,11 @@ public:
     FallingEdge = FALLING, //!< Interrupt when the value of the digital input goes from HIGH to LOW
   };
 
-  //! Constructor
+  //! Initialize the board
   /*!
     \param spiDivider_  The SPI divider (default = 8)
   */
-  Synapse(unsigned spiDivider_ = SPI_CLOCK_DIV8);
+  void begin(unsigned spiDivider_ = SPI_CLOCK_DIV8);
 
   //! Read from a CV input channel
   /*!
@@ -124,7 +125,6 @@ private:
   static constexpr uint8_t  k_pinCVOutConfA = 6;
   static constexpr uint8_t  k_pinCVOutConfB = 7;
 
-
   void setSPIDivider(unsigned spiDivider_);
   void updateCVRanges();
 
@@ -140,6 +140,10 @@ private:
   Range m_channelRange[k_numCVOutputs]{Range::MinusFiveToFiveVolts, Range::MinusFiveToFiveVolts};
   unsigned m_spiDivider;
 };
+
+//--------------------------------------------------------------------------------------------------
+
+extern Synapse SynapseShield;
 
 //--------------------------------------------------------------------------------------------------
 
