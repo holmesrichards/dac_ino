@@ -13,7 +13,94 @@ Synapse is an Arduino shield (and the corresponding library) which provides CV a
 - A convenient wrapper library with high-level functions
 
 ## Usage
-TBD
+Call SynapseBoard.begin() in the setup() function
+```cpp
+void setup()
+{
+  SynapseBoard.begin();
+  // ...
+}
+```
 
+Optionally, you can configure a callback function for each gate input channel which will be called when a specific condition is met.
+```cpp
+
+void onGateAChanged();
+void onGateBRisingEdge();
+
+void setup()
+{
+  SynapseBoard.begin();
+
+  SynapseBoard.gateInputInterrupt(
+    Synapse::GateChannel::A,
+    onGateAChanged,
+    Synapse::GateInterrupt::ValueChange
+  );
+
+  SynapseBoard.gateInputInterrupt(
+    Synapse::GateChannel::B,
+    onGateBRisingEdge,
+    Synapse::GateInterrupt::RisingEdge
+  );
+  // ...
+}
+void loop()
+{
+  // ...
+}
+
+void onGateAChanged()
+{
+  // Do something when the logic value of gate input A changes
+  // WARNING: keep this function as unexpensive as possible
+}
+
+void onGateBRisingEdge()
+{
+  // Do something when the logic value of gate input B goes from LOW to HIGH
+  // WARNING: keep this function as unexpensive as possible
+}
+```
+
+The range of each CV output channel can be individually configured (even dinamically)
+```cpp
+
+void setup()
+{
+  SynapseBoard.begin();
+
+  SynapseBoard.setCVRange(
+    Synapse::CVChannel::A,
+    Synapse::Range::ZeroToTenVolts
+  );
+
+  SynapseBoard.setCVRange(
+    Synapse::CVChannel::B,
+    Synapse::Range::MinusFiveToFiveVolts
+  );
+  // ...
+}
+
+void loop()
+{
+  Synapse::Range rangeA = SynapseBoard.getCVRange( Synapse::CVChannel::A );
+  if(rangeA == Synapse::Range::MinusFiveToFiveVolts)
+  {
+    SynapseBoard.setCVRange(
+      Synapse::CVChannel::A,
+      Synapse::Range::ZeroToTenVolts
+    );
+  }
+  else
+  {
+    SynapseBoard.setCVRange(
+      Synapse::CVChannel::A,
+      Synapse::Range::MinusFiveToFiveVolts
+    );
+  }
+  delay(1000);
+}
+```
 ## Dependencies
 - [DirectIO](https://github.com/mmarchetti/DirectIO), for fast digital pin access
