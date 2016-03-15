@@ -15,15 +15,21 @@ Synapse is an Arduino shield (and the corresponding library) which provides CV a
 ## Usage
 Call SynapseBoard.begin() in the setup() function
 ```cpp
+#include <Synapse.h>
+using namespace sl;
+
 void setup()
 {
   SynapseBoard.begin();
   // ...
 }
 ```
+when calling the begin() function you can optionally specify the SPI divider (by default it's set to 8)
 
 Optionally, you can configure a callback function for each gate input channel which will be called when a specific condition is met.
 ```cpp
+#include <Synapse.h>
+using namespace sl;
 
 void onGateAChanged();
 void onGateBRisingEdge();
@@ -65,6 +71,8 @@ void onGateBRisingEdge()
 
 The range of each CV output channel can be individually configured (even dinamically)
 ```cpp
+#include <Synapse.h>
+using namespace sl;
 
 void setup()
 {
@@ -85,6 +93,7 @@ void setup()
 void loop()
 {
   Synapse::Range rangeA = SynapseBoard.getCVRange( Synapse::CVChannel::A );
+  
   if(rangeA == Synapse::Range::MinusFiveToFiveVolts)
   {
     SynapseBoard.setCVRange(
@@ -102,5 +111,50 @@ void loop()
   delay(1000);
 }
 ```
+
+CV and Gate I/O operations are also very easy:
+```cpp
+#include <Synapse.h>
+using namespace sl;
+
+bool gateInA{false};
+unsigned cvInA{0};
+
+void setup()
+{
+  SynapseBoard.begin();
+  // ...
+}
+
+void loop()
+{
+  gateInA = SynapseBoard.readGate(Synapse::GateChannel::A);
+  cvInA = SynapseBoard.readCV(Synapse::CVChannel::A);
+  
+  if(gateInA)
+  {
+    SynapseBoard.writeCV(Synapse::CVChannel::A, 4095);
+    SynapseBoard.writeCV(Synapse::CVChannel::B, 0);
+  }
+  else
+  {
+    SynapseBoard.writeCV(Synapse::CVChannel::A, 0);
+    SynapseBoard.writeCV(Synapse::CVChannel::B, 4095);
+  }
+  
+  if(cvInA > 2047)
+  {
+    SynapseBoard.writeGate(Synapse::GateChannel::A, false);
+    SynapseBoard.writeGate(Synapse::GateChannel::B, true);
+  }
+  else
+  {
+    SynapseBoard.writeGate(Synapse::GateChannel::A, true);
+    SynapseBoard.writeGate(Synapse::GateChannel::B, false);
+  }
+}
+```
+
 ## Dependencies
 - [DirectIO](https://github.com/mmarchetti/DirectIO), for fast digital pin access
+ 
