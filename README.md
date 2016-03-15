@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/shaduzlabs/Synapse.svg?branch=master)](https://travis-ci.org/shaduzlabs/Synapse)
+[![Build Status](https://travis-ci.org/shaduzlabs/synapse.svg?branch=master)](https://travis-ci.org/shaduzlabs/Synapse)
 
 # Synapse
 ![A rendering of the Arduino shield](https://cloud.githubusercontent.com/assets/804931/13776151/e4bdfa4c-eaa8-11e5-8b88-48274cfd1437.png)
