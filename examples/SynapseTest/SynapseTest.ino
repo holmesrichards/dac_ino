@@ -7,16 +7,12 @@ unsigned val{0};
 
 void setup() {
   SynapseShield.begin();
-  SynapseShield.writeCV(Synapse::CVChannel::A,0);
-  SynapseShield.writeCV(Synapse::CVChannel::B,0);
-  SynapseShield.writeGate(Synapse::GateChannel::A,false);
-  SynapseShield.writeGate(Synapse::GateChannel::B,false);
 }
 
 void loop() {
   SynapseShield.writeCV(Synapse::CVChannel::A, val  );
   SynapseShield.writeCV(Synapse::CVChannel::B, val++);
-  if(val>4000)
+  if(val>4095)
   {
     val=0;
     gate = !gate;

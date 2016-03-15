@@ -4,27 +4,27 @@
 # Class
 #######################################
 
-Synapse        KEYWORD1
-SynapseShield  KEYWORD1
+Synapse	KEYWORD1
+SynapseShield	KEYWORD1
 
 #######################################
 # Methods and Functions
 #######################################
 
-begin               KEYWORD2
-readCV              KEYWORD2
-writeCV             KEYWORD2
-getCVRange          KEYWORD2
-setCVRange          KEYWORD2
-readGate            KEYWORD2
-writeGate           KEYWORD2
-gateInputInterrupt  KEYWORD2
+begin	KEYWORD2
+readCV	KEYWORD2
+writeCV	KEYWORD2
+getCVRange	KEYWORD2
+setCVRange	KEYWORD2
+readGate	KEYWORD2
+writeGate	KEYWORD2
+gateInputInterrupt	KEYWORD2
 
 #######################################
 # Constants
 #######################################
 
-ZeroToTenVolts        LITERAL1
-MinusFiveToFiveVolts  LITERAL1
-CVChannel             LITERAL1
-GateChannel           LITERAL1
+ZeroToTenVolts	LITERAL1
+MinusFiveToFiveVolts	LITERAL1
+CVChannel	LITERAL1
+GateChannel	LITERAL1
