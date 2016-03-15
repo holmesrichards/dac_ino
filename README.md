@@ -10,7 +10,7 @@ Synapse is an Arduino shield (and the corresponding library) which provides CV a
 - 2 x gate inputs (with interrupt)
 - 2 x gate outputs
 - 1 x eurorack power connector (10 pin)
-- A convenient wrapper library with high-level functions
+- An easy to use software library
 
 ## Usage
 Call SynapseBoard.begin() in the setup() function
