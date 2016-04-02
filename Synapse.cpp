@@ -11,11 +11,11 @@
 
 namespace
 {
-  static constexpr uint8_t  k_writeChannelA = 0b01010000;
-  static constexpr uint8_t  k_writeChannelB = 0b11010000;
+static constexpr uint8_t k_writeChannelA = 0b01010000;
+static constexpr uint8_t k_writeChannelB = 0b11010000;
 
-  static constexpr uint8_t  k_pinCVInA = A0;
-  static constexpr uint8_t  k_pinCVInB = A1;
+static constexpr uint8_t k_pinCVInA = A0;
+static constexpr uint8_t k_pinCVInB = A1;
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -79,10 +79,12 @@ void Synapse::writeCV(CVChannel channel_, unsigned value_)
     case CVChannel::A:
     {
       msg1 |= k_writeChannelA;
+      break;
     }
     case CVChannel::B:
     {
       msg1 |= k_writeChannelB;
+      break;
     }
     default:
     {
@@ -125,10 +127,12 @@ void Synapse::setCVRange(CVChannel channel_, Range range_)
     case CVChannel::A:
     {
       m_channelRange[0] = range_;
+      break;
     }
     case CVChannel::B:
     {
       m_channelRange[1] = range_;
+      break;
     }
     default:
     {
@@ -169,10 +173,12 @@ void Synapse::writeGate(GateChannel channel_, bool state_)
     case GateChannel::A:
     {
       m_outputGateA = LOW;
+      break;
     }
     case GateChannel::B:
     {
       m_outputGateB = LOW;
+      break;
     }
     default:
     {
@@ -190,10 +196,12 @@ void Synapse::gateInputInterrupt(GateChannel channel_, void (*callback_)(void), 
     case GateChannel::A:
     {
       attachInterrupt(digitalPinToInterrupt(k_pinGateInA), callback_, static_cast<uint32_t>(mode_));
+      break;
     }
     case GateChannel::B:
     {
       attachInterrupt(digitalPinToInterrupt(k_pinGateInB), callback_, static_cast<uint32_t>(mode_));
+      break;
     }
     default:
     {
@@ -241,7 +249,7 @@ void Synapse::updateCVRanges()
     {
       case Range::ZeroToTenVolts:
       {
-        if(channel==0)
+        if (channel == 0)
         {
           m_outputCVOutConfA = LOW;
         }
@@ -253,7 +261,7 @@ void Synapse::updateCVRanges()
       }
       case Range::MinusFiveToFiveVolts:
       {
-        if(channel==0)
+        if (channel == 0)
         {
           m_outputCVOutConfA = HIGH;
         }
