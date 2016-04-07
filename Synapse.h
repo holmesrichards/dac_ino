@@ -36,30 +36,32 @@ public:
   {
     A, //!< CV channel A
     B, //!< CV channel B
+    Unknown, //!< Unknown/unspecified
   };
 
   enum class GateChannel : uint8_t
   {
     A, //!< Gate channel A
     B, //!< Gate channel A
+    Unknown, //!< Unknown/unspecified
   };
 
   enum class GateInterrupt : uint32_t
   {
-    ValueLow = LOW, //!< Interrupt when the value of the digital input is LOW
+    ValueLow = HIGH, //!< Interrupt when the value of the digital input is LOW
 #ifdef _SAM3XA_
-    ValueHigh = HIGH, //!< Interrupt when the value of the digital input is HIGH
+    ValueHigh = LOW, //!< Interrupt when the value of the digital input is HIGH
 #endif
     ValueChange = CHANGE,  //!< Interrupt when the value of the digital input changes
-    RisingEdge = RISING,   //!< Interrupt when the value of the digital input goes from LOW to HIGH
-    FallingEdge = FALLING, //!< Interrupt when the value of the digital input goes from HIGH to LOW
+    RisingEdge = FALLING,   //!< Interrupt when the value of the digital input goes from LOW to HIGH
+    FallingEdge = RISING, //!< Interrupt when the value of the digital input goes from HIGH to LOW
   };
 
   //! Initialize the board
   /*!
     \param spiDivider_  The SPI divider (default = 8)
   */
-  void begin(unsigned spiDivider_ = SPI_CLOCK_DIV8);
+  void begin(unsigned spiDivider_ = SPI_CLOCK_DIV2);
 
   //! Read from a CV input channel
   /*!
@@ -72,7 +74,7 @@ public:
   /*!
     \param channel_  The channel to write to
   */
-  void writeCV(CVChannel channel_, unsigned value_);
+  void writeCV(CVChannel channel_, uint16_t value_);
 
   //! Get the CV range of the selected channel
   /*!
@@ -137,7 +139,7 @@ private:
   Output<k_pinCVOutConfA>     m_outputCVOutConfA;
   Output<k_pinCVOutConfB>     m_outputCVOutConfB;
 
-  Range m_channelRange[k_numCVOutputs]{Range::MinusFiveToFiveVolts, Range::MinusFiveToFiveVolts};
+  Range m_channelRange[k_numCVOutputs]{Range::ZeroToTenVolts, Range::ZeroToTenVolts};
   unsigned m_spiDivider;
 };
 

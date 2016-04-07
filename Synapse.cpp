@@ -11,8 +11,8 @@
 
 namespace
 {
-static constexpr uint8_t k_writeChannelA = 0b01010000;
-static constexpr uint8_t k_writeChannelB = 0b11010000;
+static constexpr uint8_t k_writeChannelA = 0b01110000;
+static constexpr uint8_t k_writeChannelB = 0b11110000;
 
 static constexpr uint8_t k_pinCVInA = A0;
 static constexpr uint8_t k_pinCVInB = A1;
@@ -69,7 +69,7 @@ unsigned Synapse::readCV(CVChannel channel_)
 
 //--------------------------------------------------------------------------------------------------
 
-void Synapse::writeCV(CVChannel channel_, unsigned value_)
+void Synapse::writeCV(CVChannel channel_, uint16_t value_)
 {
   uint8_t msg1 = (uint8_t)((value_ >> 8) & 0x0F);
   uint8_t msg2 = (uint8_t)(value_ & 0xFF);
@@ -172,12 +172,12 @@ void Synapse::writeGate(GateChannel channel_, bool state_)
   {
     case GateChannel::A:
     {
-      m_outputGateA = LOW;
+      m_outputGateA = state_ ? LOW : HIGH;
       break;
     }
     case GateChannel::B:
     {
-      m_outputGateB = LOW;
+      m_outputGateB = state_ ? LOW : HIGH;
       break;
     }
     default:
