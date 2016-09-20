@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/shaduzlabs/synapse.svg?branch=master)](https://travis-ci.org/shaduzlabs/synapse)
+[![Order from OSH Park](https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png)](https://oshpark.com/shared_projects/3d4FCRE4)
 
 # Synapse
 ![A rendering of the Arduino shield](https://cloud.githubusercontent.com/assets/804931/13776151/e4bdfa4c-eaa8-11e5-8b88-48274cfd1437.png)
@@ -12,7 +13,35 @@ Synapse is an Arduino shield (and the corresponding library) which provides CV a
 - 1 x eurorack power connector (10 pin)
 - An easy to use software library
 
-## Usage
+## BOM
+### Passive components
+- 2 x ferrite beads (or 10 ohm resistors)
+- 8 x 1K 1% resistor
+- 4 x 10K 1% resistor
+- 6 x 100K 1% resistor
+- 2 x 1M 1% resistor
+- 2 x 47p capacitor
+- 4 x 100n capacitor
+- 1 x 10u 25V electrolytic capacitor
+### Diodes, transistors ICs
+- 4 x BAT85 diode
+- 4 x 2N3904 transistor
+- 1 x REF02CP voltage reference
+- 1 x MCP4922E SPI DAC
+- 1 x TL072 dual opamp
+- 1 x 4053N
+### Mechanical
+- 2 x 8 pin dip socket
+- 1 x 16 pin dip socket
+- 1 x 14 pin dip socket
+- 1 x 5x2 male strip connector (2.54mm pitch)
+- 1 x 3x2 female strip connector (2.54mm pitch)
+- 1 x 10x1 male strip connector (2.54mm pitch)
+- 2 x 8x1 male strip connector (2.54mm pitch)
+- 1 x 6x1 male strip connector (2.54mm pitch)
+- 8 x PJ301BM vertical mount 'Erthenvar' jack
+
+## Software library usage
 Call SynapseBoard.begin() in the setup() function
 ```cpp
 #include <Synapse.h>
@@ -93,7 +122,7 @@ void setup()
 void loop()
 {
   Synapse::Range rangeA = SynapseBoard.getCVRange( Synapse::CVChannel::A );
-  
+
   if(rangeA == Synapse::Range::MinusFiveToFiveVolts)
   {
     SynapseBoard.setCVRange(
@@ -130,7 +159,7 @@ void loop()
 {
   gateInA = SynapseBoard.readGate(Synapse::GateChannel::A);
   cvInA = SynapseBoard.readCV(Synapse::CVChannel::A);
-  
+
   if(gateInA)
   {
     SynapseBoard.writeCV(Synapse::CVChannel::A, 4095);
@@ -141,7 +170,7 @@ void loop()
     SynapseBoard.writeCV(Synapse::CVChannel::A, 0);
     SynapseBoard.writeCV(Synapse::CVChannel::B, 4095);
   }
-  
+
   if(cvInA > 2047)
   {
     SynapseBoard.writeGate(Synapse::GateChannel::A, false);
@@ -157,4 +186,3 @@ void loop()
 
 ## Dependencies
 - [DirectIO](https://github.com/mmarchetti/DirectIO), for fast digital pin access
- 
