@@ -45,7 +45,9 @@ Synapse is an Arduino shield (and the corresponding library) which provides CV a
 - 8 x PJ301BM vertical mount 'Erthenvar' jack
 
 ## Software library usage
-Call SynapseBoard.begin() in the setup() function
+The library can be installed using Arduino Library Manager (Sketch -> Include Library -> Library Manager), just search for "synapse".
+
+Once the library is installed (please remember to install the dependencies, as well - see the last paragraph below), you can call SynapseBoard.begin() in the setup() function to initialize the library and the shield
 ```cpp
 #include <Synapse.h>
 using namespace sl;
