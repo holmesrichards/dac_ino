@@ -9,8 +9,7 @@ before_install:
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/synapse
-  - git clone https://github.com/mmarchetti/DirectIO.git D-IO
-  - ln -s $PWD/D-IO/DirectIO /usr/local/share/arduino/libraries/DirectIO
+  - git clone https://github.com/mmarchetti/DirectIO.git /usr/local/share/arduino/libraries/DirectIO
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/SynapseTest/SynapseTest.ino
 notifications:
