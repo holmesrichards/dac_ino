@@ -33,16 +33,31 @@ void Synapse::begin(unsigned spiDivider_)
 {
   pinMode(k_pinCVInA, INPUT);
   pinMode(k_pinCVInB, INPUT);
+  pinMode(k_pinGateInA, INPUT);
+  pinMode(k_pinGateInB, INPUT);
 
+  pinMode(k_pinChipSelectDAC, OUTPUT);
+  pinMode(k_pinCVOutConfA, OUTPUT);
+  pinMode(k_pinCVOutConfB, OUTPUT);
+  pinMode(k_pinGateOutA, OUTPUT);
+  pinMode(k_pinGateOutB, OUTPUT);
+
+#if defined __AVR__
   m_outputChipSelectDAC = HIGH;
   m_outputCVOutConfA = LOW;
   m_outputCVOutConfB = LOW;
+#else
+  digitalWrite(k_pinChipSelectDAC, HIGH);
+  digitalWrite(k_pinCVOutConfA, LOW);
+  digitalWrite(k_pinCVOutConfB, LOW);
+#endif
 
   SPI.begin();
+
   SPI.setBitOrder(MSBFIRST);
   SPI.setDataMode(SPI_MODE0);
-
   setSPIDivider(spiDivider_);
+
   updateCVRanges();
 }
 
@@ -91,10 +106,21 @@ void Synapse::writeCV(CVChannel channel_, uint16_t value_)
       return;
     }
   }
+
+#if defined __AVR__
   m_outputChipSelectDAC = LOW;
+#else
+  digitalWrite(k_pinChipSelectDAC, LOW);
+#endif
+
   SPI.transfer(msg1);
   SPI.transfer(msg2);
+
+#if defined __AVR__
   m_outputChipSelectDAC = HIGH;
+#else
+  digitalWrite(k_pinChipSelectDAC, HIGH);
+#endif
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -151,11 +177,19 @@ bool Synapse::readGate(GateChannel channel_)
   {
     case GateChannel::A:
     {
+#if defined __AVR__
       return m_inputGateA;
+#else
+      return digitalRead(k_pinGateInA);
+#endif
     }
     case GateChannel::B:
     {
+#if defined __AVR__
       return m_inputGateB;
+#else
+      return digitalRead(k_pinGateInB);
+#endif
     }
     default:
     {
@@ -172,12 +206,21 @@ void Synapse::writeGate(GateChannel channel_, bool state_)
   {
     case GateChannel::A:
     {
+#if defined __AVR__
       m_outputGateA = state_ ? LOW : HIGH;
+#else
+      digitalWrite(k_pinGateOutA, (state_ ? LOW : HIGH));
+#endif
+
       break;
     }
     case GateChannel::B:
     {
+#if defined __AVR__
       m_outputGateB = state_ ? LOW : HIGH;
+#else
+      digitalWrite(k_pinGateOutB, (state_ ? LOW : HIGH));
+#endif
       break;
     }
     default:
@@ -230,11 +273,11 @@ void Synapse::setSPIDivider(unsigned spiDivider_)
     }
     default:
     {
-      m_spiDivider = SPI_CLOCK_DIV8;
+      m_spiDivider = SPI_CLOCK_DIV2;
     }
   }
 #else
-  m_spiDivider = SPI_CLOCK_DIV8;
+  m_spiDivider = SPI_CLOCK_DIV2;
 #endif
   SPI.setClockDivider(m_spiDivider);
 }
@@ -251,11 +294,19 @@ void Synapse::updateCVRanges()
       {
         if (channel == 0)
         {
+#if defined __AVR__
           m_outputCVOutConfA = LOW;
+#else
+          digitalWrite(k_pinCVOutConfA, LOW);
+#endif
         }
         else
         {
+#if defined __AVR__
           m_outputCVOutConfB = LOW;
+#else
+          digitalWrite(k_pinCVOutConfB, LOW);
+#endif
         }
         break;
       }
@@ -263,11 +314,19 @@ void Synapse::updateCVRanges()
       {
         if (channel == 0)
         {
+#if defined __AVR__
           m_outputCVOutConfA = HIGH;
+#else
+          digitalWrite(k_pinCVOutConfA, HIGH);
+#endif
         }
         else
         {
+#if defined __AVR__
           m_outputCVOutConfB = HIGH;
+#else
+          digitalWrite(k_pinCVOutConfB, HIGH);
+#endif
         }
         break;
       }

@@ -8,7 +8,9 @@
 #pragma once
 
 #include <SPI.h>
+#if defined __AVR__
 #include <DirectIO.h> // --> https://github.com/mmarchetti/DirectIO.git
+#endif
 
 //--------------------------------------------------------------------------------------------------
 
@@ -130,6 +132,7 @@ private:
   void setSPIDivider(unsigned spiDivider_);
   void updateCVRanges();
 
+#if defined __AVR__
   Input<k_pinGateInA> m_inputGateA;
   Input<k_pinGateInB> m_inputGateB;
 
@@ -138,6 +141,7 @@ private:
   Output<k_pinGateOutB>       m_outputGateB;
   Output<k_pinCVOutConfA>     m_outputCVOutConfA;
   Output<k_pinCVOutConfB>     m_outputCVOutConfB;
+#endif
 
   Range m_channelRange[k_numCVOutputs]{Range::ZeroToTenVolts, Range::ZeroToTenVolts};
   unsigned m_spiDivider;
