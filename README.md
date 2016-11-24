@@ -13,7 +13,11 @@ Synapse is an Arduino shield (and the corresponding library) which provides CV a
 - An easy to use software library
 
 ## Compatible Boards
-The shield has been tested mainly with **Arduino Uno** and **Arduino Due**, it should work fine with **any Arduino with onboard 5V regulator** which can tolerate up to 12V on the VIN pin (e.g. it will **NOT** work with an Arduino Yun or Tian and will most likely damage the board).
+The shield should work fine with **any Arduino with onboard 5V regulator** which can tolerate up to 12V on the **VIN** pin (e.g. it will **NOT** work with an Arduino Yùn or Tian and will most likely damage the board).
+### Verified Boards
+- Arduino Uno
+- Arduino Due
+- Arduino 101 (requires a small modification to the shield)
 
 ## Hardware
 [![Order from OSH Park](https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png)](https://oshpark.com/shared_projects/3d4FCRE4)
