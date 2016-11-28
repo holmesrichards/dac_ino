@@ -1,0 +1,12 @@
+# Eagle
+*.b##
+*.s##
+
+# Mac specific
+*.DS_Store
+
+# Windows specific
+*.bak
+
+# Temporary files
+*~

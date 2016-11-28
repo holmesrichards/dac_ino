@@ -54,14 +54,14 @@ The shield should work fine with **any Arduino with onboard 5V regulator** which
 ## Software library usage
 The library can be installed using Arduino Library Manager (Sketch -> Include Library -> Library Manager), just search for "synapse".
 
-Once the library is installed (please remember to install the dependencies, as well - see the last paragraph below), you can call SynapseBoard.begin() in the setup() function to initialize the library and the shield
+Once the library is installed (please remember to install the dependencies, as well - see the last paragraph below), you can call SynapseShield.begin() in the setup() function to initialize the library and the shield
 ```cpp
 #include <Synapse.h>
 using namespace sl;
 
 void setup()
 {
-  SynapseBoard.begin();
+  SynapseShield.begin();
   // ...
 }
 ```
@@ -77,15 +77,15 @@ void onGateBRisingEdge();
 
 void setup()
 {
-  SynapseBoard.begin();
+  SynapseShield.begin();
 
-  SynapseBoard.gateInputInterrupt(
+  SynapseShield.gateInputInterrupt(
     Synapse::GateChannel::A,
     onGateAChanged,
     Synapse::GateInterrupt::ValueChange
   );
 
-  SynapseBoard.gateInputInterrupt(
+  SynapseShield.gateInputInterrupt(
     Synapse::GateChannel::B,
     onGateBRisingEdge,
     Synapse::GateInterrupt::RisingEdge
@@ -117,14 +117,14 @@ using namespace sl;
 
 void setup()
 {
-  SynapseBoard.begin();
+  SynapseShield.begin();
 
-  SynapseBoard.setCVRange(
+  SynapseShield.setCVRange(
     Synapse::CVChannel::A,
     Synapse::Range::ZeroToTenVolts
   );
 
-  SynapseBoard.setCVRange(
+  SynapseShield.setCVRange(
     Synapse::CVChannel::B,
     Synapse::Range::MinusFiveToFiveVolts
   );
@@ -133,18 +133,18 @@ void setup()
 
 void loop()
 {
-  Synapse::Range rangeA = SynapseBoard.getCVRange( Synapse::CVChannel::A );
+  Synapse::Range rangeA = SynapseShield.getCVRange( Synapse::CVChannel::A );
 
   if(rangeA == Synapse::Range::MinusFiveToFiveVolts)
   {
-    SynapseBoard.setCVRange(
+    SynapseShield.setCVRange(
       Synapse::CVChannel::A,
       Synapse::Range::ZeroToTenVolts
     );
   }
   else
   {
-    SynapseBoard.setCVRange(
+    SynapseShield.setCVRange(
       Synapse::CVChannel::A,
       Synapse::Range::MinusFiveToFiveVolts
     );
@@ -163,35 +163,35 @@ unsigned cvInA{0};
 
 void setup()
 {
-  SynapseBoard.begin();
+  SynapseShield.begin();
   // ...
 }
 
 void loop()
 {
-  gateInA = SynapseBoard.readGate(Synapse::GateChannel::A);
-  cvInA = SynapseBoard.readCV(Synapse::CVChannel::A);
+  gateInA = SynapseShield.readGate(Synapse::GateChannel::A);
+  cvInA = SynapseShield.readCV(Synapse::CVChannel::A);
 
   if(gateInA)
   {
-    SynapseBoard.writeCV(Synapse::CVChannel::A, 4095);
-    SynapseBoard.writeCV(Synapse::CVChannel::B, 0);
+    SynapseShield.writeCV(Synapse::CVChannel::A, 4095);
+    SynapseShield.writeCV(Synapse::CVChannel::B, 0);
   }
   else
   {
-    SynapseBoard.writeCV(Synapse::CVChannel::A, 0);
-    SynapseBoard.writeCV(Synapse::CVChannel::B, 4095);
+    SynapseShield.writeCV(Synapse::CVChannel::A, 0);
+    SynapseShield.writeCV(Synapse::CVChannel::B, 4095);
   }
 
   if(cvInA > 2047)
   {
-    SynapseBoard.writeGate(Synapse::GateChannel::A, false);
-    SynapseBoard.writeGate(Synapse::GateChannel::B, true);
+    SynapseShield.writeGate(Synapse::GateChannel::A, false);
+    SynapseShield.writeGate(Synapse::GateChannel::B, true);
   }
   else
   {
-    SynapseBoard.writeGate(Synapse::GateChannel::A, true);
-    SynapseBoard.writeGate(Synapse::GateChannel::B, false);
+    SynapseShield.writeGate(Synapse::GateChannel::A, true);
+    SynapseShield.writeGate(Synapse::GateChannel::B, false);
   }
 }
 ```
