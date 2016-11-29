@@ -11,7 +11,7 @@ install:
   - ln -s $PWD /usr/local/share/arduino/libraries/synapse
   - git clone https://github.com/mmarchetti/DirectIO.git /usr/local/share/arduino/libraries/DirectIO
 script:
-  - arduino --verify --board arduino:avr:uno $PWD/examples/SynapseTest/SynapseTest.ino
+  - arduino --verify --board arduino:avr:uno $PWD/examples/Test/Test.ino
 notifications:
   email:
     on_success: change
