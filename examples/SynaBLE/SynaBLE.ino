@@ -15,7 +15,7 @@ Arduino 101: you'll need to cut the 5V pin of the shield and then connect the Ar
 Synapse 5V pin through diode with low (~200mV) forward voltage drop (e.g. a Schottky like BAT42 or
 BAT85).
 
-The BLE MIDI I/O device will be visible with the name "SynapseBle".
+The BLE MIDI I/O device will be visible with the name "SynaBLE".
 The MIDI in port will translate note events on channel 1 and 2 to a pitch CV (on output A and B
 respectively).
 The MIDI out port will send control change events (CV input A is cc#60 and CV input B is cc#61) when
@@ -34,8 +34,8 @@ using namespace sl;
 
 CurieMIDI g_device;
 
-uint8_t g_lastNoteOnA{0xFF};
-uint8_t g_lastNoteOnB{0xFF};
+int g_noteOnCountA{0};
+int g_noteOnCountB{0};
 
 uint8_t g_lastValueA{0xFF};
 uint8_t g_lastValueB{0xFF};
@@ -97,28 +97,36 @@ void noteEvent(bool noteOn_, uint8_t note_, uint8_t velocity_, uint8_t channel_)
   {
     if (channel_ == 0)
     {
-      g_lastNoteOnA = note_;
+      g_noteOnCountA++;
       SynapseShield.writeGate(Synapse::GateChannel::A, true);
       SynapseShield.writeCV(Synapse::CVChannel::A, midiNoteToCV(note_));
     }
     else if (channel_ == 1)
     {
-      g_lastNoteOnB = note_;
+      g_noteOnCountB++;
       SynapseShield.writeGate(Synapse::GateChannel::B, true);
       SynapseShield.writeCV(Synapse::CVChannel::B, midiNoteToCV(note_));
     }
   }
   else
   {
-    if (channel_ == 0 && note_ == g_lastNoteOnA)
+    if (channel_ == 0)
     {
-      g_lastNoteOnA = 0xFF;
-      SynapseShield.writeGate(Synapse::GateChannel::A, false);
+      g_noteOnCountA--;
+      if (g_noteOnCountA <= 0)
+      {
+        g_noteOnCountA = 0;
+        SynapseShield.writeGate(Synapse::GateChannel::A, false);
+      }
     }
-    else if (channel_ == 1 && note_ == g_lastNoteOnB)
+    else if (channel_ == 1)
     {
-      g_lastNoteOnB = 0xFF;
-      SynapseShield.writeGate(Synapse::GateChannel::B, false);
+      g_noteOnCountB--;
+      if (g_noteOnCountB <= 0)
+      {
+        g_noteOnCountB = 0;
+        SynapseShield.writeGate(Synapse::GateChannel::B, false);
+      }
     }
   }
 }
