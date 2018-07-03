@@ -46,7 +46,7 @@ The shield should work fine with **any Arduino with onboard 5V regulator** which
 - 2 x 8 pin dip socket
 - 1 x 16 pin dip socket
 - 1 x 14 pin dip socket
-- 1 x 5x2 male strip connector (2.54mm pitch)
+- 1 x 5x2 male strip connector (angled if you want to stack another shield on top) (2.54mm pitch)
 - 1 x 3x2 female strip connector (2.54mm pitch)
 - 1 x 10x1 male strip connector (2.54mm pitch)
 - 2 x 8x1 male strip connector (2.54mm pitch)
