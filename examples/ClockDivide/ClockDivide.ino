@@ -58,17 +58,11 @@ void loop()
 {
   int i;
 
-  Serial.print(analogRead(2));
-  Serial.print('\t');
-  Serial.print(analogRead(3));
-  Serial.print('\t');
-  Serial.println(analogRead(4));
-
   // deal with possible reset
   if (rstState == HIGH) {
     rstState = LOW;
     for (i=0; i<2; i++) {
-      clockTick[i] = (analogRead(i+2) >> 6) + 1;
+      clockTick[i] = (analogRead(i+2) >> 5) + 1;
     }
   }
 
@@ -82,8 +76,7 @@ void loop()
         digState[i] = HIGH;
         prevMilli[i] = millis();
         SynapseShield.writeGate(channel[i], true);
-
-        clockTick[i] = (analogRead(i+2) >> 6) + 1 + (analogRead(4) >> 6);
+        clockTick[i] = (analogRead(i+2) >> 5) + 1 + (analogRead(4) >> 5);
       }
     }
   }
