@@ -65,7 +65,7 @@ void loop()
   Serial.println(analogRead(4));
 
   // deal with possible reset
-  if (rstState = HIGH) {
+  if (rstState == HIGH) {
     rstState = LOW;
     for (i=0; i<2; i++) {
       clockTick[i] = (analogRead(i+2) >> 6) + 1;
