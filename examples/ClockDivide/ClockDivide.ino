@@ -7,9 +7,9 @@
 //  Description: Given incoming clock pulses, output two
 //               triggers with varying delays
 //
-//    Analog In 0: Division of clock out 1 (1-32)
-//    Analog In 1: Division of clock out 2 (1-32)
-//    Analog In 2: Additional division offset (1-16)
+//    Analog In 2: Division of clock out 1 (1-32)
+//    Analog In 3: Division of clock out 2 (1-32)
+//    Analog In 4: Additional division offset (1-16)
 //    GateOut A: Trigger output 1
 //    GateOut B: Trigger output 2
 //    GateIn A: External trigger input
@@ -58,19 +58,17 @@ void loop()
 {
   int i;
 
-  Serial.print(analogRead(0));
-  Serial.print('\t');
-  Serial.print(analogRead(1));
-  Serial.print('\t');
   Serial.print(analogRead(2));
   Serial.print('\t');
-  Serial.println(analogRead(3));
+  Serial.print(analogRead(3));
+  Serial.print('\t');
+  Serial.println(analogRead(4));
 
   // deal with possible reset
   if (rstState = HIGH) {
     rstState = LOW;
     for (i=0; i<2; i++) {
-      clockTick[i] = (analogRead(i) >> 6) + 1;
+      clockTick[i] = (analogRead(i+2) >> 6) + 1;
     }
   }
 
@@ -85,7 +83,7 @@ void loop()
         prevMilli[i] = millis();
         SynapseShield.writeGate(channel[i], true);
 
-        clockTick[i] = (analogRead(i) >> 6) + 1 + (analogRead(2) >> 6);
+        clockTick[i] = (analogRead(i+2) >> 6) + 1 + (analogRead(4) >> 6);
       }
     }
   }
