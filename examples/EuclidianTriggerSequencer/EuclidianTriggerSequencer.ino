@@ -16,6 +16,8 @@
 //    A1: Steps for rhythm B
 //    A2: Pulses for rhythm A
 //    A3: Pulses for rhythm B
+//    CVIn A: rotate rhythm A
+//    CVIn B: rotate rhythm B
 //    GateOut A: Rhythm A output
 //    GateOut B: Rhythm B output
 //    GateIn: External clock input
@@ -44,8 +46,9 @@ const int trigTime = 25;       // 25 ms trigger timing
 
 //  variables for interrupt handling of the clock input
 volatile int clkState = LOW;
+volatile int rstState = LOW;
 
-//  variables used to control the current DIO output states
+//  variables used to control the gate output states
 int digState[2] = {LOW, LOW};        // start with both set low
 unsigned long digMilli[2] = {0, 0};  // a place to store millis()
 Synapse::GateChannel channel[2] = {Synapse::GateChannel::A, Synapse::GateChannel::B};
@@ -60,6 +63,9 @@ int euArray[2][32];
 unsigned long currPulse = 0;
 int doCalc = 0;
 
+void onGateARisingEdge();
+void onGateBRisingEdge();
+
 //  ==================== start of setup() ======================
 void setup()
 {
@@ -70,8 +76,9 @@ void setup()
   inSteps[1] = (analogRead(1) >> 5) + 1;
   inPulses[0] = (analogRead(2) >> 5) + 1;
   inPulses[1] = (analogRead(3) >> 5) + 1;
-  inRotate[0] = 0;
-  inRotate[1] = 0;
+
+  inRotate[0] = map(SynapseShield.readCV(Synapse::CVChannel::A), 0, 4095, 0, inSteps[0]);
+  inRotate[1] = map(SynapseShield.readCV(Synapse::CVChannel::B), 0, 4095, 0, inSteps[1]);
 
   euCalc(0);
   euCalc(1);
@@ -82,8 +89,15 @@ void setup()
     onGateARisingEdge,
     Synapse::GateInterrupt::RisingEdge
   );
-}
 
+  // Note: Interrupt 0 is for Gate A (clkIn)
+  SynapseShield.gateInputInterrupt(
+    Synapse::GateChannel::B,
+    onGateBRisingEdge,
+    Synapse::GateInterrupt::RisingEdge
+  );
+
+}
 
 void loop()
 {
@@ -94,6 +108,11 @@ void loop()
     clkState = LOW;
     currPulse++;
     doClock = 1;
+  }
+
+  if (rstState == HIGH) {
+    rstState = LOW;
+    currPulse = 0;
   }
 
   if (doClock) {
@@ -113,7 +132,7 @@ void loop()
     }
   }
 
-  // do we have to turn off any of the digital outputs?
+  // do we have to turn off any of the Gate outs?
   for (int i=0; i<2; i++) {
     if ((digState[i] == HIGH) && (millis() - digMilli[i] > trigTime)) {
       digState[i] = LOW;
@@ -156,6 +175,8 @@ void loop()
     euCalc(1);
   }
 
+  inRotate[0] = map(SynapseShield.readCV(Synapse::CVChannel::A), 0, 4095, 0, inSteps[0]);
+  inRotate[1] = map(SynapseShield.readCV(Synapse::CVChannel::B), 0, 4095, 0, inSteps[1]);
 }
 
 //  onGateARisingEdge() - quickly handle interrupts from the clock input
@@ -163,6 +184,13 @@ void loop()
 void onGateARisingEdge()
 {
   clkState = HIGH;
+}
+
+//  onGateBRisingEdge() - quickly handle interrupts from the rst input
+//  ------------------------------------------------------
+void onGateBRisingEdge()
+{
+  rstState = HIGH;
 }
 
 //  euCalc(int) - create a Euclidean Rhythm array.
