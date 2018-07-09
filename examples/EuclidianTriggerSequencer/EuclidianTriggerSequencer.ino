@@ -12,10 +12,10 @@
 //               Rhythm Generation.
 //
 //  I/O Usage:
-//    A0: Steps for rhythm A
-//    A1: Steps for rhythm B
-//    A2: Pulses for rhythm A
-//    A3: Pulses for rhythm B
+//    A2: Steps for rhythm A
+//    A3: Steps for rhythm B
+//    A4: Pulses for rhythm A
+//    A5: Pulses for rhythm B
 //    CVIn A: rotate rhythm A
 //    CVIn B: rotate rhythm B
 //    GateOut A: Rhythm A output
@@ -40,6 +40,8 @@
 //  ============================================================
 #include <Synapse.h>
 using namespace sl;
+
+#define CHANNELS 2
 
 //  constants related to the trigger out
 const int trigTime = 25;       // 25 ms trigger timing
@@ -72,10 +74,10 @@ void setup()
   SynapseShield.begin();
 
   // get the analog reading to set up the system
-  inSteps[0] = (analogRead(0) >> 5) + 1;
-  inSteps[1] = (analogRead(1) >> 5) + 1;
-  inPulses[0] = (analogRead(2) >> 5) + 1;
-  inPulses[1] = (analogRead(3) >> 5) + 1;
+  inSteps[0] = (analogRead(2) >> 5) + 1;
+  inSteps[1] = (analogRead(3) >> 5) + 1;
+  inPulses[0] = (analogRead(4) >> 5) + 1;
+  inPulses[1] = (analogRead(5) >> 5) + 1;
 
   inRotate[0] = map(SynapseShield.readCV(Synapse::CVChannel::A), 0, 4095, 0, inSteps[0]);
   inRotate[1] = map(SynapseShield.readCV(Synapse::CVChannel::B), 0, 4095, 0, inSteps[1]);
@@ -118,13 +120,9 @@ void loop()
   if (doClock) {
     int outPulse[2] = {0, 0};
 
-    for (int i=0; i<2; i++) {
+    for (int i=0; i < CHANNELS; i++) {
       int myPulse = (currPulse + inRotate[i]) % inSteps[i];
-      outPulse[i] = euArray[i][myPulse];
-    }
-
-    for (int i=0; i<2; i++) {
-      if (outPulse[i] > 0) {
+      if (euArray[i][myPulse] > 0) {
         digState[i] = HIGH;
         digMilli[i] = millis();
         SynapseShield.writeGate(channel[i], true);
@@ -133,7 +131,7 @@ void loop()
   }
 
   // do we have to turn off any of the Gate outs?
-  for (int i=0; i<2; i++) {
+  for (int i=0; i<CHANNELS; i++) {
     if ((digState[i] == HIGH) && (millis() - digMilli[i] > trigTime)) {
       digState[i] = LOW;
       SynapseShield.writeGate(channel[i], false);
@@ -142,13 +140,13 @@ void loop()
 
   // reread the inputs in case we need to change
   doCalc = 0;
-  int tmp = (analogRead(0) >> 5) + 1;
+  int tmp = (analogRead(2) >> 5) + 1;
   if (tmp != inSteps[0]) {
     inSteps[0] = tmp;
     doCalc = 1;
   }
 
-  tmp = (analogRead(2) >> 5) + 1;
+  tmp = (analogRead(4) >> 5) + 1;
   if (tmp != inPulses[0]) {
     inPulses[0] = tmp;
     doCalc = 1;
@@ -159,13 +157,13 @@ void loop()
   }
 
   doCalc = 0;
-  tmp = (analogRead(1) >> 5) + 1;
+  tmp = (analogRead(3) >> 5) + 1;
   if (tmp != inSteps[1]) {
     inSteps[1] = tmp;
     doCalc = 1;
   }
 
-  tmp = (analogRead(3) >> 5) + 1;
+  tmp = (analogRead(5) >> 5) + 1;
   if (tmp != inPulses[1]) {
     inPulses[1] = tmp;
     doCalc = 1;
