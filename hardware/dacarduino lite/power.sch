@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 11 12
 Title ""
 Date ""
 Rev ""
@@ -76,7 +76,7 @@ AR Path="/5E8A5AB1" Ref="D?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5AB1" Ref="D13"  Part="1" 
 F 0 "D13" H 5150 3434 50  0000 C CNN
 F 1 "1N5817" H 5150 3525 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5150 3475 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5150 3650 50  0001 C CNN
 	1    5150 3650
 	-1   0    0    1   

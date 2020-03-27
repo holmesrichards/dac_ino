@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 17
+Sheet 17 18
 Title ""
 Date ""
 Rev ""
@@ -151,7 +151,7 @@ AR Path="/5E8A5AB1" Ref="D?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5AB1" Ref="D13"  Part="1" 
 F 0 "D13" H 5150 3434 50  0000 C CNN
 F 1 "1N5817" H 5150 3525 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5150 3475 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5150 3650 50  0001 C CNN
 	1    5150 3650
 	-1   0    0    1   
@@ -167,7 +167,7 @@ AR Path="/5E8A5AB8" Ref="D?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5AB8" Ref="D14"  Part="1" 
 F 0 "D14" H 5150 4266 50  0000 C CNN
 F 1 "1N5817" H 5150 4175 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5150 3875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5150 4050 50  0001 C CNN
 	1    5150 4050
 	1    0    0    -1  
@@ -215,31 +215,6 @@ F 3 "~" H 6350 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6350 3850
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5E8A5AD5
-P 2950 3750
-AR Path="/5E7957F4/5E8A5AD5" Ref="J?"  Part="1" 
-AR Path="/5E8A5AD5" Ref="J?"  Part="1" 
-AR Path="/5E8A3CCB/5E8A5AD5" Ref="J18"  Part="1" 
-F 0 "J18" H 2950 4050 50  0000 C CNN
-F 1 "Vin" H 2950 3950 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 2950 3750 50  0001 C CNN
-F 3 "~" H 2950 3750 50  0001 C CNN
-	1    2950 3750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 3650 3550 3650
-Connection ~ 3550 3650
-Wire Wire Line
-	3150 3750 3550 3750
-Connection ~ 3550 3750
-Wire Wire Line
-	3150 3850 3150 4050
-Wire Wire Line
-	3150 4050 3550 4050
-Connection ~ 3550 4050
 Connection ~ 5600 3650
 Wire Wire Line
 	5600 3650 5700 3650

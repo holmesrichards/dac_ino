@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 17
+Sheet 2 12
 Title ""
 Date ""
 Rev ""
@@ -116,12 +116,9 @@ Wire Wire Line
 Wire Wire Line
 	5350 4250 5000 4250
 Wire Wire Line
-	6400 3300 7000 3300
-Wire Wire Line
 	7000 3300 7000 3500
 Wire Wire Line
 	7000 3500 6900 3500
-Connection ~ 6400 3300
 Wire Wire Line
 	7000 3500 7000 4000
 Wire Wire Line
@@ -150,4 +147,6 @@ Text HLabel 5750 4000 0    50   BiDi ~ 0
 DAC_CS
 Text Notes 7150 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
+Text HLabel 7000 3300 1    50   Input ~ 0
+VREFDAC
 $EndSCHEMATC

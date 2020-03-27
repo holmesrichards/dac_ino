@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 17
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -23,6 +23,7 @@ F3 "DAC_B" O R 6950 4200 50
 F4 "SCK" B L 6200 4050 50 
 F5 "MOSI" B L 6200 4150 50 
 F6 "DAC_CS" B L 6200 4250 50 
+F7 "VREFDAC" I L 6200 3950 50 
 $EndSheet
 $Sheet
 S 7150 3900 550  450 
@@ -171,4 +172,21 @@ Text Notes 4350 6300 0    100  ~ 0
 * Same for dacarduino and dacarduino lite
 Text Notes 2150 3900 0    500  ~ 0
 *
+$Sheet
+S 6250 3300 800  350 
+U 5E7D346F
+F0 "Voltage reference" 50
+F1 "vref.sch" 50
+F2 "VREF" O R 7050 3500 50 
+$EndSheet
+Wire Wire Line
+	7050 3500 7150 3500
+Wire Wire Line
+	7150 3500 7150 3800
+Wire Wire Line
+	7150 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 3950
+Wire Wire Line
+	6100 3950 6200 3950
 $EndSCHEMATC
