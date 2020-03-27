@@ -1,0 +1,853 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 11774 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5000 2600 5000 2700
+Wire Wire Line
+	5000 2700 5300 2700
+Wire Wire Line
+	5300 2700 5300 2300
+Wire Wire Line
+	5300 2700 5300 2800
+Connection ~ 5300 2700
+Text GLabel 5000 2600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	10000 3600 10000 3700
+Wire Wire Line
+	10000 3700 10000 4200
+Wire Wire Line
+	10000 4200 9100 4200
+Wire Wire Line
+	9100 3600 10000 3600
+Wire Wire Line
+	10000 4200 10000 4300
+Wire Wire Line
+	10000 4300 10000 4600
+Wire Wire Line
+	9100 3700 10000 3700
+Wire Wire Line
+	9100 4300 10000 4300
+Connection ~ 10000 4200
+Connection ~ 10000 3700
+Connection ~ 10000 4300
+Text GLabel 10000 3600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	3100 4800 3100 4700
+Text GLabel 3100 4800 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5300 4800 5300 4700
+Text GLabel 5300 4800 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2800 2600 2800 2700
+Wire Wire Line
+	2800 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 2300
+Wire Wire Line
+	3100 2700 3100 2800
+Connection ~ 3100 2700
+Text GLabel 2800 2600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9100 1400 10000 1400
+Wire Wire Line
+	10000 1400 10000 1000
+Wire Wire Line
+	10000 1000 10000 900 
+Wire Wire Line
+	10000 900  9100 900 
+Wire Wire Line
+	10000 1400 10000 1500
+Wire Wire Line
+	10000 1500 10000 1700
+Wire Wire Line
+	9100 1000 10000 1000
+Wire Wire Line
+	9100 1500 10000 1500
+Connection ~ 10000 1400
+Connection ~ 10000 1000
+Connection ~ 10000 1500
+Text GLabel 9100 1400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 5600 2300 5600
+Text GLabel 2300 5600 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 5700 2300 5700
+Text GLabel 2300 5700 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 6500 2300 6500
+Text GLabel 2300 6500 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 6600 2300 6600
+Text GLabel 2300 6600 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 5900 2300 5900
+Text GLabel 2300 5900 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 6200 2300 6200
+Text GLabel 2300 6200 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	4700 6400 4700 6500
+Wire Wire Line
+	4700 6500 4800 6500
+Wire Wire Line
+	4800 6500 4900 6500
+Wire Wire Line
+	4900 6500 4900 6400
+Wire Wire Line
+	4800 6500 4800 6600
+Connection ~ 4800 6500
+Text GLabel 4700 6400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9100 5700 10000 5700
+Wire Wire Line
+	10000 5100 10000 5700
+Wire Wire Line
+	9100 5100 10000 5100
+Wire Wire Line
+	10000 5700 10000 6000
+Connection ~ 10000 5700
+Text GLabel 9100 5700 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	9100 2200 10000 2200
+Wire Wire Line
+	10000 2200 10000 2800
+Wire Wire Line
+	9100 2800 10000 2800
+Wire Wire Line
+	10000 2800 10000 3100
+Connection ~ 10000 2800
+Text GLabel 9100 2200 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5500 6600 5500 6300
+Text GLabel 5500 6600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	2600 6000 2300 6000
+Text GLabel 2300 6000 2    70   BiDi ~ 0
+VREF
+Wire Wire Line
+	2600 6300 2300 6300
+Text GLabel 2300 6300 2    70   BiDi ~ 0
+VREF
+Wire Wire Line
+	2800 4500 2900 4500
+Wire Wire Line
+	5000 4500 5100 4500
+Wire Wire Line
+	2700 2100 2800 2100
+Wire Wire Line
+	2800 2100 2900 2100
+Wire Wire Line
+	2800 2200 2800 2100
+Connection ~ 2800 2100
+Wire Wire Line
+	5000 2200 5000 2100
+Wire Wire Line
+	5000 2100 5100 2100
+Wire Wire Line
+	5000 2100 4900 2100
+Connection ~ 5000 2100
+Wire Wire Line
+	5300 1900 5300 1800
+Wire Wire Line
+	5300 1800 5300 1700
+Wire Wire Line
+	5300 1800 5700 1800
+Text GLabel 5400 1800 2    70   BiDi ~ 0
+D_IN_B
+Connection ~ 5300 1800
+Wire Wire Line
+	3100 4300 3100 4200
+Wire Wire Line
+	3100 4200 3100 4100
+Wire Wire Line
+	3100 4200 3400 4200
+Connection ~ 3100 4200
+Text Label 3200 4200 0    70   ~ 0
+GATE_OUT_A
+Wire Wire Line
+	9100 5400 9700 5400
+Text Label 9200 5400 0    70   ~ 0
+GATE_OUT_A
+Wire Wire Line
+	9100 5800 9700 5800
+Text Label 9200 5800 0    70   ~ 0
+GATE_OUT_A
+Wire Wire Line
+	5300 4100 5300 4200
+Wire Wire Line
+	5300 4200 5300 4300
+Wire Wire Line
+	5300 4200 5600 4200
+Connection ~ 5300 4200
+Text Label 5400 4200 0    70   ~ 0
+GATE_OUT_B
+Wire Wire Line
+	9100 6000 9700 6000
+Text Label 9200 6000 0    70   ~ 0
+GATE_OUT_B
+Wire Wire Line
+	3100 3700 3100 3600
+Text GLabel 3100 3700 0    10   BiDi ~ 0
+VCC
+Wire Wire Line
+	5300 3700 5300 3600
+Text GLabel 5300 3700 0    10   BiDi ~ 0
+VCC
+Wire Wire Line
+	3100 1300 3100 1200
+Text GLabel 3100 1300 0    10   BiDi ~ 0
+VCC
+Wire Wire Line
+	5300 1300 5300 1200
+Text GLabel 5300 1300 0    10   BiDi ~ 0
+VCC
+Wire Wire Line
+	5500 5800 5500 6000
+Text GLabel 5500 5800 0    10   BiDi ~ 0
+VCC
+Wire Wire Line
+	3600 6200 3900 6200
+Text GLabel 3600 6200 2    70   BiDi ~ 0
+OFFSET_B
+Wire Wire Line
+	3600 5900 3900 5900
+Text GLabel 3600 5900 2    70   BiDi ~ 0
+OFFSET_A
+Wire Wire Line
+	9100 2500 9700 2500
+Text GLabel 9200 2500 2    70   BiDi ~ 0
+CV_OUT_A
+Wire Wire Line
+	9100 3100 9700 3100
+Text GLabel 9200 3100 2    70   BiDi ~ 0
+CV_OUT_B
+Wire Wire Line
+	3100 1900 3100 1800
+Wire Wire Line
+	3100 1800 3100 1700
+Wire Wire Line
+	3100 1800 3500 1800
+Text GLabel 3200 1800 2    70   BiDi ~ 0
+D_IN_A
+Connection ~ 3100 1800
+Wire Wire Line
+	4600 4500 4100 4500
+Text GLabel 4100 4500 2    70   BiDi ~ 0
+D_OUT_B
+Wire Wire Line
+	2400 4500 1900 4500
+Text GLabel 1900 4500 2    70   BiDi ~ 0
+D_OUT_A
+Wire Wire Line
+	2300 2100 1800 2100
+Text Label 1800 2100 0    70   ~ 0
+GATE_IN_A
+Wire Wire Line
+	9100 3900 9700 3900
+Text Label 9200 3900 0    70   ~ 0
+GATE_IN_A
+Wire Wire Line
+	4500 2100 4000 2100
+Text Label 4000 2100 0    70   ~ 0
+GATE_IN_B
+Wire Wire Line
+	9100 4500 9700 4500
+Text Label 9200 4500 0    70   ~ 0
+GATE_IN_B
+Wire Wire Line
+	9100 1200 9800 1200
+Text GLabel 9300 1200 2    70   BiDi ~ 0
+CV_IN_A
+Wire Wire Line
+	9100 1700 9800 1700
+Text GLabel 9300 1700 2    70   BiDi ~ 0
+CV_IN_B
+Wire Wire Line
+	2600 6700 2300 6700
+Text GLabel 2300 6700 2    70   BiDi ~ 0
+CFG_A
+Wire Wire Line
+	2600 6800 2300 6800
+Text GLabel 2300 6800 2    70   BiDi ~ 0
+CFG_B
+$Comp
+L synapse-eagle-import:-NPN-TO92-EBC T1
+U 1 1 6BC8C1C8
+P 3000 4500
+AR Path="/6BC8C1C8" Ref="T1"  Part="1" 
+AR Path="/5E7D40A1/6BC8C1C8" Ref="T1"  Part="1" 
+F 0 "T1" H 2600 4800 59  0000 L BNN
+F 1 "2N3904" H 2600 4700 59  0000 L BNN
+F 2 "synapse:TO92-EBC" H 3000 4500 50  0001 C CNN
+F 3 "" H 3000 4500 50  0001 C CNN
+	1    3000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:-NPN-TO92-EBC T2
+U 1 1 F490A3A7
+P 5200 4500
+AR Path="/F490A3A7" Ref="T2"  Part="1" 
+AR Path="/5E7D40A1/F490A3A7" Ref="T2"  Part="1" 
+F 0 "T2" H 4800 4800 59  0000 L BNN
+F 1 "2N3904" H 4800 4700 59  0000 L BNN
+F 2 "synapse:TO92-EBC" H 5200 4500 50  0001 C CNN
+F 3 "" H 5200 4500 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:-NPN-TO92-EBC T3
+U 1 1 7EADEB30
+P 3000 2100
+AR Path="/7EADEB30" Ref="T3"  Part="1" 
+AR Path="/5E7D40A1/7EADEB30" Ref="T3"  Part="1" 
+F 0 "T3" H 2600 2400 59  0000 L BNN
+F 1 "2N3904" H 2600 2300 59  0000 L BNN
+F 2 "synapse:TO92-EBC" H 3000 2100 50  0001 C CNN
+F 3 "" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:-NPN-TO92-EBC T4
+U 1 1 3F1AAFFB
+P 5200 2100
+AR Path="/3F1AAFFB" Ref="T4"  Part="1" 
+AR Path="/5E7D40A1/3F1AAFFB" Ref="T4"  Part="1" 
+F 0 "T4" H 4800 2400 59  0000 L BNN
+F 1 "2N3904" H 4800 2300 59  0000 L BNN
+F 2 "synapse:TO92-EBC" H 5200 2100 50  0001 C CNN
+F 3 "" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R1
+U 1 1 B27AFD5B
+P 2600 4500
+AR Path="/B27AFD5B" Ref="R1"  Part="1" 
+AR Path="/5E7D40A1/B27AFD5B" Ref="R1"  Part="1" 
+F 0 "R1" H 2450 4559 59  0000 L BNN
+F 1 "1K" H 2450 4370 59  0000 L BNN
+F 2 "synapse:0204_7" H 2600 4500 50  0001 C CNN
+F 3 "" H 2600 4500 50  0001 C CNN
+	1    2600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R2
+U 1 1 8A7CCFCE
+P 3100 3900
+AR Path="/8A7CCFCE" Ref="R2"  Part="1" 
+AR Path="/5E7D40A1/8A7CCFCE" Ref="R2"  Part="1" 
+F 0 "R2" H 2950 3959 59  0000 L BNN
+F 1 "1K" H 2950 3770 59  0000 L BNN
+F 2 "synapse:0204_7" H 3100 3900 50  0001 C CNN
+F 3 "" H 3100 3900 50  0001 C CNN
+	1    3100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R3
+U 1 1 2DC20805
+P 4800 4500
+AR Path="/2DC20805" Ref="R3"  Part="1" 
+AR Path="/5E7D40A1/2DC20805" Ref="R3"  Part="1" 
+F 0 "R3" H 4650 4559 59  0000 L BNN
+F 1 "1K" H 4650 4370 59  0000 L BNN
+F 2 "synapse:0204_7" H 4800 4500 50  0001 C CNN
+F 3 "" H 4800 4500 50  0001 C CNN
+	1    4800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R4
+U 1 1 931C0BDC
+P 5300 3900
+AR Path="/931C0BDC" Ref="R4"  Part="1" 
+AR Path="/5E7D40A1/931C0BDC" Ref="R4"  Part="1" 
+F 0 "R4" H 5150 3959 59  0000 L BNN
+F 1 "1K" H 5150 3770 59  0000 L BNN
+F 2 "synapse:0204_7" H 5300 3900 50  0001 C CNN
+F 3 "" H 5300 3900 50  0001 C CNN
+	1    5300 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R5
+U 1 1 C42E3C7A
+P 2500 2100
+AR Path="/C42E3C7A" Ref="R5"  Part="1" 
+AR Path="/5E7D40A1/C42E3C7A" Ref="R5"  Part="1" 
+F 0 "R5" H 2350 2159 59  0000 L BNN
+F 1 "100K" H 2350 1970 59  0000 L BNN
+F 2 "synapse:0204_7" H 2500 2100 50  0001 C CNN
+F 3 "" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R6
+U 1 1 4BA01425
+P 2800 2400
+AR Path="/4BA01425" Ref="R6"  Part="1" 
+AR Path="/5E7D40A1/4BA01425" Ref="R6"  Part="1" 
+F 0 "R6" H 2650 2459 59  0000 L BNN
+F 1 "1M" H 2650 2270 59  0000 L BNN
+F 2 "synapse:0204_7" H 2800 2400 50  0001 C CNN
+F 3 "" H 2800 2400 50  0001 C CNN
+	1    2800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R7
+U 1 1 99333350
+P 3100 1500
+AR Path="/99333350" Ref="R7"  Part="1" 
+AR Path="/5E7D40A1/99333350" Ref="R7"  Part="1" 
+F 0 "R7" H 2950 1559 59  0000 L BNN
+F 1 "10K" H 2950 1370 59  0000 L BNN
+F 2 "synapse:0204_7" H 3100 1500 50  0001 C CNN
+F 3 "" H 3100 1500 50  0001 C CNN
+	1    3100 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R8
+U 1 1 829AA7FA
+P 4700 2100
+AR Path="/829AA7FA" Ref="R8"  Part="1" 
+AR Path="/5E7D40A1/829AA7FA" Ref="R8"  Part="1" 
+F 0 "R8" H 4550 2159 59  0000 L BNN
+F 1 "100K" H 4550 1970 59  0000 L BNN
+F 2 "synapse:0204_7" H 4700 2100 50  0001 C CNN
+F 3 "" H 4700 2100 50  0001 C CNN
+	1    4700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R9
+U 1 1 80A596E5
+P 5000 2400
+AR Path="/80A596E5" Ref="R9"  Part="1" 
+AR Path="/5E7D40A1/80A596E5" Ref="R9"  Part="1" 
+F 0 "R9" H 4850 2459 59  0000 L BNN
+F 1 "1M" H 4850 2270 59  0000 L BNN
+F 2 "synapse:0204_7" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synapse-eagle-import:R-US_0204_7 R10
+U 1 1 FF346B35
+P 5300 1500
+AR Path="/FF346B35" Ref="R10"  Part="1" 
+AR Path="/5E7D40A1/FF346B35" Ref="R10"  Part="1" 
+F 0 "R10" H 5150 1559 59  0000 L BNN
+F 1 "10K" H 5150 1370 59  0000 L BNN
+F 2 "synapse:0204_7" H 5300 1500 50  0001 C CNN
+F 3 "" H 5300 1500 50  0001 C CNN
+	1    5300 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY4
+U 1 1 6DF68C43
+P 5300 2900
+AR Path="/6DF68C43" Ref="#SUPPLY4"  Part="1" 
+AR Path="/5E7D40A1/6DF68C43" Ref="#SUPPLY04"  Part="1" 
+F 0 "#SUPPLY04" H 5300 2900 50  0001 C CNN
+F 1 "GND" H 5225 2775 59  0000 L BNN
+F 2 "" H 5300 2900 50  0001 C CNN
+F 3 "" H 5300 2900 50  0001 C CNN
+	1    5300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY5
+U 1 1 FD320F9F
+P 10000 4700
+AR Path="/FD320F9F" Ref="#SUPPLY5"  Part="1" 
+AR Path="/5E7D40A1/FD320F9F" Ref="#SUPPLY05"  Part="1" 
+F 0 "#SUPPLY05" H 10000 4700 50  0001 C CNN
+F 1 "GND" H 9925 4575 59  0000 L BNN
+F 2 "" H 10000 4700 50  0001 C CNN
+F 3 "" H 10000 4700 50  0001 C CNN
+	1    10000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:VCC #SUPPLY7
+U 1 1 70B0FDB1
+P 3100 3500
+AR Path="/70B0FDB1" Ref="#SUPPLY7"  Part="1" 
+AR Path="/5E7D40A1/70B0FDB1" Ref="#SUPPLY07"  Part="1" 
+F 0 "#SUPPLY07" H 3100 3500 50  0001 C CNN
+F 1 "VCC" H 3025 3625 59  0000 L BNN
+F 2 "" H 3100 3500 50  0001 C CNN
+F 3 "" H 3100 3500 50  0001 C CNN
+	1    3100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:VCC #SUPPLY8
+U 1 1 CC52D7E0
+P 5300 3500
+AR Path="/CC52D7E0" Ref="#SUPPLY8"  Part="1" 
+AR Path="/5E7D40A1/CC52D7E0" Ref="#SUPPLY08"  Part="1" 
+F 0 "#SUPPLY08" H 5300 3500 50  0001 C CNN
+F 1 "VCC" H 5225 3625 59  0000 L BNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY9
+U 1 1 7F737C64
+P 3100 4900
+AR Path="/7F737C64" Ref="#SUPPLY9"  Part="1" 
+AR Path="/5E7D40A1/7F737C64" Ref="#SUPPLY09"  Part="1" 
+F 0 "#SUPPLY09" H 3100 4900 50  0001 C CNN
+F 1 "GND" H 3025 4775 59  0000 L BNN
+F 2 "" H 3100 4900 50  0001 C CNN
+F 3 "" H 3100 4900 50  0001 C CNN
+	1    3100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY10
+U 1 1 AC3081B0
+P 5300 4900
+AR Path="/AC3081B0" Ref="#SUPPLY10"  Part="1" 
+AR Path="/5E7D40A1/AC3081B0" Ref="#SUPPLY010"  Part="1" 
+F 0 "#SUPPLY010" H 5300 4900 50  0001 C CNN
+F 1 "GND" H 5225 4775 59  0000 L BNN
+F 2 "" H 5300 4900 50  0001 C CNN
+F 3 "" H 5300 4900 50  0001 C CNN
+	1    5300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:VCC #SUPPLY11
+U 1 1 EFE06A32
+P 3100 1100
+AR Path="/EFE06A32" Ref="#SUPPLY11"  Part="1" 
+AR Path="/5E7D40A1/EFE06A32" Ref="#SUPPLY011"  Part="1" 
+F 0 "#SUPPLY011" H 3100 1100 50  0001 C CNN
+F 1 "VCC" H 3025 1225 59  0000 L BNN
+F 2 "" H 3100 1100 50  0001 C CNN
+F 3 "" H 3100 1100 50  0001 C CNN
+	1    3100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:VCC #SUPPLY12
+U 1 1 A9A8C894
+P 5300 1100
+AR Path="/A9A8C894" Ref="#SUPPLY12"  Part="1" 
+AR Path="/5E7D40A1/A9A8C894" Ref="#SUPPLY012"  Part="1" 
+F 0 "#SUPPLY012" H 5300 1100 50  0001 C CNN
+F 1 "VCC" H 5225 1225 59  0000 L BNN
+F 2 "" H 5300 1100 50  0001 C CNN
+F 3 "" H 5300 1100 50  0001 C CNN
+	1    5300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY13
+U 1 1 0BDF3AC2
+P 3100 2900
+AR Path="/0BDF3AC2" Ref="#SUPPLY13"  Part="1" 
+AR Path="/5E7D40A1/0BDF3AC2" Ref="#SUPPLY013"  Part="1" 
+F 0 "#SUPPLY013" H 3100 2900 50  0001 C CNN
+F 1 "GND" H 3025 2775 59  0000 L BNN
+F 2 "" H 3100 2900 50  0001 C CNN
+F 3 "" H 3100 2900 50  0001 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR CVOUT1
+U 1 1 2B1A3B8B
+P 8800 2300
+AR Path="/2B1A3B8B" Ref="CVOUT1"  Part="1" 
+AR Path="/5E7D40A1/2B1A3B8B" Ref="CVOUT1"  Part="1" 
+F 0 "CVOUT1" H 8505 2475 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 2300 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 2300 50  0001 C CNN
+F 3 "" H 8800 2300 50  0001 C CNN
+	1    8800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR CVOUT2
+U 1 1 C82BCF5C
+P 8800 2900
+AR Path="/C82BCF5C" Ref="CVOUT2"  Part="1" 
+AR Path="/5E7D40A1/C82BCF5C" Ref="CVOUT2"  Part="1" 
+F 0 "CVOUT2" H 8505 3075 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 2900 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 2900 50  0001 C CNN
+F 3 "" H 8800 2900 50  0001 C CNN
+	1    8800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR GOUT1
+U 1 1 1C261693
+P 8800 5200
+AR Path="/1C261693" Ref="GOUT1"  Part="1" 
+AR Path="/5E7D40A1/1C261693" Ref="GOUT1"  Part="1" 
+F 0 "GOUT1" H 8505 5375 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 5200 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 5200 50  0001 C CNN
+F 3 "" H 8800 5200 50  0001 C CNN
+	1    8800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR GOUT2
+U 1 1 7C955D7C
+P 8800 5800
+AR Path="/7C955D7C" Ref="GOUT2"  Part="1" 
+AR Path="/5E7D40A1/7C955D7C" Ref="GOUT2"  Part="1" 
+F 0 "GOUT2" H 8505 5975 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 5800 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 5800 50  0001 C CNN
+F 3 "" H 8800 5800 50  0001 C CNN
+	1    8800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR GIN1
+U 1 1 4E5A8DEB
+P 8800 3700
+AR Path="/4E5A8DEB" Ref="GIN1"  Part="1" 
+AR Path="/5E7D40A1/4E5A8DEB" Ref="GIN1"  Part="1" 
+F 0 "GIN1" H 8505 3875 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 3700 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 3700 50  0001 C CNN
+F 3 "" H 8800 3700 50  0001 C CNN
+	1    8800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR GIN2
+U 1 1 3D7D4D7E
+P 8800 4300
+AR Path="/3D7D4D7E" Ref="GIN2"  Part="1" 
+AR Path="/5E7D40A1/3D7D4D7E" Ref="GIN2"  Part="1" 
+F 0 "GIN2" H 8505 4475 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 4300 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 4300 50  0001 C CNN
+F 3 "" H 8800 4300 50  0001 C CNN
+	1    8800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR CVIN1
+U 1 1 CCB04DAF
+P 8800 1000
+AR Path="/CCB04DAF" Ref="CVIN1"  Part="1" 
+AR Path="/5E7D40A1/CCB04DAF" Ref="CVIN1"  Part="1" 
+F 0 "CVIN1" H 8505 1175 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 1000 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 1000 50  0001 C CNN
+F 3 "" H 8800 1000 50  0001 C CNN
+	1    8800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:AUDIO-JACKERTHENVAR CVIN2
+U 1 1 7253EFB4
+P 8800 1500
+AR Path="/7253EFB4" Ref="CVIN2"  Part="1" 
+AR Path="/5E7D40A1/7253EFB4" Ref="CVIN2"  Part="1" 
+F 0 "CVIN2" H 8505 1675 59  0000 L BNN
+F 1 "AUDIO-JACKERTHENVAR" H 8800 1500 50  0001 C CNN
+F 2 "synapse:ERTHENVAR-JACK" H 8800 1500 50  0001 C CNN
+F 3 "" H 8800 1500 50  0001 C CNN
+	1    8800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY24
+U 1 1 6EA68DB5
+P 10000 1800
+AR Path="/6EA68DB5" Ref="#SUPPLY24"  Part="1" 
+AR Path="/5E7D40A1/6EA68DB5" Ref="#SUPPLY024"  Part="1" 
+F 0 "#SUPPLY024" H 10000 1800 50  0001 C CNN
+F 1 "GND" H 9925 1675 59  0000 L BNN
+F 2 "" H 10000 1800 50  0001 C CNN
+F 3 "" H 10000 1800 50  0001 C CNN
+	1    10000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:4053N IC4
+U 1 1 46657C43
+P 3100 6200
+AR Path="/46657C43" Ref="IC4"  Part="1" 
+AR Path="/5E7D40A1/46657C43" Ref="IC4"  Part="1" 
+F 0 "IC4" H 3000 6175 59  0000 L BNN
+F 1 "4053N" H 2800 5400 59  0001 L BNN
+F 2 "synapse:DIL16" H 3100 6200 50  0001 C CNN
+F 3 "" H 3100 6200 50  0001 C CNN
+	1    3100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:4053N IC4
+U 2 1 46657C4F
+P 4900 6100
+AR Path="/46657C4F" Ref="IC4"  Part="2" 
+AR Path="/5E7D40A1/46657C4F" Ref="IC4"  Part="2" 
+F 0 "IC4" H 4800 6075 59  0000 L BNN
+F 1 "4053N" H 4600 5300 59  0001 L BNN
+F 2 "synapse:DIL16" H 4900 6100 50  0001 C CNN
+F 3 "" H 4900 6100 50  0001 C CNN
+	2    4900 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY20
+U 1 1 11576E5E
+P 4800 6700
+AR Path="/11576E5E" Ref="#SUPPLY20"  Part="1" 
+AR Path="/5E7D40A1/11576E5E" Ref="#SUPPLY020"  Part="1" 
+F 0 "#SUPPLY020" H 4800 6700 50  0001 C CNN
+F 1 "GND" H 4725 6575 59  0000 L BNN
+F 2 "" H 4800 6700 50  0001 C CNN
+F 3 "" H 4800 6700 50  0001 C CNN
+	1    4800 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY25
+U 1 1 45AA5876
+P 10000 3200
+AR Path="/45AA5876" Ref="#SUPPLY25"  Part="1" 
+AR Path="/5E7D40A1/45AA5876" Ref="#SUPPLY025"  Part="1" 
+F 0 "#SUPPLY025" H 10000 3200 50  0001 C CNN
+F 1 "GND" H 9925 3075 59  0000 L BNN
+F 2 "" H 10000 3200 50  0001 C CNN
+F 3 "" H 10000 3200 50  0001 C CNN
+	1    10000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY26
+U 1 1 D211C7B6
+P 10000 6100
+AR Path="/D211C7B6" Ref="#SUPPLY26"  Part="1" 
+AR Path="/5E7D40A1/D211C7B6" Ref="#SUPPLY026"  Part="1" 
+F 0 "#SUPPLY026" H 10000 6100 50  0001 C CNN
+F 1 "GND" H 9925 5975 59  0000 L BNN
+F 2 "" H 10000 6100 50  0001 C CNN
+F 3 "" H 10000 6100 50  0001 C CNN
+	1    10000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:C-US025-025X050 C7
+U 1 1 B9E0DE35
+P 5500 6100
+AR Path="/B9E0DE35" Ref="C7"  Part="1" 
+AR Path="/5E7D40A1/B9E0DE35" Ref="C7"  Part="1" 
+F 0 "C7" H 5540 6125 59  0000 L BNN
+F 1 "100n" H 5540 5935 59  0000 L BNN
+F 2 "synapse:C025-025X050" H 5500 6100 50  0001 C CNN
+F 3 "" H 5500 6100 50  0001 C CNN
+	1    5500 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:GND #SUPPLY28
+U 1 1 C677056B
+P 5500 6700
+AR Path="/C677056B" Ref="#SUPPLY28"  Part="1" 
+AR Path="/5E7D40A1/C677056B" Ref="#SUPPLY028"  Part="1" 
+F 0 "#SUPPLY028" H 5500 6700 50  0001 C CNN
+F 1 "GND" H 5425 6575 59  0000 L BNN
+F 2 "" H 5500 6700 50  0001 C CNN
+F 3 "" H 5500 6700 50  0001 C CNN
+	1    5500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:VCC #SUPPLY29
+U 1 1 0331A01D
+P 4900 5700
+AR Path="/0331A01D" Ref="#SUPPLY29"  Part="1" 
+AR Path="/5E7D40A1/0331A01D" Ref="#SUPPLY029"  Part="1" 
+F 0 "#SUPPLY029" H 4900 5700 50  0001 C CNN
+F 1 "VCC" H 4825 5825 59  0000 L BNN
+F 2 "" H 4900 5700 50  0001 C CNN
+F 3 "" H 4900 5700 50  0001 C CNN
+	1    4900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:VCC #SUPPLY30
+U 1 1 5E7AC924
+P 5500 5700
+AR Path="/5E7AC924" Ref="#SUPPLY30"  Part="1" 
+AR Path="/5E7D40A1/5E7AC924" Ref="#SUPPLY030"  Part="1" 
+F 0 "#SUPPLY030" H 5500 5700 50  0001 C CNN
+F 1 "VCC" H 5425 5825 59  0000 L BNN
+F 2 "" H 5500 5700 50  0001 C CNN
+F 3 "" H 5500 5700 50  0001 C CNN
+	1    5500 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synapse-eagle-import:A4L-LOC #FRAME1
+U 1 1 73DA64CA
+P 900 7400
+AR Path="/73DA64CA" Ref="#FRAME1"  Part="1" 
+AR Path="/5E7D40A1/73DA64CA" Ref="#FRAME1"  Part="1" 
+F 0 "#FRAME1" H 900 7400 50  0001 C CNN
+F 1 "A4L-LOC" H 900 7400 50  0001 C CNN
+F 2 "" H 900 7400 50  0001 C CNN
+F 3 "" H 900 7400 50  0001 C CNN
+	1    900  7400
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 6700 0    100  ~ 0
+cc-by-sa
+Text Notes 7400 6900 0    100  ~ 0
+Vincenzo Pacella
+Text Notes 7400 7100 0    100  ~ 0
+shaduz@shaduzlabs.com
+$EndSCHEMATC
