@@ -1,0 +1,23 @@
+dacarduino arpeggiator:
+
+rotary switches:
+3 pos 3rd min - off - maj
+3 pos 5th dim - off - aug
+4 pos 7th dim - min - off - maj
+
+sp3t switches:
+1 oct - 2 oct - 3 oct
+down - both - up
+root - 1st inv - 2nd inv - 3rd inv
+
+Gates/switches:
+forward (clock)
+backward (clock)
+zero (mute)
+reset
+
+Outputs:
+CV
+Gate w/LED
+Start (gate) w/LED
+
