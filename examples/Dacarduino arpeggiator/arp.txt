@@ -1,14 +1,14 @@
 dacarduino arpeggiator:
 
 rotary switches:
-3 pos 3rd min - off - maj
-3 pos 5th dim - off - aug
-4 pos 7th dim - min - off - maj
+5 pos 3rd off - dim (2nd) - min - maj - aug (4th)
+4 pos 5th off - dim - perfect - aug
+4 pos 7th off - dim - min - maj
 
 sp3t switches:
 1 oct - 2 oct - 3 oct
 down - both - up
-root - 1st inv - 2nd inv - 3rd inv
+root - 1st inv - 2nd inv
 
 Gates/switches:
 forward (clock)
