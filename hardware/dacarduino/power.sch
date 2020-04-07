@@ -79,13 +79,13 @@ Text Label 5300 4050 0    50   ~ 0
 Wire Wire Line
 	5300 4050 5600 4050
 Text GLabel 5700 3650 2    50   Input ~ 0
-+12V
++VIN
 Text GLabel 5700 4050 2    50   Input ~ 0
--12V
+-VIN
 Text GLabel 6650 3450 1    50   Input ~ 0
-+12V
++VIN
 Text GLabel 6650 4250 3    50   Input ~ 0
--12V
+-VIN
 Wire Wire Line
 	3550 3750 3550 3850
 Connection ~ 3550 3850

@@ -46,9 +46,9 @@ Wire Wire Line
 Text Label 5300 3650 0    50   ~ 0
 +12V
 Text GLabel 5700 3650 2    50   Input ~ 0
-+12V
++VIN
 Text GLabel 6650 3450 1    50   Input ~ 0
-+12V
++VIN
 Wire Wire Line
 	3550 3750 3550 3850
 $Comp
@@ -131,8 +131,6 @@ Wire Wire Line
 Connection ~ 5600 3650
 Wire Wire Line
 	5600 3650 5700 3650
-Wire Wire Line
-	5600 4050 5700 4050
 Wire Wire Line
 	3150 3650 5000 3650
 $EndSCHEMATC

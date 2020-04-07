@@ -38,7 +38,7 @@ AR Path="/5E7957F4/5E7E4ED3" Ref="U?"  Part="1"
 AR Path="/5E7E4ED3" Ref="U?"  Part="1" 
 AR Path="/5E7E1DC7/5E7E4ED3" Ref="U2"  Part="1" 
 F 0 "U2" H 6200 3817 50  0000 C CNN
-F 1 "TL972" H 6200 3726 50  0000 C CNN
+F 1 "MCP6002" H 6200 3726 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 3450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl972.pdf" H 6200 3450 50  0001 C CNN
 	1    6200 3450
@@ -52,7 +52,7 @@ AR Path="/5E7957F4/5E7E4ED9" Ref="U?"  Part="2"
 AR Path="/5E7E4ED9" Ref="U?"  Part="2" 
 AR Path="/5E7E1DC7/5E7E4ED9" Ref="U2"  Part="2" 
 F 0 "U2" H 6200 5217 50  0000 C CNN
-F 1 "TL972" H 6200 5126 50  0000 C CNN
+F 1 "MCP6002" H 6200 5126 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl972.pdf" H 6200 4850 50  0001 C CNN
 	2    6200 4850
@@ -155,14 +155,14 @@ AR Path="/5E7957F4/5E8AE4DB" Ref="U?"  Part="3"
 AR Path="/5E8AE4DB" Ref="U?"  Part="3" 
 AR Path="/5E7E1DC7/5E8AE4DB" Ref="U2"  Part="3" 
 F 0 "U2" H 5258 5996 50  0000 L CNN
-F 1 "TL972" H 5258 5905 50  0000 L CNN
+F 1 "MCP6002" H 5258 5905 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5300 5950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl972.pdf" H 5300 5950 50  0001 C CNN
 	3    5300 5950
 	1    0    0    -1  
 $EndComp
 Text GLabel 4550 5650 0    50   Input ~ 0
-+12V
++VIN
 $Comp
 L power:GND #PWR?
 U 1 1 5E8B4179
@@ -234,4 +234,8 @@ Text Label 7150 4850 0    50   ~ 0
 CV_OUT_B
 Text Label 8850 4150 2    50   ~ 0
 CV_OUT_B
+Text Notes 6250 4100 0    50   ~ 0
+Omit 1k resistors if 1V/oct output critical
+Text Notes 6475 5575 0    50   ~ 0
+MCP6002 may be good choice for dacarduino lite,\nit being rail to rail, but limited to 6V power. (Or \nTL972 but that seems harder to find.) 
 $EndSCHEMATC

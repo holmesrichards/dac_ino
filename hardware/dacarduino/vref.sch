@@ -25,7 +25,7 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/REF01-REF02.pdf" H 5400 3700 5
 	1    0    0    -1  
 $EndComp
 Text GLabel 5450 3050 1    50   Input ~ 0
-+12V
++VIN
 Wire Wire Line
 	5450 3050 5450 3350
 $Comp

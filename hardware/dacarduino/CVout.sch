@@ -173,9 +173,9 @@ AR Path="/5E7957F4/5E7E4ED3" Ref="U?"  Part="1"
 AR Path="/5E7E4ED3" Ref="U?"  Part="1" 
 AR Path="/5E7E1DC7/5E7E4ED3" Ref="U2"  Part="1" 
 F 0 "U2" H 6200 3817 50  0000 C CNN
-F 1 "TL972" H 6200 3726 50  0000 C CNN
+F 1 "TL072" H 6200 3726 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl972.pdf" H 6200 3450 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 6200 3450 50  0001 C CNN
 	1    6200 3450
 	1    0    0    -1  
 $EndComp
@@ -187,9 +187,9 @@ AR Path="/5E7957F4/5E7E4ED9" Ref="U?"  Part="2"
 AR Path="/5E7E4ED9" Ref="U?"  Part="2" 
 AR Path="/5E7E1DC7/5E7E4ED9" Ref="U2"  Part="2" 
 F 0 "U2" H 6200 5217 50  0000 C CNN
-F 1 "TL972" H 6200 5126 50  0000 C CNN
+F 1 "TL072" H 6200 5126 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 4850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl972.pdf" H 6200 4850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 6200 4850 50  0001 C CNN
 	2    6200 4850
 	1    0    0    -1  
 $EndComp
@@ -318,7 +318,7 @@ P 9050 4150
 AR Path="/5E795811/5E7F27A0" Ref="J?"  Part="1" 
 AR Path="/5E7E1DC7/5E7F27A0" Ref="J4"  Part="1" 
 F 0 "J4" H 9130 4142 50  0000 L CNN
-F 1 "CV OUT B" H 9130 4051 50  0000 L CNN
+F 1 "Molex 2 pin" H 9130 4051 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 4150 50  0001 C CNN
 F 3 "~" H 9050 4150 50  0001 C CNN
 	1    9050 4150
@@ -331,7 +331,7 @@ P 9050 3700
 AR Path="/5E795811/5E7F27A6" Ref="J?"  Part="1" 
 AR Path="/5E7E1DC7/5E7F27A6" Ref="J3"  Part="1" 
 F 0 "J3" H 9130 3692 50  0000 L CNN
-F 1 "CV OUT A" H 9130 3601 50  0000 L CNN
+F 1 "Molex 2 pin" H 9130 3601 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 3700 50  0001 C CNN
 F 3 "~" H 9050 3700 50  0001 C CNN
 	1    9050 3700
@@ -399,9 +399,9 @@ AR Path="/5E7957F4/5E8AE4DB" Ref="U?"  Part="3"
 AR Path="/5E8AE4DB" Ref="U?"  Part="3" 
 AR Path="/5E7E1DC7/5E8AE4DB" Ref="U2"  Part="3" 
 F 0 "U2" H 5258 5996 50  0000 L CNN
-F 1 "TL972" H 5258 5905 50  0000 L CNN
+F 1 "TL072" H 5258 5905 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5300 5950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl972.pdf" H 5300 5950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 5300 5950 50  0001 C CNN
 	3    5300 5950
 	1    0    0    -1  
 $EndComp
@@ -410,9 +410,9 @@ Wire Wire Line
 Wire Wire Line
 	4750 6250 5200 6250
 Text GLabel 4550 5650 0    50   Input ~ 0
-+12V
++VIN
 Text GLabel 4550 6250 0    50   Input ~ 0
--12V
+-VIN
 $Comp
 L power:GND #PWR?
 U 1 1 5E8B4179
@@ -445,4 +445,8 @@ Text Label 7250 4850 0    50   ~ 0
 CV_OUT_B
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
+Text Notes 6450 3800 0    50   ~ 0
+Omit 1k resistors if 1V/oct output critical
+Text Notes 5300 5275 0    50   ~ 0
+For the 12V powered dacarduino we don't need rail to rail.
 $EndSCHEMATC

@@ -59,7 +59,7 @@ Wire Wire Line
 Text GLabel 6050 2550 1    50   Output ~ 0
 VCC
 Text GLabel 5750 2550 1    50   Input ~ 0
-+12V
++VIN
 Wire Wire Line
 	5750 2550 5750 2650
 Wire Wire Line
@@ -140,7 +140,7 @@ AR Path="/5E7957F4/5E8935D8" Ref="J?"  Part="1"
 AR Path="/5E8935D8" Ref="J?"  Part="1" 
 AR Path="/5E8923A6/5E8935D8" Ref="J17"  Part="1" 
 F 0 "J17" H 4368 3017 50  0000 C CNN
-F 1 "VCC" H 4368 2926 50  0000 C CNN
+F 1 "Molex 2 pin" H 4368 2926 50  0000 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4450 2800 50  0001 C CNN
 F 3 "~" H 4450 2800 50  0001 C CNN
 	1    4450 2800

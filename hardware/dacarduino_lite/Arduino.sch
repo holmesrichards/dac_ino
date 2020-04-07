@@ -59,7 +59,7 @@ Wire Wire Line
 Text GLabel 6050 2550 1    50   Output ~ 0
 VCC
 Text GLabel 5750 2550 1    50   Input ~ 0
-+12V
++VIN
 Wire Wire Line
 	5750 2550 5750 2650
 Wire Wire Line
