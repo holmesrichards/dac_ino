@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 18
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -119,10 +119,10 @@ Wire Wire Line
 Wire Wire Line
 	4750 4150 4900 4150
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole H101
 U 1 1 5E8D2F88
 P 6450 5200
-F 0 "H1" H 6550 5246 50  0000 L CNN
+F 0 "H101" H 6550 5246 50  0000 L CNN
 F 1 "MountingHole" H 6550 5155 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5200 50  0001 C CNN
 F 3 "~" H 6450 5200 50  0001 C CNN
@@ -130,10 +130,10 @@ F 3 "~" H 6450 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole H102
 U 1 1 5E8D422B
 P 6450 5400
-F 0 "H2" H 6550 5446 50  0000 L CNN
+F 0 "H102" H 6550 5446 50  0000 L CNN
 F 1 "MountingHole" H 6550 5355 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5400 50  0001 C CNN
 F 3 "~" H 6450 5400 50  0001 C CNN
@@ -141,10 +141,10 @@ F 3 "~" H 6450 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Mechanical:MountingHole H103
 U 1 1 5E8D4380
 P 6450 5600
-F 0 "H3" H 6550 5646 50  0000 L CNN
+F 0 "H103" H 6550 5646 50  0000 L CNN
 F 1 "MountingHole" H 6550 5555 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5600 50  0001 C CNN
 F 3 "~" H 6450 5600 50  0001 C CNN
@@ -152,10 +152,10 @@ F 3 "~" H 6450 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L Mechanical:MountingHole H104
 U 1 1 5E8D4646
 P 6450 5800
-F 0 "H4" H 6550 5846 50  0000 L CNN
+F 0 "H104" H 6550 5846 50  0000 L CNN
 F 1 "MountingHole" H 6550 5755 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5800 50  0001 C CNN
 F 3 "~" H 6450 5800 50  0001 C CNN
