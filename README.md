@@ -14,10 +14,11 @@ Differences between these and Synapse are:
 
 ## Features
 ### dacarduino has
-- 2 x control voltage inputs, 0 to 5V
+- 4 x control voltage inputs, 0 to 5V
 - 2 x control voltage outputs, individually configurable as 0 to 10V or -5 to 5V via jumpers, with 12 bits of resolution
 - 4 x gate inputs (with interrupt)
 - 2 x gate outputs
+- Pads for 4 additional analog inputs and 2 additional digital inputs
 - Voltage reference chip
 - 1 x eurorack power connector (10 pin)
 

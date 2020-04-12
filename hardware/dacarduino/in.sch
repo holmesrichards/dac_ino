@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 14
+Sheet 8 16
 Title ""
 Date ""
 Rev ""
@@ -58,13 +58,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 2750 6050 2750
 $Sheet
-S 4150 3950 550  350 
-U 5E895183
-F0 "CV in A" 50
-F1 "CV_in.sch" 50
-F2 "A_IN" O R 4700 4100 50 
-$EndSheet
-$Sheet
 S 5300 3950 550  350 
 U 5E8954B7
 F0 "CV in B" 50
@@ -74,44 +67,92 @@ $EndSheet
 Text HLabel 4900 4100 2    50   Output ~ 0
 A_IN_A
 Wire Wire Line
-	4700 4100 4900 4100
-Wire Wire Line
 	5850 4100 6050 4100
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
-Text Notes 3625 5500 0    100  ~ 0
+Text Notes 3375 6425 0    100  ~ 0
 * Same for dacarduino and dacarduino lite
 Text Notes 4100 3150 0    500  ~ 0
 *
-Wire Wire Line
-	4475 4825 4675 4825
-Text HLabel 4675 4825 2    50   Output ~ 0
+Text HLabel 4900 4800 2    50   Output ~ 0
 A_IN_C
 Text HLabel 6050 4100 2    50   Output ~ 0
 A_IN_B
-Text Notes 5250 4500 0    500  ~ 0
+Text HLabel 6075 4800 2    50   Output ~ 0
+A_IN_D
+Wire Wire Line
+	4450 5750 4650 5750
+Text Notes 5275 4525 0    500  ~ 0
 *
 Wire Wire Line
-	4475 4925 4675 4925
+	4450 5850 4650 5850
 Wire Wire Line
-	4475 5125 4675 5125
+	4450 6050 4650 6050
 Wire Wire Line
-	4475 5025 4675 5025
-Text HLabel 4675 5125 2    50   Output ~ 0
+	4450 5950 4650 5950
+Text HLabel 4650 5850 2    50   Output ~ 0
 A_IN_F
-Text HLabel 4675 5025 2    50   Output ~ 0
+Text HLabel 4650 5750 2    50   Output ~ 0
 A_IN_E
-Text HLabel 4675 4925 2    50   Output ~ 0
-A_IN_D
 $Comp
-L Connector_Generic:Conn_01x04 J501
+L Connector_Generic:Conn_01x04 J9
 U 1 1 5E8E7EE3
-P 4275 4925
-F 0 "J501" H 4193 5242 50  0000 C CNN
-F 1 "Conn_01x04" H 4193 5151 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P3.81mm_Drill1.2mm" H 4275 4925 50  0001 C CNN
-F 3 "~" H 4275 4925 50  0001 C CNN
-	1    4275 4925
+P 4250 5850
+F 0 "J9" H 4168 6167 50  0000 C CNN
+F 1 "Conn_01x04" H 4168 6076 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x04_P3.81mm_Drill1.2mm" H 4250 5850 50  0001 C CNN
+F 3 "~" H 4250 5850 50  0001 C CNN
+	1    4250 5850
 	-1   0    0    -1  
 $EndComp
+Text HLabel 4650 6050 2    50   Output ~ 0
+A_IN_H
+Text HLabel 4650 5950 2    50   Output ~ 0
+A_IN_G
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5E968D29
+P 5350 5750
+F 0 "J10" H 5268 5967 50  0000 C CNN
+F 1 "Conn_01x02" H 5268 5876 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1.2mm" H 5350 5750 50  0001 C CNN
+F 3 "~" H 5350 5750 50  0001 C CNN
+	1    5350 5750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5850 5750 5850
+Wire Wire Line
+	5550 5750 5750 5750
+Text HLabel 5750 5850 2    50   Output ~ 0
+D_IN_F
+Text HLabel 5750 5750 2    50   Output ~ 0
+D_IN_E
+Wire Wire Line
+	4700 4100 4900 4100
+$Sheet
+S 4150 3950 550  350 
+U 5E895183
+F0 "CV in A" 50
+F1 "CV_in.sch" 50
+F2 "A_IN" O R 4700 4100 50 
+$EndSheet
+$Sheet
+S 4150 4650 550  350 
+U 5E974F2E
+F0 "CV in C" 50
+F1 "CV_in.sch" 50
+F2 "A_IN" O R 4700 4800 50 
+$EndSheet
+$Sheet
+S 5300 4650 550  350 
+U 5E974F9E
+F0 "CV IN D" 50
+F1 "CV_in.sch" 50
+F2 "A_IN" O R 5850 4800 50 
+$EndSheet
+Wire Wire Line
+	4700 4800 4900 4800
+Wire Wire Line
+	5850 4800 6075 4800
 $EndSCHEMATC

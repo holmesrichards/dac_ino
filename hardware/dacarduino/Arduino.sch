@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 14
+Sheet 5 16
 Title ""
 Date ""
 Rev ""
@@ -22,8 +22,8 @@ P 4450 3700
 AR Path="/5E89358E" Ref="R?"  Part="1" 
 AR Path="/5E7977E1/5E89358E" Ref="R?"  Part="1" 
 AR Path="/5E7957F4/5E89358E" Ref="R?"  Part="1" 
-AR Path="/5E8923A6/5E89358E" Ref="R1201"  Part="1" 
-F 0 "R1201" H 4550 3750 59  0000 L BNN
+AR Path="/5E8923A6/5E89358E" Ref="R12"  Part="1" 
+F 0 "R12" H 4550 3750 59  0000 L BNN
 F 1 "10K" H 4550 3650 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4450 3700 50  0001 C CNN
 F 3 "" H 4450 3700 50  0001 C CNN
@@ -70,8 +70,8 @@ U 1 1 5E8935B0
 P 5950 4650
 AR Path="/5E7957F4/5E8935B0" Ref="#PWR?"  Part="1" 
 AR Path="/5E8935B0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8923A6/5E8935B0" Ref="#PWR01202"  Part="1" 
-F 0 "#PWR01202" H 5950 4400 50  0001 C CNN
+AR Path="/5E8923A6/5E8935B0" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 5950 4400 50  0001 C CNN
 F 1 "GND" H 5955 4477 50  0000 C CNN
 F 2 "" H 5950 4650 50  0001 C CNN
 F 3 "" H 5950 4650 50  0001 C CNN
@@ -94,8 +94,8 @@ U 1 1 5E8935BE
 P 5850 3650
 AR Path="/5E7957F4/5E8935BE" Ref="A?"  Part="1" 
 AR Path="/5E8935BE" Ref="A?"  Part="1" 
-AR Path="/5E8923A6/5E8935BE" Ref="A1201"  Part="1" 
-F 0 "A1201" H 5750 2500 50  0000 C CNN
+AR Path="/5E8923A6/5E8935BE" Ref="A1"  Part="1" 
+F 0 "A1" H 5750 2500 50  0000 C CNN
 F 1 "Arduino_Nano_v3.x 5V" H 5850 2400 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 5850 3650 50  0001 C CIN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5850 3650 50  0001 C CNN
@@ -107,10 +107,6 @@ NoConn ~ 5350 3150
 NoConn ~ 5350 3050
 NoConn ~ 6350 3150
 NoConn ~ 6350 3050
-NoConn ~ 5350 3850
-NoConn ~ 5350 3950
-NoConn ~ 6350 4250
-NoConn ~ 6350 4350
 NoConn ~ 5350 4250
 NoConn ~ 5950 2650
 Wire Wire Line
@@ -124,8 +120,8 @@ U 1 1 5E8935D2
 P 4650 2900
 AR Path="/5E7957F4/5E8935D2" Ref="#PWR?"  Part="1" 
 AR Path="/5E8935D2" Ref="#PWR?"  Part="1" 
-AR Path="/5E8923A6/5E8935D2" Ref="#PWR01201"  Part="1" 
-F 0 "#PWR01201" H 4650 2650 50  0001 C CNN
+AR Path="/5E8923A6/5E8935D2" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 4650 2650 50  0001 C CNN
 F 1 "GND" H 4655 2727 50  0000 C CNN
 F 2 "" H 4650 2900 50  0001 C CNN
 F 3 "" H 4650 2900 50  0001 C CNN
@@ -138,8 +134,8 @@ U 1 1 5E8935D8
 P 4450 2800
 AR Path="/5E7957F4/5E8935D8" Ref="J?"  Part="1" 
 AR Path="/5E8935D8" Ref="J?"  Part="1" 
-AR Path="/5E8923A6/5E8935D8" Ref="J1201"  Part="1" 
-F 0 "J1201" H 4368 3017 50  0000 C CNN
+AR Path="/5E8923A6/5E8935D8" Ref="J7"  Part="1" 
+F 0 "J7" H 4368 3017 50  0000 C CNN
 F 1 "VCC" H 4368 2926 50  0000 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4450 2800 50  0001 C CNN
 F 3 "~" H 4450 2800 50  0001 C CNN
@@ -179,4 +175,20 @@ A_IN_F
 NoConn ~ 6350 3450
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
+Wire Wire Line
+	5250 3850 5350 3850
+Wire Wire Line
+	5250 3950 5350 3950
+Text HLabel 5250 3850 0    50   Output ~ 0
+D_IN_E
+Text HLabel 5250 3950 0    50   Output ~ 0
+D_IN_F
+Wire Wire Line
+	6350 4350 6450 4350
+Wire Wire Line
+	6350 4250 6450 4250
+Text HLabel 6450 4250 2    50   Input ~ 0
+A_IN_G
+Text HLabel 6450 4350 2    50   Input ~ 0
+A_IN_H
 $EndSCHEMATC
