@@ -10,3 +10,4 @@ fp-lib-table
 *.zip
 *.DS_Store
 *~
+.gitignore-extra
