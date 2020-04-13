@@ -39,6 +39,12 @@ public:
   {
     A, //!< CV channel A
     B, //!< CV channel B
+    C, //!< CV channel C
+    D, //!< CV channel D
+    E, //!< CV channel E
+    F, //!< CV channel F
+    G, //!< CV channel G
+    H, //!< CV channel H
     Unknown, //!< Unknown/unspecified
   };
 
@@ -48,6 +54,8 @@ public:
     B, //!< Gate channel B
     C, //!< Gate channel C
     D, //!< Gate channel D
+    E, //!< Gate channel E
+    F, //!< Gate channel F
     Unknown, //!< Unknown/unspecified
   };
 
@@ -114,6 +122,8 @@ private:
   static constexpr uint8_t  k_pinGateInB = 3;
   static constexpr uint8_t  k_pinGateInC = 4;
   static constexpr uint8_t  k_pinGateInD = 5;
+  static constexpr uint8_t  k_pinGateInE = 8;
+  static constexpr uint8_t  k_pinGateInF = 9;
   static constexpr uint8_t  k_pinGateOutA = 6;
   static constexpr uint8_t  k_pinGateOutB = 7;
 
@@ -124,6 +134,8 @@ private:
   Input<k_pinGateInB> m_inputGateB;
   Input<k_pinGateInC> m_inputGateC;
   Input<k_pinGateInD> m_inputGateD;
+  Input<k_pinGateInE> m_inputGateE;
+  Input<k_pinGateInF> m_inputGateF;
 
   Output<k_pinChipSelectDAC>  m_outputChipSelectDAC;
   Output<k_pinGateOutA>       m_outputGateA;

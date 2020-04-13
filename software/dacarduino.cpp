@@ -26,6 +26,12 @@ static constexpr uint8_t k_writeChannelB = 0b11110000;
 
 static constexpr uint8_t k_pinCVInA = A0;
 static constexpr uint8_t k_pinCVInB = A1;
+static constexpr uint8_t k_pinCVInC = A2;
+static constexpr uint8_t k_pinCVInD = A3;
+static constexpr uint8_t k_pinCVInE = A4;
+static constexpr uint8_t k_pinCVInF = A5;
+static constexpr uint8_t k_pinCVInG = A6;
+static constexpr uint8_t k_pinCVInH = A7;
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -47,6 +53,8 @@ void dacarduino::begin(unsigned spiDivider_)
   pinMode(k_pinGateInB, INPUT);
   pinMode(k_pinGateInC, INPUT);
   pinMode(k_pinGateInD, INPUT);
+  pinMode(k_pinGateInE, INPUT);
+  pinMode(k_pinGateInF, INPUT);
 
   pinMode(k_pinChipSelectDAC, OUTPUT);
   pinMode(k_pinGateOutA, OUTPUT);
@@ -72,17 +80,23 @@ unsigned dacarduino::readCV(CVChannel channel_)
   switch (channel_)
   {
     case CVChannel::A:
-    {
       return analogRead(k_pinCVInA);
-    }
     case CVChannel::B:
-    {
       return analogRead(k_pinCVInB);
-    }
+    case CVChannel::C:
+      return analogRead(k_pinCVInC);
+    case CVChannel::D:
+      return analogRead(k_pinCVInD);
+    case CVChannel::E:
+      return analogRead(k_pinCVInE);
+    case CVChannel::F:
+      return analogRead(k_pinCVInF);
+    case CVChannel::G:
+      return analogRead(k_pinCVInG);
+    case CVChannel::H:
+      return analogRead(k_pinCVInH);
     default:
-    {
       return 0U;
-    }
   }
 }
 
@@ -165,6 +179,22 @@ bool dacarduino::readGate(GateChannel channel_)
       return digitalRead(k_pinGateInD);
 #endif
     }
+    case GateChannel::E:
+    {
+#if defined __AVR__
+      return m_inputGateE;
+#else
+      return digitalRead(k_pinGateInE);
+#endif
+    }
+    case GateChannel::F:
+    {
+#if defined __AVR__
+      return m_inputGateF;
+#else
+      return digitalRead(k_pinGateInF);
+#endif
+    }
     default:
     {
       return false;
@@ -228,6 +258,16 @@ void dacarduino::gateInputInterrupt(GateChannel channel_, void (*callback_)(void
     case GateChannel::D:
     {
       attachInterrupt(digitalPinToInterrupt(k_pinGateInD), callback_, static_cast<uint32_t>(mode_));
+      break;
+    }
+    case GateChannel::E:
+    {
+      attachInterrupt(digitalPinToInterrupt(k_pinGateInE), callback_, static_cast<uint32_t>(mode_));
+      break;
+    }
+    case GateChannel::F:
+    {
+      attachInterrupt(digitalPinToInterrupt(k_pinGateInF), callback_, static_cast<uint32_t>(mode_));
       break;
     }
     default:
