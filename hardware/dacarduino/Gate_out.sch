@@ -184,9 +184,9 @@ Wire Wire Line
 Wire Wire Line
 	7650 3850 7750 3850
 Text HLabel 2950 4100 0    50   Input ~ 0
-D6
+D_OUT_A
 Text HLabel 4950 4100 0    50   Input ~ 0
-D7
+D_OUT_B
 Text Label 4200 3800 0    50   ~ 0
 GATE_OUT_A
 Text Label 7700 3850 2    50   ~ 0
