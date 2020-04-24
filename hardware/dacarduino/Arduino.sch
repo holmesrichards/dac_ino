@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 16
+Sheet 16 16
 Title ""
 Date ""
 Rev ""
@@ -143,17 +143,17 @@ F 3 "~" H 4450 2800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text HLabel 5250 3250 0    50   Input ~ 0
-D_IN_A
+D2
 Text HLabel 5250 3350 0    50   Input ~ 0
-D_IN_B
+D3
 Text HLabel 5250 3450 0    50   Input ~ 0
-D_IN_C
+D4
 Text HLabel 5250 3550 0    50   Input ~ 0
-D_IN_D
+D5
 Text HLabel 5250 3650 0    50   Output ~ 0
-D_OUT_A
+D6
 Text HLabel 5250 3750 0    50   Output ~ 0
-D_OUT_B
+D7
 Text HLabel 5250 4150 0    50   BiDi ~ 0
 MOSI
 Text HLabel 5250 4350 0    50   BiDi ~ 0
@@ -161,17 +161,17 @@ SCK
 Text HLabel 4350 4050 0    50   BiDi ~ 0
 DAC_CS
 Text HLabel 6450 3650 2    50   Input ~ 0
-A_IN_A
+A0
 Text HLabel 6450 3750 2    50   Input ~ 0
-A_IN_B
+A1
 Text HLabel 6450 3850 2    50   Input ~ 0
-A_IN_C
+A2
 Text HLabel 6450 3950 2    50   Input ~ 0
-A_IN_D
+A3
 Text HLabel 6450 4050 2    50   Input ~ 0
-A_IN_E
+A4
 Text HLabel 6450 4150 2    50   Input ~ 0
-A_IN_F
+A5
 NoConn ~ 6350 3450
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
@@ -180,15 +180,15 @@ Wire Wire Line
 Wire Wire Line
 	5250 3950 5350 3950
 Text HLabel 5250 3850 0    50   Output ~ 0
-D_IN_E
+D8
 Text HLabel 5250 3950 0    50   Output ~ 0
-D_IN_F
+D9
 Wire Wire Line
 	6350 4350 6450 4350
 Wire Wire Line
 	6350 4250 6450 4250
 Text HLabel 6450 4250 2    50   Input ~ 0
-A_IN_G
+A6
 Text HLabel 6450 4350 2    50   Input ~ 0
-A_IN_H
+A7
 $EndSCHEMATC
