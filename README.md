@@ -20,6 +20,7 @@ Differences between these and Synapse are:
 - 2 x gate outputs
 - Pads for 4 additional analog inputs and 2 additional digital inputs
 - Voltage reference chip
+- Option to use 4 digital pins to control multiplexer instead
 - 1 x eurorack power connector (10 pin)
 
 ### dacarduino lite has
