@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -52,10 +52,10 @@ Wire Wire Line
 NoConn ~ 5850 4850
 NoConn ~ 7000 4850
 $Comp
-L Connector_Generic:Conn_01x04 J502
+L Connector_Generic:Conn_01x04 J7
 U 1 1 5E8EBB95
 P 4200 3025
-F 0 "J502" H 4118 3342 50  0000 C CNN
+F 0 "J7" H 4118 3342 50  0000 C CNN
 F 1 "Conn_01x04" H 4118 3251 50  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x04_P3.81mm_Drill1.2mm" H 4200 3025 50  0001 C CNN
 F 3 "~" H 4200 3025 50  0001 C CNN
@@ -67,10 +67,10 @@ Wire Wire Line
 Wire Wire Line
 	4400 3225 4550 3225
 $Comp
-L Connector_Generic:Conn_01x04 J501
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5E8EF53A
 P 4175 4200
-F 0 "J501" H 4093 4517 50  0000 C CNN
+F 0 "J6" H 4093 4517 50  0000 C CNN
 F 1 "Conn_01x04" H 4093 4426 50  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x04_P3.81mm_Drill1.2mm" H 4175 4200 50  0001 C CNN
 F 3 "~" H 4175 4200 50  0001 C CNN
