@@ -1,6 +1,6 @@
 # dacarduino
 
-This is a pair of boards and corresponding library which provides CV and Gate I/O for an Arduino Nano. It is derived from ![shaduzlabs/synapse](https://github.com/shaduzlabs/synapse).
+This is a pair of boards and corresponding library which provide CV and gate I/O for an Arduino Nano. It is derived from [shaduzlabs/synapse](https://github.com/shaduzlabs/synapse).
 
 There are two boards, dacarduino and dacarduino lite.
 
@@ -28,8 +28,6 @@ Differences between these and Synapse are:
 - 1 x Molex connector for 6–12V battery or unipolar power supply
 
 ## Compatible Arduinos
-The circuit should work fine with **any Arduino with onboard 5V regulator** which can tolerate up to 12V on the **VIN** pin (e.g. it will **NOT** work with an Arduino Yùn or Tian and will most likely damage the board).
-
 The PCB layout is for an Arduino Nano (5V).
 
 ## Dependencies
