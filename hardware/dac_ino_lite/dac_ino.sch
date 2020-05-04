@@ -155,7 +155,7 @@ Text Notes 5300 3900 0    500  ~ 0
 Text Notes 6350 4500 0    500  ~ 0
 *
 Text Notes 4350 6300 0    100  ~ 0
-* Same for dacarduino and dacarduino lite
+* Same for dac/ino and dac/ino lite
 Text Notes 2150 3900 0    500  ~ 0
 *
 $Sheet

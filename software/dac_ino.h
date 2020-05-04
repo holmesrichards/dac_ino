@@ -1,5 +1,5 @@
 /*
-dacarduino
+dac/ino
 by Rich Holmes
 based on Synapse:
 =====
@@ -28,10 +28,10 @@ namespace dcrd
 //--------------------------------------------------------------------------------------------------
 
 /**
-  \class dacarduinoBoard
-  \brief This class is used to configure and handle the dacarduino board for Arduino
+  \class dac_inoBoard
+  \brief This class is used to configure and handle the dac/ino board for Arduino
 */
-class dacarduino
+class dac_ino
 {
 public:
 
@@ -147,7 +147,7 @@ private:
 
 //--------------------------------------------------------------------------------------------------
 
-extern dacarduino dacarduinoBoard;
+extern dac_ino dac_inoBoard;
 
 //--------------------------------------------------------------------------------------------------
 

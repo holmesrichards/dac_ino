@@ -35,8 +35,8 @@ P 6200 2600
 AR Path="/5E7E4E98" Ref="R?"  Part="1" 
 AR Path="/5E7977E1/5E7E4E98" Ref="R?"  Part="1" 
 AR Path="/5E7957F4/5E7E4E98" Ref="R?"  Part="1" 
-AR Path="/5E7E1DC7/5E7E4E98" Ref="R4"  Part="1" 
-F 0 "R4" V 6450 2550 59  0000 L BNN
+AR Path="/5E7E1DC7/5E7E4E98" Ref="R6"  Part="1" 
+F 0 "R6" V 6450 2550 59  0000 L BNN
 F 1 "100K" V 6350 2500 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 2600 50  0001 C CNN
 F 3 "" H 6200 2600 50  0001 C CNN
@@ -116,7 +116,7 @@ AR Path="/5E7977E1/5E7E4EBA" Ref="R?"  Part="1"
 AR Path="/5E7957F4/5E7E4EBA" Ref="R?"  Part="1" 
 AR Path="/5E7E1DC7/5E7E4EBA" Ref="R2"  Part="1" 
 F 0 "R2" V 5450 3300 59  0000 L BNN
-F 1 "100K" V 5350 3250 59  0000 L BNN
+F 1 "91K" V 5350 3250 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 3350 50  0001 C CNN
 F 3 "" H 5200 3350 50  0001 C CNN
 	1    5200 3350
@@ -131,7 +131,7 @@ AR Path="/5E7977E1/5E7E4EC0" Ref="R?"  Part="1"
 AR Path="/5E7957F4/5E7E4EC0" Ref="R?"  Part="1" 
 AR Path="/5E7E1DC7/5E7E4EC0" Ref="R3"  Part="1" 
 F 0 "R3" V 5450 4700 59  0000 L BNN
-F 1 "100K" V 5350 4650 59  0000 L BNN
+F 1 "91K" V 5350 4650 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 4750 50  0001 C CNN
 F 3 "" H 5200 4750 50  0001 C CNN
 	1    5200 4750
@@ -140,7 +140,7 @@ $EndComp
 Wire Wire Line
 	4900 3350 5050 3350
 Wire Wire Line
-	5350 3350 5800 3350
+	5350 3350 5400 3350
 Wire Wire Line
 	4900 4750 5050 4750
 $Comp
@@ -150,8 +150,8 @@ P 6900 3450
 AR Path="/5E7E4EC9" Ref="R?"  Part="1" 
 AR Path="/5E7977E1/5E7E4EC9" Ref="R?"  Part="1" 
 AR Path="/5E7957F4/5E7E4EC9" Ref="R?"  Part="1" 
-AR Path="/5E7E1DC7/5E7E4EC9" Ref="R6"  Part="1" 
-F 0 "R6" V 7150 3400 59  0000 L BNN
+AR Path="/5E7E1DC7/5E7E4EC9" Ref="R8"  Part="1" 
+F 0 "R8" V 7150 3400 59  0000 L BNN
 F 1 "1K" V 7050 3350 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 3450 50  0001 C CNN
 F 3 "" H 6900 3450 50  0001 C CNN
@@ -222,7 +222,7 @@ Wire Wire Line
 	6500 4850 6600 4850
 Connection ~ 6600 4850
 Wire Wire Line
-	5350 4750 5800 4750
+	5350 4750 5400 4750
 Wire Wire Line
 	5900 4750 5800 4750
 Connection ~ 5800 4750
@@ -237,8 +237,8 @@ P 6200 4000
 AR Path="/5E7E4EF2" Ref="R?"  Part="1" 
 AR Path="/5E7977E1/5E7E4EF2" Ref="R?"  Part="1" 
 AR Path="/5E7957F4/5E7E4EF2" Ref="R?"  Part="1" 
-AR Path="/5E7E1DC7/5E7E4EF2" Ref="R5"  Part="1" 
-F 0 "R5" V 6450 3950 59  0000 L BNN
+AR Path="/5E7E1DC7/5E7E4EF2" Ref="R7"  Part="1" 
+F 0 "R7" V 6450 3950 59  0000 L BNN
 F 1 "100K" V 6350 3900 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 4000 50  0001 C CNN
 F 3 "" H 6200 4000 50  0001 C CNN
@@ -281,8 +281,8 @@ P 6900 4850
 AR Path="/5E7E4F06" Ref="R?"  Part="1" 
 AR Path="/5E7977E1/5E7E4F06" Ref="R?"  Part="1" 
 AR Path="/5E7957F4/5E7E4F06" Ref="R?"  Part="1" 
-AR Path="/5E7E1DC7/5E7E4F06" Ref="R7"  Part="1" 
-F 0 "R7" V 7150 4800 59  0000 L BNN
+AR Path="/5E7E1DC7/5E7E4F06" Ref="R9"  Part="1" 
+F 0 "R9" V 7150 4800 59  0000 L BNN
 F 1 "1K" V 7050 4750 59  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 4850 50  0001 C CNN
 F 3 "" H 6900 4850 50  0001 C CNN
@@ -447,6 +447,40 @@ Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
 Text Notes 6450 3800 0    50   ~ 0
 Omit 1k resistors if 1V/oct output critical
-Text Notes 5300 5275 0    50   ~ 0
-For the 12V powered dacarduino we don't need rail to rail.
+$Comp
+L Device:R_POT_TRIM R4
+U 1 1 5EA3D54F
+P 5550 3350
+F 0 "R4" V 5343 3350 50  0000 C CNN
+F 1 "20k" V 5434 3350 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" V 5480 3350 50  0001 C CNN
+F 3 "~" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3350 5800 3350
+$Comp
+L Device:R_POT_TRIM R5
+U 1 1 5EA3F5D2
+P 5550 4750
+F 0 "R5" V 5343 4750 50  0000 C CNN
+F 1 "20k" V 5434 4750 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" V 5480 4750 50  0001 C CNN
+F 3 "~" H 5550 4750 50  0001 C CNN
+	1    5550 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4750 5800 4750
+Wire Wire Line
+	5550 3500 5400 3500
+Wire Wire Line
+	5400 3500 5400 3350
+Connection ~ 5400 3350
+Wire Wire Line
+	5550 4900 5400 4900
+Wire Wire Line
+	5400 4900 5400 4750
+Connection ~ 5400 4750
 $EndSCHEMATC

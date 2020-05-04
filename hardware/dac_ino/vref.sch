@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 18 16
+Sheet 7 16
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L dacarduino:REF02CP+ U3
+L dac_ino:REF02CP+ U3
 U 1 1 5E7D472A
 P 5450 3650
 F 0 "U3" H 5500 4050 50  0000 L CNN

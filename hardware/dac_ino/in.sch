@@ -13,12 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4850 3400 2    50   Output ~ 0
-D_IN_B
 Text HLabel 6050 2750 2    50   Output ~ 0
-D_IN_C
+D3
 Text HLabel 6050 3400 2    50   Output ~ 0
-D_IN_D
+D5
 $Sheet
 S 4150 2600 550  350 
 U 5E8150C7
@@ -26,25 +24,14 @@ F0 "Gate in A" 50
 F1 "Gate_in.sch" 50
 F2 "D_IN" O R 4700 2750 50 
 $EndSheet
-Text HLabel 4850 2750 2    50   Output ~ 0
-D_IN_A
-Wire Wire Line
-	4700 2750 4850 2750
+Text HLabel 4900 2750 2    50   Output ~ 0
+D2
 $Sheet
 S 4150 3250 550  350 
-U 5E845115
-F0 "Gate in B" 50
-F1 "Gate_in.sch" 50
-F2 "D_IN" O R 4700 3400 50 
-$EndSheet
-Wire Wire Line
-	4700 3400 4850 3400
-$Sheet
-S 5300 2600 550  350 
 U 5E8670B9
 F0 "Gate in C" 50
 F1 "Gate_in.sch" 50
-F2 "D_IN" O R 5850 2750 50 
+F2 "D_IN" O R 4700 3400 50 
 $EndSheet
 $Sheet
 S 5300 3250 550  350 
@@ -55,8 +42,6 @@ F2 "D_IN" O R 5850 3400 50
 $EndSheet
 Wire Wire Line
 	5850 3400 6050 3400
-Wire Wire Line
-	5850 2750 6050 2750
 $Sheet
 S 5300 3950 550  350 
 U 5E8954B7
@@ -65,25 +50,19 @@ F1 "CV_in.sch" 50
 F2 "A_IN" O R 5850 4100 50 
 $EndSheet
 Text HLabel 4900 4100 2    50   Output ~ 0
-A_IN_A
+A0
 Wire Wire Line
 	5850 4100 6050 4100
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
-Text Notes 3375 6425 0    100  ~ 0
-* Same for dacarduino and dacarduino lite
-Text Notes 4100 3150 0    500  ~ 0
-*
 Text HLabel 4900 4800 2    50   Output ~ 0
-A_IN_C
+A2
 Text HLabel 6050 4100 2    50   Output ~ 0
-A_IN_B
+A1
 Text HLabel 6075 4800 2    50   Output ~ 0
-A_IN_D
+A3
 Wire Wire Line
 	4450 5750 4650 5750
-Text Notes 5275 4525 0    500  ~ 0
-*
 Wire Wire Line
 	4450 5850 4650 5850
 Wire Wire Line
@@ -91,9 +70,9 @@ Wire Wire Line
 Wire Wire Line
 	4450 5950 4650 5950
 Text HLabel 4650 5850 2    50   Output ~ 0
-A_IN_F
+A5
 Text HLabel 4650 5750 2    50   Output ~ 0
-A_IN_E
+A4
 $Comp
 L Connector_Generic:Conn_01x04 J9
 U 1 1 5E8E7EE3
@@ -106,9 +85,9 @@ F 3 "~" H 4250 5850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text HLabel 4650 6050 2    50   Output ~ 0
-A_IN_H
+A7
 Text HLabel 4650 5950 2    50   Output ~ 0
-A_IN_G
+A6
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5E968D29
@@ -125,9 +104,9 @@ Wire Wire Line
 Wire Wire Line
 	5550 5750 5750 5750
 Text HLabel 5750 5850 2    50   Output ~ 0
-D_IN_F
+D9
 Text HLabel 5750 5750 2    50   Output ~ 0
-D_IN_E
+D8
 Wire Wire Line
 	4700 4100 4900 4100
 $Sheet
@@ -155,4 +134,19 @@ Wire Wire Line
 	4700 4800 4900 4800
 Wire Wire Line
 	5850 4800 6075 4800
+Wire Wire Line
+	4700 3400 4900 3400
+$Sheet
+S 5300 2600 550  350 
+U 5E845115
+F0 "Gate in B" 50
+F1 "Gate_in.sch" 50
+F2 "D_IN" O R 5850 2750 50 
+$EndSheet
+Text HLabel 4900 3400 2    50   Output ~ 0
+D4
+Wire Wire Line
+	4700 2750 4900 2750
+Wire Wire Line
+	5850 2750 6050 2750
 $EndSCHEMATC

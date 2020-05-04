@@ -1,5 +1,5 @@
 /*
-dacarduino
+dac/ino
 by Rich Holmes
 based on Synapse:
 =====
@@ -15,7 +15,7 @@ and removal of code to control offset
 
 
 #include <Arduino.h>
-#include "dacarduino.h"
+#include "dac_ino.h"
 
 //--------------------------------------------------------------------------------------------------
 
@@ -41,11 +41,11 @@ namespace dcrd
 
 //--------------------------------------------------------------------------------------------------
 
-dacarduino dacarduinoBoard;
+dac_ino dac_inoBoard;
 
 //--------------------------------------------------------------------------------------------------
 
-void dacarduino::begin(unsigned spiDivider_)
+void dac_ino::begin(unsigned spiDivider_)
 {
   pinMode(k_pinCVInA, INPUT);
   pinMode(k_pinCVInB, INPUT);
@@ -75,7 +75,7 @@ void dacarduino::begin(unsigned spiDivider_)
 
 //--------------------------------------------------------------------------------------------------
 
-unsigned dacarduino::readCV(CVChannel channel_)
+unsigned dac_ino::readCV(CVChannel channel_)
 {
   switch (channel_)
   {
@@ -102,7 +102,7 @@ unsigned dacarduino::readCV(CVChannel channel_)
 
 //--------------------------------------------------------------------------------------------------
 
-void dacarduino::writeCV(CVChannel channel_, uint16_t value_)
+void dac_ino::writeCV(CVChannel channel_, uint16_t value_)
 {
   uint8_t msg1 = (uint8_t)((value_ >> 8) & 0x0F);
   uint8_t msg2 = (uint8_t)(value_ & 0xFF);
@@ -143,7 +143,7 @@ void dacarduino::writeCV(CVChannel channel_, uint16_t value_)
 
 //--------------------------------------------------------------------------------------------------
 
-bool dacarduino::readGate(GateChannel channel_)
+bool dac_ino::readGate(GateChannel channel_)
 {
   switch (channel_)
   {
@@ -204,7 +204,7 @@ bool dacarduino::readGate(GateChannel channel_)
 
 //--------------------------------------------------------------------------------------------------
 
-void dacarduino::writeGate(GateChannel channel_, bool state_)
+void dac_ino::writeGate(GateChannel channel_, bool state_)
 {
   switch (channel_)
   {
@@ -236,7 +236,7 @@ void dacarduino::writeGate(GateChannel channel_, bool state_)
 
 //--------------------------------------------------------------------------------------------------
 
-void dacarduino::gateInputInterrupt(GateChannel channel_, void (*callback_)(void), GateInterrupt mode_)
+void dac_ino::gateInputInterrupt(GateChannel channel_, void (*callback_)(void), GateInterrupt mode_)
 {
   switch (channel_)
   {
@@ -279,7 +279,7 @@ void dacarduino::gateInputInterrupt(GateChannel channel_, void (*callback_)(void
 
 //--------------------------------------------------------------------------------------------------
 
-void dacarduino::setSPIDivider(unsigned spiDivider_)
+void dac_ino::setSPIDivider(unsigned spiDivider_)
 {
 #ifdef __AVR__
   switch (spiDivider_)

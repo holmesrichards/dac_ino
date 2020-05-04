@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R8
+L Device:R R10
 U 1 1 5E84CAC8
 P 3300 4100
-F 0 "R8" V 3093 4100 50  0000 C CNN
+F 0 "R10" V 3093 4100 50  0000 C CNN
 F 1 "1k" V 3184 4100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3230 4100 50  0001 C CNN
 F 3 "~" H 3300 4100 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "~" H 3300 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R9
+L Device:R R11
 U 1 1 5E84CACE
 P 3950 3550
-F 0 "R9" H 3880 3504 50  0000 R CNN
+F 0 "R11" H 3880 3504 50  0000 R CNN
 F 1 "1k" H 3880 3595 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3880 3550 50  0001 C CNN
 F 3 "~" H 3950 3550 50  0001 C CNN
@@ -75,10 +75,10 @@ Wire Wire Line
 Wire Wire Line
 	3950 4300 3950 4750
 $Comp
-L Device:R R10
+L Device:R R12
 U 1 1 5E84CAEB
 P 5300 4100
-F 0 "R10" V 5093 4100 50  0000 C CNN
+F 0 "R12" V 5093 4100 50  0000 C CNN
 F 1 "1k" V 5184 4100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 4100 50  0001 C CNN
 F 3 "~" H 5300 4100 50  0001 C CNN
@@ -86,10 +86,10 @@ F 3 "~" H 5300 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R11
+L Device:R R13
 U 1 1 5E84CAF1
 P 5950 3550
-F 0 "R11" H 5880 3504 50  0000 R CNN
+F 0 "R13" H 5880 3504 50  0000 R CNN
 F 1 "1k" H 5880 3595 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 3550 50  0001 C CNN
 F 3 "~" H 5950 3550 50  0001 C CNN
@@ -184,9 +184,9 @@ Wire Wire Line
 Wire Wire Line
 	7650 3850 7750 3850
 Text HLabel 2950 4100 0    50   Input ~ 0
-D_OUT_A
+D6
 Text HLabel 4950 4100 0    50   Input ~ 0
-D_OUT_B
+D7
 Text Label 4200 3800 0    50   ~ 0
 GATE_OUT_A
 Text Label 7700 3850 2    50   ~ 0
