@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/rsholmes/Documents/Hobbies/Music/Instruments/Synths/scratch/dac_ino/hardware/dac_ino/dac_ino.sch</source>
-    <date>Tue 05 May 2020 10:12:58 PM EDT</date>
+    <date>Fri 15 May 2020 11:58:55 AM EDT</date>
     <tool>Eeschema 5.1.5-52549c5~84~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -360,7 +360,7 @@
       <tstamp>5E7E4F06</tstamp>
     </comp>
     <comp ref="J4">
-      <value>Molex 2 pin</value>
+      <value>Molex 2 pin CV OUT</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -368,7 +368,7 @@
       <tstamp>5E7F27A0</tstamp>
     </comp>
     <comp ref="J3">
-      <value>Molex 2 pin</value>
+      <value>Molex 2 pin CV OUT</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -456,7 +456,7 @@
       <tstamp>5E84CAF7</tstamp>
     </comp>
     <comp ref="J5">
-      <value>Molex 2 pin</value>
+      <value>Molex 2 pin GATE OUT</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -464,7 +464,7 @@
       <tstamp>5E84CB1A</tstamp>
     </comp>
     <comp ref="J6">
-      <value>Molex 2 pin</value>
+      <value>Molex 2 pin GATE OUT</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -487,7 +487,7 @@
       <tstamp>5E8935BE</tstamp>
     </comp>
     <comp ref="J7">
-      <value>VCC</value>
+      <value>Molex 2 pin VCC </value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -590,7 +590,7 @@
       <tstamp>5E8162CC</tstamp>
     </comp>
     <comp ref="J11">
-      <value>GATE IN</value>
+      <value>Molex 2 pin GATE IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -630,7 +630,7 @@
       <tstamp>5E8162CC</tstamp>
     </comp>
     <comp ref="J13">
-      <value>GATE IN</value>
+      <value>Molex 2 pin GATE IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -670,7 +670,7 @@
       <tstamp>5E8162CC</tstamp>
     </comp>
     <comp ref="J14">
-      <value>GATE IN</value>
+      <value>Molex 2 pin GATE IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -702,7 +702,7 @@
       <tstamp>5E8C4951</tstamp>
     </comp>
     <comp ref="J15">
-      <value>CV IN</value>
+      <value>Molex 2 pin CV IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -734,7 +734,7 @@
       <tstamp>5E8C4951</tstamp>
     </comp>
     <comp ref="J16">
-      <value>CV IN</value>
+      <value>Molex 2 pin CV IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -766,7 +766,7 @@
       <tstamp>5E8C4951</tstamp>
     </comp>
     <comp ref="J17">
-      <value>CV IN</value>
+      <value>Molex 2 pin CV IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -798,7 +798,7 @@
       <tstamp>5E8C4951</tstamp>
     </comp>
     <comp ref="J18">
-      <value>CV IN</value>
+      <value>Molex 2 pin CV IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -838,7 +838,7 @@
       <tstamp>5E8162CC</tstamp>
     </comp>
     <comp ref="J12">
-      <value>GATE IN</value>
+      <value>Molex 2 pin GATE IN</value>
       <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
