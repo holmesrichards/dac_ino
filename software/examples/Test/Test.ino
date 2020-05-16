@@ -13,6 +13,10 @@ Changes mainly to do with increased number of inputs and outputs
 and removal of code to control offset
 */
 
+#define DBG   1
+#define DBGCV 0
+#define DBGGT 1
+
 #include <dacarduino.h>
 
 using namespace dcrd;
@@ -22,12 +26,15 @@ unsigned val{0};
 
 void setup()
 {
+#if DBG
   Serial.begin (9600);
+#endif
   dacarduinoBoard.begin();
 }
 
 void loop()
 {
+#if DBGCV
   Serial.print ("CV ");
   Serial.print (dacarduinoBoard.readCV(dacarduino::CVChannel::A));
   Serial.print (" ");
@@ -41,27 +48,30 @@ void loop()
   Serial.print (" ");
   Serial.print (dacarduinoBoard.readCV(dacarduino::CVChannel::F));
   Serial.println ();
-  Serial.print ("Gate ");
-  Serial.print (dacarduinoBoard.readCV(dacarduino::CVChannel::A) ? "T": "F");
-  Serial.print (" ");
-  Serial.print (dacarduinoBoard.readCV(dacarduino::CVChannel::B) ? "T": "F");
-  Serial.print (" ");
-  Serial.print (dacarduinoBoard.readCV(dacarduino::CVChannel::C) ? "T": "F");
-  Serial.print (" ");
-  Serial.print (dacarduinoBoard.readCV(dacarduino::CVChannel::D) ? "T": "F");
-  Serial.println ();
   Serial.print ("CV out ");
   Serial.println (val);
+#endif
   dacarduinoBoard.writeCV(dacarduino::CVChannel::A, val);
   dacarduinoBoard.writeCV(dacarduino::CVChannel::B, val++);
-  if (val > 8)
+  if (val > 4096)
   {
     val = 0;
     gate = !gate;
+#if DBGGT
+    Serial.print ("Gate ");
+    Serial.print (dacarduinoBoard.readGate(dacarduino::GateChannel::A) ? "T": "F");
+    Serial.print (" ");
+    Serial.print (dacarduinoBoard.readGate(dacarduino::GateChannel::B) ? "T": "F");
+    Serial.print (" ");
+    Serial.print (dacarduinoBoard.readGate(dacarduino::GateChannel::C) ? "T": "F");
+    Serial.print (" ");
+    Serial.print (dacarduinoBoard.readGate(dacarduino::GateChannel::D) ? "T": "F");
+    Serial.println ();
     Serial.print ("Gate out ");
     Serial.println (gate ? "T" : "F");
+#endif
     dacarduinoBoard.writeGate(dacarduino::GateChannel::A, gate);
     dacarduinoBoard.writeGate(dacarduino::GateChannel::B, gate);
   }
-  delay(3000);
+  delay(1);
 }
