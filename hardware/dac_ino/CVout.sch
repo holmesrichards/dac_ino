@@ -172,12 +172,12 @@ P 6200 3450
 AR Path="/5E7957F4/5E7E4ED3" Ref="U?"  Part="1" 
 AR Path="/5E7E4ED3" Ref="U?"  Part="1" 
 AR Path="/5E7E1DC7/5E7E4ED3" Ref="U2"  Part="1" 
-F 0 "U2" H 6200 3817 50  0000 C CNN
-F 1 "TL072" H 6200 3726 50  0000 C CNN
+F 0 "U2" H 6225 3125 50  0000 C CNN
+F 1 "TL072" H 6250 3200 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 3450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 6200 3450 50  0001 C CNN
 	1    6200 3450
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL072 U?
@@ -186,12 +186,12 @@ P 6200 4850
 AR Path="/5E7957F4/5E7E4ED9" Ref="U?"  Part="2" 
 AR Path="/5E7E4ED9" Ref="U?"  Part="2" 
 AR Path="/5E7E1DC7/5E7E4ED9" Ref="U2"  Part="2" 
-F 0 "U2" H 6200 5217 50  0000 C CNN
-F 1 "TL072" H 6200 5126 50  0000 C CNN
+F 0 "U2" H 6225 4575 50  0000 C CNN
+F 1 "TL072" H 6225 4650 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 4850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 6200 4850 50  0001 C CNN
 	2    6200 4850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C?
