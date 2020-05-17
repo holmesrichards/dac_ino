@@ -197,4 +197,44 @@ Text Label 6200 3800 0    50   ~ 0
 GATE_OUT_B
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
+Wire Wire Line
+	7650 5000 7750 5000
+$Comp
+L dac_ino:Conn_01x01_Units J?
+U 5 1 5EC37F3C
+P 7950 5000
+AR Path="/5E86BFC7/5E8150C7/5EC37F3C" Ref="J?"  Part="1" 
+AR Path="/5E86BFC7/5E8670B9/5EC37F3C" Ref="J?"  Part="3" 
+AR Path="/5E86BFC7/5E867AC0/5EC37F3C" Ref="J?"  Part="4" 
+AR Path="/5E86BFC7/5E845115/5EC37F3C" Ref="J?"  Part="2" 
+AR Path="/5E84260A/5EC37F3C" Ref="J7"  Part="5" 
+F 0 "J7" H 7868 4775 50  0000 C CNN
+F 1 "Conn_01x01_Units" H 7868 4866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7950 5000 50  0001 C CNN
+F 3 "~" H 7950 5000 50  0001 C CNN
+	5    7950 5000
+	1    0    0    1   
+$EndComp
+Text Label 7650 5000 2    50   ~ 0
+GATE_OUT_A
+Wire Wire Line
+	7650 5375 7750 5375
+$Comp
+L dac_ino:Conn_01x01_Units J?
+U 6 1 5EC39F46
+P 7950 5375
+AR Path="/5E86BFC7/5E8150C7/5EC39F46" Ref="J?"  Part="1" 
+AR Path="/5E86BFC7/5E8670B9/5EC39F46" Ref="J?"  Part="3" 
+AR Path="/5E86BFC7/5E867AC0/5EC39F46" Ref="J?"  Part="4" 
+AR Path="/5E86BFC7/5E845115/5EC39F46" Ref="J?"  Part="2" 
+AR Path="/5E84260A/5EC39F46" Ref="J7"  Part="6" 
+F 0 "J7" H 7868 5150 50  0000 C CNN
+F 1 "Conn_01x01_Units" H 7868 5241 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7950 5375 50  0001 C CNN
+F 3 "~" H 7950 5375 50  0001 C CNN
+	6    7950 5375
+	1    0    0    1   
+$EndComp
+Text Label 7650 5375 2    50   ~ 0
+GATE_OUT_B
 $EndSCHEMATC

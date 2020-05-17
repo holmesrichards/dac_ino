@@ -15,17 +15,8 @@ Comment4 ""
 $EndDescr
 Text HLabel 6050 2750 2    50   Output ~ 0
 D3
-Text HLabel 6050 3400 2    50   Output ~ 0
+Text HLabel 6050 3415 2    50   Output ~ 0
 D5
-$Sheet
-S 4150 2600 550  350 
-U 5E8150C7
-F0 "Gate in A" 50
-F1 "Gate_in.sch" 50
-F2 "D_IN" O R 4700 2750 50 
-$EndSheet
-Text HLabel 4900 2750 2    50   Output ~ 0
-D2
 $Sheet
 S 4150 3250 550  350 
 U 5E8670B9
@@ -34,14 +25,14 @@ F1 "Gate_in.sch" 50
 F2 "D_IN" O R 4700 3400 50 
 $EndSheet
 $Sheet
-S 5300 3250 550  350 
+S 5300 3265 550  350 
 U 5E867AC0
 F0 "Gate in D" 50
 F1 "Gate_in.sch" 50
-F2 "D_IN" O R 5850 3400 50 
+F2 "D_IN" O R 5850 3415 50 
 $EndSheet
 Wire Wire Line
-	5850 3400 6050 3400
+	5850 3415 6050 3415
 $Sheet
 S 5300 3950 550  350 
 U 5E8954B7
@@ -74,12 +65,12 @@ A5
 Text HLabel 4650 5750 2    50   Output ~ 0
 A4
 $Comp
-L Connector_Generic:Conn_01x04 J9
+L Connector_Generic:Conn_01x04 J10
 U 1 1 5E8E7EE3
 P 4250 5850
-F 0 "J9" H 4168 6167 50  0000 C CNN
+F 0 "J10" H 4168 6167 50  0000 C CNN
 F 1 "Conn_01x04" H 4168 6076 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P3.81mm_Drill1.2mm" H 4250 5850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4250 5850 50  0001 C CNN
 F 3 "~" H 4250 5850 50  0001 C CNN
 	1    4250 5850
 	-1   0    0    -1  
@@ -89,12 +80,12 @@ A7
 Text HLabel 4650 5950 2    50   Output ~ 0
 A6
 $Comp
-L Connector_Generic:Conn_01x02 J10
+L Connector_Generic:Conn_01x02 J11
 U 1 1 5E968D29
 P 5350 5750
-F 0 "J10" H 5268 5967 50  0000 C CNN
+F 0 "J11" H 5268 5967 50  0000 C CNN
 F 1 "Conn_01x02" H 5268 5876 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1.2mm" H 5350 5750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5350 5750 50  0001 C CNN
 F 3 "~" H 5350 5750 50  0001 C CNN
 	1    5350 5750
 	-1   0    0    -1  
@@ -146,7 +137,16 @@ $EndSheet
 Text HLabel 4900 3400 2    50   Output ~ 0
 D4
 Wire Wire Line
-	4700 2750 4900 2750
-Wire Wire Line
 	5850 2750 6050 2750
+$Sheet
+S 4150 2595 550  350 
+U 5E8150C7
+F0 "Gate in A" 50
+F1 "Gate_in.sch" 50
+F2 "D_IN" O R 4700 2745 50 
+$EndSheet
+Wire Wire Line
+	4700 2745 4900 2745
+Text HLabel 4900 2745 2    50   Output ~ 0
+D2
 $EndSCHEMATC

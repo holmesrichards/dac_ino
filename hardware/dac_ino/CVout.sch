@@ -483,4 +483,34 @@ Wire Wire Line
 Wire Wire Line
 	5400 4900 5400 4750
 Connection ~ 5400 4750
+$Comp
+L dac_ino:Conn_01x01_Units J14
+U 5 1 5EC43358
+P 9050 4775
+F 0 "J14" H 9130 4817 50  0000 L CNN
+F 1 "Conn_01x01_Units" H 9130 4726 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9050 4775 50  0001 C CNN
+F 3 "~" H 9050 4775 50  0001 C CNN
+	5    9050 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4775 8850 4775
+Text Label 8800 4775 2    50   ~ 0
+CV_OUT_A
+$Comp
+L dac_ino:Conn_01x01_Units J14
+U 6 1 5EC45E3E
+P 9050 5125
+F 0 "J14" H 9130 5167 50  0000 L CNN
+F 1 "Conn_01x01_Units" H 9130 5076 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9050 5125 50  0001 C CNN
+F 3 "~" H 9050 5125 50  0001 C CNN
+	6    9050 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5125 8850 5125
+Text Label 8800 5125 2    50   ~ 0
+CV_OUT_B
 $EndSCHEMATC

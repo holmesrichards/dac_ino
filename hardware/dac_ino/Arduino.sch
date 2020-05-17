@@ -70,8 +70,8 @@ U 1 1 5E8935B0
 P 5950 4650
 AR Path="/5E7957F4/5E8935B0" Ref="#PWR?"  Part="1" 
 AR Path="/5E8935B0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8923A6/5E8935B0" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 5950 4400 50  0001 C CNN
+AR Path="/5E8923A6/5E8935B0" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 5950 4400 50  0001 C CNN
 F 1 "GND" H 5955 4477 50  0000 C CNN
 F 2 "" H 5950 4650 50  0001 C CNN
 F 3 "" H 5950 4650 50  0001 C CNN
@@ -120,8 +120,8 @@ U 1 1 5E8935D2
 P 4650 2900
 AR Path="/5E7957F4/5E8935D2" Ref="#PWR?"  Part="1" 
 AR Path="/5E8935D2" Ref="#PWR?"  Part="1" 
-AR Path="/5E8923A6/5E8935D2" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 4650 2650 50  0001 C CNN
+AR Path="/5E8923A6/5E8935D2" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 4650 2650 50  0001 C CNN
 F 1 "GND" H 4655 2727 50  0000 C CNN
 F 2 "" H 4650 2900 50  0001 C CNN
 F 3 "" H 4650 2900 50  0001 C CNN
@@ -134,8 +134,8 @@ U 1 1 5E8935D8
 P 4450 2800
 AR Path="/5E7957F4/5E8935D8" Ref="J?"  Part="1" 
 AR Path="/5E8935D8" Ref="J?"  Part="1" 
-AR Path="/5E8923A6/5E8935D8" Ref="J7"  Part="1" 
-F 0 "J7" H 4368 3017 50  0000 C CNN
+AR Path="/5E8923A6/5E8935D8" Ref="J8"  Part="1" 
+F 0 "J8" H 4368 3017 50  0000 C CNN
 F 1 "Molex 2 pin VCC " H 4368 2926 50  0000 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4450 2800 50  0001 C CNN
 F 3 "~" H 4450 2800 50  0001 C CNN
@@ -191,4 +191,108 @@ Text HLabel 6450 4250 2    50   Input ~ 0
 A6
 Text HLabel 6450 4350 2    50   Input ~ 0
 A7
+$Comp
+L dac_ino:Conn_01x01_Units J?
+U 7 1 5EC35EDB
+P 3300 2750
+AR Path="/5E86BFC7/5E8150C7/5EC35EDB" Ref="J?"  Part="1" 
+AR Path="/5E86BFC7/5E8670B9/5EC35EDB" Ref="J?"  Part="3" 
+AR Path="/5E86BFC7/5E867AC0/5EC35EDB" Ref="J?"  Part="4" 
+AR Path="/5E86BFC7/5E845115/5EC35EDB" Ref="J?"  Part="2" 
+AR Path="/5E8923A6/5EC35EDB" Ref="J7"  Part="7" 
+F 0 "J7" H 3218 2525 50  0000 C CNN
+F 1 "Conn_01x01_Units" H 3218 2616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 2750 50  0001 C CNN
+F 3 "~" H 3300 2750 50  0001 C CNN
+	7    3300 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 2750 3500 2750
+$Comp
+L dac_ino:Conn_01x01_Units J?
+U 8 1 5EC3679D
+P 3300 3100
+AR Path="/5E86BFC7/5E8150C7/5EC3679D" Ref="J?"  Part="1" 
+AR Path="/5E86BFC7/5E8670B9/5EC3679D" Ref="J?"  Part="3" 
+AR Path="/5E86BFC7/5E867AC0/5EC3679D" Ref="J?"  Part="4" 
+AR Path="/5E86BFC7/5E845115/5EC3679D" Ref="J?"  Part="2" 
+AR Path="/5E8923A6/5EC3679D" Ref="J7"  Part="8" 
+F 0 "J7" H 3218 2875 50  0000 C CNN
+F 1 "Conn_01x01_Units" H 3218 2966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3100 50  0001 C CNN
+F 3 "~" H 3300 3100 50  0001 C CNN
+	8    3300 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3100 3500 3100
+Text GLabel 3600 2750 2    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR?
+U 1 1 5EC36D19
+P 3600 3100
+AR Path="/5E7957F4/5EC36D19" Ref="#PWR?"  Part="1" 
+AR Path="/5EC36D19" Ref="#PWR?"  Part="1" 
+AR Path="/5E8923A6/5EC36D19" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 3600 2850 50  0001 C CNN
+F 1 "GND" H 3605 2927 50  0000 C CNN
+F 2 "" H 3600 3100 50  0001 C CNN
+F 3 "" H 3600 3100 50  0001 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_ino:Conn_01x01_Units J?
+U 7 1 5EC4878D
+P 3300 3625
+AR Path="/5E86BFC7/5E8150C7/5EC4878D" Ref="J?"  Part="1" 
+AR Path="/5E86BFC7/5E8670B9/5EC4878D" Ref="J?"  Part="3" 
+AR Path="/5E86BFC7/5E867AC0/5EC4878D" Ref="J?"  Part="4" 
+AR Path="/5E86BFC7/5E845115/5EC4878D" Ref="J?"  Part="2" 
+AR Path="/5E8923A6/5EC4878D" Ref="J14"  Part="7" 
+F 0 "J14" H 3218 3400 50  0000 C CNN
+F 1 "Conn_01x01_Units" H 3218 3491 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3625 50  0001 C CNN
+F 3 "~" H 3300 3625 50  0001 C CNN
+	7    3300 3625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3625 3500 3625
+$Comp
+L dac_ino:Conn_01x01_Units J?
+U 8 1 5EC48794
+P 3300 3975
+AR Path="/5E86BFC7/5E8150C7/5EC48794" Ref="J?"  Part="1" 
+AR Path="/5E86BFC7/5E8670B9/5EC48794" Ref="J?"  Part="3" 
+AR Path="/5E86BFC7/5E867AC0/5EC48794" Ref="J?"  Part="4" 
+AR Path="/5E86BFC7/5E845115/5EC48794" Ref="J?"  Part="2" 
+AR Path="/5E8923A6/5EC48794" Ref="J14"  Part="8" 
+F 0 "J14" H 3218 3750 50  0000 C CNN
+F 1 "Conn_01x01_Units" H 3218 3841 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3975 50  0001 C CNN
+F 3 "~" H 3300 3975 50  0001 C CNN
+	8    3300 3975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3975 3500 3975
+Text GLabel 3600 3625 2    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR?
+U 1 1 5EC4879C
+P 3600 3975
+AR Path="/5E7957F4/5EC4879C" Ref="#PWR?"  Part="1" 
+AR Path="/5EC4879C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8923A6/5EC4879C" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 3600 3725 50  0001 C CNN
+F 1 "GND" H 3605 3802 50  0000 C CNN
+F 2 "" H 3600 3975 50  0001 C CNN
+F 3 "" H 3600 3975 50  0001 C CNN
+	1    3600 3975
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
