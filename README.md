@@ -1,13 +1,13 @@
 # dac/ino
 
-This is a pair of boards and corresponding library which provide CV and gate I/O for an Arduino Nano. It is derived from [shaduzlabs/synapse](https://github.com/shaduzlabs/synapse).
+This is a pair of boards and corresponding library which provide CV and gate I/O for an Arduino Nano. It is derived from [shaduzlabs/synapse](https://github.com/shaduzlabs/synapse), and there are obvious similarities to [ArdCore](http://20objects.com/ardcore/), but there are significant differences with both. 
 
 There are two boards, dac/ino and dac/ino lite.
 
 Differences between these and Synapse are:
 
 - Board design with space for Arduino Nano, instead of as Uno style shield
-- No on-board jacks — pads for Molex connectors (or direct soldering) instead
+- No on-board jacks — pads for Molex or pin connectors (or direct soldering) instead
 - Simplification by eliminating software-controlled range selection
 - Number of inputs and outputs is different
 - dac/ino lite is battery powered and has 0–5V output range, also uses Arduino Vcc as voltage reference
@@ -19,6 +19,7 @@ Differences between these and Synapse are:
 - 4 x gate inputs (with interrupt)
 - 2 x gate outputs
 - Pads for additional inputs/outputs: 4 analog, 2 digital
+- All above inputs/outputs also available via pin headers for daughterboards
 - Voltage reference chip
 - 1 x eurorack power connector (10 pin)
 
@@ -33,3 +34,7 @@ The PCB layout is for an Arduino Nano (5V).
 
 ## Dependencies
 - [DirectIO](https://github.com/mmarchetti/DirectIO), for fast digital pin access
+
+## Respository
+- KiCad format schematics and PCB layouts, and Arduino library and example sketches, may be found at https://github.com/holmesrichards/dac_ino .
+
