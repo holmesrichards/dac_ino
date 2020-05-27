@@ -1,24 +1,30 @@
 //  ============================================================
 //
-//  Program: Synapse ClockDivide
+//  Program: dac_ino ClockDivide
 //
 //  Based on https://github.com/darwingrosse/ArdCore-Code/tree/master/20%20Objects/AC05_ClockDivide
 //
 //  Description: Given incoming clock pulses, output two
 //               triggers with varying delays
 //
-//    Analog In 2: Division of clock out 1 (1-32)
-//    Analog In 3: Division of clock out 2 (1-32)
-//    Analog In 4: Additional division offset (1-16)
+//    CVIn A: Division of clock out 1 (1-32)
+//    CVIn B: Division of clock out 2 (1-32)
+//    CVIn C: Additional division offset (1-16) (if enabled)
 //    GateOut A: Trigger output 1
 //    GateOut B: Trigger output 2
 //    GateIn A: External trigger input
 //    GateIn B: HIGH to reset clock 1 & 2
 //
 //  ============================================================
+//
+//  From Synapse project, adapted to dac/ino by Rich Holmes, May 2020
+//
+//  ============================================================
 
-#include <Synapse.h>
-using namespace sl;
+#define USECVOFFSET 0
+
+#include <dac_ino.h>
+using namespace di;
 
 const int trigTime = 10;       // triggers are 10 ms.
 
@@ -30,42 +36,49 @@ int clockTick[2] = {1, 1};
 //  variables used to control the current gate output states
 int digState[2] = {LOW, LOW};  // start with both set low
 unsigned long prevMilli[2] = {0, 0};     // the last time of a loop
-Synapse::GateChannel channel[2] = {Synapse::GateChannel::A, Synapse::GateChannel::B};
+dac_ino::GateOutChannel outChannel[2] = {dac_ino::GateOutChannel::A, dac_ino::GateOutChannel::B};
+dac_ino::CVInChannel cvChannel[3] = {dac_ino::CVInChannel::A, dac_ino::CVInChannel::B, dac_ino::CVInChannel::C};
 
 void onGateARisingEdge();
 void onGateBRisingEdge();
 
 void setup() {
-  SynapseShield.begin();
+  dac_inoBoard.begin();
   Serial.begin(9600);
 
   // attach clock in interrupt
-  SynapseShield.gateInputInterrupt(
-    Synapse::GateChannel::A,
+  dac_inoBoard.gateInputInterrupt(
+    dac_ino::GateInChannel::A,
     onGateARisingEdge,
-    Synapse::GateInterrupt::RisingEdge
+    dac_ino::GateInterrupt::RisingEdge
   );
 
   // attach reset interrupt
-  SynapseShield.gateInputInterrupt(
-    Synapse::GateChannel::B,
+  dac_inoBoard.gateInputInterrupt(
+    dac_ino::GateInChannel::B,
     onGateBRisingEdge,
-    Synapse::GateInterrupt::RisingEdge
+    dac_ino::GateInterrupt::RisingEdge
   );
+}
+
+int getDivide (int i)
+{
+  // Get division for channel 0 or 1 or offset
+  return 1 << int (dac_inoBoard.readCV(cvChannel[i]) / (1024./6));
 }
 
 void loop()
 {
   int i;
-
+  
   // deal with possible reset
   if (rstState == HIGH) {
     rstState = LOW;
     for (i=0; i<2; i++) {
-      clockTick[i] = (analogRead(i+2) >> 5) + 1;
+      clockTick[i] = getDivide(i);
     }
   }
-
+  
   // deal with incoming clock ticks
   if (clkState == HIGH) {
     clkState = LOW;  // reset for the next clock
@@ -75,9 +88,9 @@ void loop()
       if (clockTick[i] < 1) {
         digState[i] = HIGH;
         prevMilli[i] = millis();
-        SynapseShield.writeGate(channel[i], true);
-        clockTick[i] = (analogRead(i+2) >> 5) + 1 + (analogRead(4) >> 5);
-      }
+        dac_inoBoard.writeGate(outChannel[i], true);
+        clockTick[i] = getDivide(i) + USECVOFFSET ? getDivide(3) : 0;
+     }
     }
   }
 
@@ -85,7 +98,7 @@ void loop()
   for (int i=0; i<2; i++) {
     if ((digState[i] == HIGH) && ((millis() - prevMilli[i]) > trigTime)) {
       digState[i] = LOW;
-      SynapseShield.writeGate(channel[i], false);
+      dac_inoBoard.writeGate(outChannel[i], false);
     }
   }
 
