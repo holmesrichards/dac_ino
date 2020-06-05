@@ -60,9 +60,9 @@ Wire Wire Line
 	4450 6050 4650 6050
 Wire Wire Line
 	4450 5950 4650 5950
-Text HLabel 4650 5850 2    50   Output ~ 0
+Text HLabel 4650 5950 2    50   Output ~ 0
 A5
-Text HLabel 4650 5750 2    50   Output ~ 0
+Text HLabel 4650 6050 2    50   Output ~ 0
 A4
 $Comp
 L Connector_Generic:Conn_01x04 J10
@@ -75,9 +75,9 @@ F 3 "~" H 4250 5850 50  0001 C CNN
 	1    4250 5850
 	-1   0    0    -1  
 $EndComp
-Text HLabel 4650 6050 2    50   Output ~ 0
+Text HLabel 4650 5750 2    50   Output ~ 0
 A7
-Text HLabel 4650 5950 2    50   Output ~ 0
+Text HLabel 4650 5850 2    50   Output ~ 0
 A6
 $Comp
 L Connector_Generic:Conn_01x02 J11
