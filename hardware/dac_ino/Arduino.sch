@@ -193,36 +193,36 @@ Text HLabel 6450 4350 2    50   Input ~ 0
 A7
 $Comp
 L dac_ino:Conn_01x01_Units J?
-U 7 1 5EC35EDB
+U 2 1 5EC35EDB
 P 3300 2750
 AR Path="/5E86BFC7/5E8150C7/5EC35EDB" Ref="J?"  Part="1" 
 AR Path="/5E86BFC7/5E8670B9/5EC35EDB" Ref="J?"  Part="3" 
 AR Path="/5E86BFC7/5E867AC0/5EC35EDB" Ref="J?"  Part="4" 
 AR Path="/5E86BFC7/5E845115/5EC35EDB" Ref="J?"  Part="2" 
-AR Path="/5E8923A6/5EC35EDB" Ref="J7"  Part="7" 
+AR Path="/5E8923A6/5EC35EDB" Ref="J7"  Part="2" 
 F 0 "J7" H 3218 2525 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 3218 2616 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 2750 50  0001 C CNN
 F 3 "~" H 3300 2750 50  0001 C CNN
-	7    3300 2750
+	2    3300 2750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3600 2750 3500 2750
 $Comp
 L dac_ino:Conn_01x01_Units J?
-U 8 1 5EC3679D
+U 1 1 5EC3679D
 P 3300 3100
 AR Path="/5E86BFC7/5E8150C7/5EC3679D" Ref="J?"  Part="1" 
 AR Path="/5E86BFC7/5E8670B9/5EC3679D" Ref="J?"  Part="3" 
 AR Path="/5E86BFC7/5E867AC0/5EC3679D" Ref="J?"  Part="4" 
 AR Path="/5E86BFC7/5E845115/5EC3679D" Ref="J?"  Part="2" 
-AR Path="/5E8923A6/5EC3679D" Ref="J7"  Part="8" 
+AR Path="/5E8923A6/5EC3679D" Ref="J7"  Part="1" 
 F 0 "J7" H 3218 2875 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 3218 2966 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3100 50  0001 C CNN
 F 3 "~" H 3300 3100 50  0001 C CNN
-	8    3300 3100
+	1    3300 3100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
