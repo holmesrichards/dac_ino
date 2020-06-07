@@ -38,23 +38,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5EDCC6F6
-P 3000 2450
-F 0 "J2" H 3080 2442 50  0000 L CNN
-F 1 "Conn_01x02" H 3080 2351 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3000 2450 50  0001 C CNN
-F 3 "~" H 3000 2450 50  0001 C CNN
-	1    3000 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5EDCCA80
-P 4200 2550
-F 0 "J3" H 4280 2542 50  0000 L CNN
-F 1 "Conn_01x04" H 4280 2451 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4200 2550 50  0001 C CNN
-F 3 "~" H 4200 2550 50  0001 C CNN
-	1    4200 2550
+P 3250 2475
+F 0 "J2" H 3330 2467 50  0000 L CNN
+F 1 "Conn_01x02" H 3330 2376 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3250 2475 50  0001 C CNN
+F 3 "~" H 3250 2475 50  0001 C CNN
+	1    3250 2475
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -104,16 +93,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5EDD006C
-P 2000 2375
-F 0 "#PWR?" H 2000 2125 50  0001 C CNN
-F 1 "GND" H 2005 2202 50  0000 C CNN
-F 2 "" H 2000 2375 50  0001 C CNN
-F 3 "" H 2000 2375 50  0001 C CNN
-	1    2000 2375
+P 1500 2375
+F 0 "#PWR?" H 1500 2125 50  0001 C CNN
+F 1 "GND" H 1505 2202 50  0000 C CNN
+F 2 "" H 1500 2375 50  0001 C CNN
+F 3 "" H 1500 2375 50  0001 C CNN
+	1    1500 2375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 2375 2175 2375
 $Comp
 L power:GND #PWR?
 U 1 1 5EDD04FC
@@ -127,4 +114,79 @@ F 3 "" H 5150 3075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 3075 5300 3075
+$Comp
+L power:VCC #PWR?
+U 1 1 5EDC3A53
+P 1650 2475
+F 0 "#PWR?" H 1650 2325 50  0001 C CNN
+F 1 "VCC" H 1668 2648 50  0000 C CNN
+F 2 "" H 1650 2475 50  0001 C CNN
+F 3 "" H 1650 2475 50  0001 C CNN
+	1    1650 2475
+	-1   0    0    1   
+$EndComp
+Text Label 2175 2575 2    50   ~ 0
+GATE_OUT_B
+Text Label 2175 2675 2    50   ~ 0
+GATE_OUT_A
+Wire Wire Line
+	1500 2375 2175 2375
+Wire Wire Line
+	1650 2475 2175 2475
+Text Label 2175 2775 2    50   ~ 0
+GATE_IN_D
+Text Label 2175 2875 2    50   ~ 0
+GATE_IN_C
+Text Label 2175 2975 2    50   ~ 0
+GATE_IN_B
+Text Label 2175 3075 2    50   ~ 0
+GATE_IN_A
+Text Label 3050 2475 2    50   ~ 0
+D8
+Text Label 3050 2575 2    50   ~ 0
+D9
+Text Label 4000 2650 2    50   ~ 0
+A5
+Text Label 4000 2750 2    50   ~ 0
+A4
+Text Label 4000 2550 2    50   ~ 0
+A6
+Text Label 4000 2450 2    50   ~ 0
+A7
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5EDCCA80
+P 4200 2550
+F 0 "J3" H 4280 2542 50  0000 L CNN
+F 1 "Conn_01x04" H 4280 2451 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4200 2550 50  0001 C CNN
+F 3 "~" H 4200 2550 50  0001 C CNN
+	1    4200 2550
+	1    0    0    -1  
+$EndComp
+Text Label 5300 2375 2    50   ~ 0
+CV_IN_A
+Text Label 5300 2475 2    50   ~ 0
+CV_IN_B
+Text Label 5300 2575 2    50   ~ 0
+CV_IN_C
+Text Label 5300 2675 2    50   ~ 0
+CV_IN_D
+Text Label 5300 2775 2    50   ~ 0
+CV_OUT_A
+Text Label 5300 2875 2    50   ~ 0
+CV_OUT_B
+$Comp
+L power:VCC #PWR?
+U 1 1 5EDC64F9
+P 4825 2975
+F 0 "#PWR?" H 4825 2825 50  0001 C CNN
+F 1 "VCC" H 4842 3148 50  0000 C CNN
+F 2 "" H 4825 2975 50  0001 C CNN
+F 3 "" H 4825 2975 50  0001 C CNN
+	1    4825 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 2975 5300 2975
 $EndSCHEMATC
