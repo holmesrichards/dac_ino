@@ -19,7 +19,7 @@ U 1 1 5E84CAC8
 P 3300 4100
 F 0 "R10" V 3093 4100 50  0000 C CNN
 F 1 "1k" V 3184 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3230 4100 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3230 4100 50  0001 C CNN
 F 3 "~" H 3300 4100 50  0001 C CNN
 	1    3300 4100
 	0    1    1    0   
@@ -30,7 +30,7 @@ U 1 1 5E84CACE
 P 3950 3550
 F 0 "R11" H 3880 3504 50  0000 R CNN
 F 1 "1k" H 3880 3595 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3880 3550 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3880 3550 50  0001 C CNN
 F 3 "~" H 3950 3550 50  0001 C CNN
 	1    3950 3550
 	-1   0    0    1   
@@ -41,7 +41,7 @@ U 1 1 5E84CAD4
 P 3850 4100
 F 0 "Q1" H 4040 4146 50  0000 L CNN
 F 1 "2N3904" H 4040 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4050 4025 50  0001 L CIN
+F 2 "ao_tht:TO-92_Inline_Wide" H 4050 4025 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3850 4100 50  0001 L CNN
 	1    3850 4100
 	1    0    0    -1  
@@ -80,7 +80,7 @@ U 1 1 5E84CAEB
 P 5300 4100
 F 0 "R12" V 5093 4100 50  0000 C CNN
 F 1 "1k" V 5184 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 4100 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 4100 50  0001 C CNN
 F 3 "~" H 5300 4100 50  0001 C CNN
 	1    5300 4100
 	0    1    1    0   
@@ -91,7 +91,7 @@ U 1 1 5E84CAF1
 P 5950 3550
 F 0 "R13" H 5880 3504 50  0000 R CNN
 F 1 "1k" H 5880 3595 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 3550 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 3550 50  0001 C CNN
 F 3 "~" H 5950 3550 50  0001 C CNN
 	1    5950 3550
 	-1   0    0    1   
@@ -102,7 +102,7 @@ U 1 1 5E84CAF7
 P 5850 4100
 F 0 "Q2" H 6040 4146 50  0000 L CNN
 F 1 "2N3904" H 6040 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6050 4025 50  0001 L CIN
+F 2 "ao_tht:TO-92_Inline_Wide" H 6050 4025 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5850 4100 50  0001 L CNN
 	1    5850 4100
 	1    0    0    -1  
@@ -163,7 +163,7 @@ U 1 1 5E84CB1A
 P 7950 3850
 F 0 "J5" H 8030 3842 50  0000 L CNN
 F 1 "Molex 2 pin GATE OUT" H 8030 3751 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7950 3850 50  0001 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7950 3850 50  0001 C CNN
 F 3 "~" H 7950 3850 50  0001 C CNN
 	1    7950 3850
 	1    0    0    -1  
@@ -174,7 +174,7 @@ U 1 1 5E84CB20
 P 7950 4350
 F 0 "J6" H 8030 4342 50  0000 L CNN
 F 1 "Molex 2 pin GATE OUT" H 8030 4251 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7950 4350 50  0001 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7950 4350 50  0001 C CNN
 F 3 "~" H 7950 4350 50  0001 C CNN
 	1    7950 4350
 	1    0    0    -1  
@@ -210,7 +210,7 @@ AR Path="/5E86BFC7/5E845115/5EC37F3C" Ref="J?"  Part="2"
 AR Path="/5E84260A/5EC37F3C" Ref="J7"  Part="4" 
 F 0 "J7" H 7868 4775 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 7868 4866 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7950 5000 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 7950 5000 50  0001 C CNN
 F 3 "~" H 7950 5000 50  0001 C CNN
 	4    7950 5000
 	1    0    0    1   
@@ -230,7 +230,7 @@ AR Path="/5E86BFC7/5E845115/5EC39F46" Ref="J?"  Part="2"
 AR Path="/5E84260A/5EC39F46" Ref="J7"  Part="3" 
 F 0 "J7" H 7868 5150 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 7868 5241 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7950 5375 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 7950 5375 50  0001 C CNN
 F 3 "~" H 7950 5375 50  0001 C CNN
 	3    7950 5375
 	1    0    0    1   

@@ -19,7 +19,7 @@ U 1 1 5E7DAE1D
 P 6400 3700
 F 0 "U1" H 6400 4281 50  0000 C CNN
 F 1 "MCP4922" H 6400 4190 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7200 3400 50  0001 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 7200 3400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 7200 3400 50  0001 C CNN
 	1    6400 3700
 	1    0    0    -1  
@@ -49,7 +49,7 @@ U 1 1 5E7DAE30
 P 4600 4100
 F 0 "C1" H 4718 4146 50  0000 L CNN
 F 1 "10uF" H 4718 4055 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4638 3950 50  0001 C CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 4638 3950 50  0001 C CNN
 F 3 "~" H 4600 4100 50  0001 C CNN
 	1    4600 4100
 	1    0    0    -1  
@@ -60,7 +60,7 @@ U 1 1 5E7DAE36
 P 5000 4100
 F 0 "C2" H 5115 4146 50  0000 L CNN
 F 1 "0.1uF" H 5115 4055 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5038 3950 50  0001 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5038 3950 50  0001 C CNN
 F 3 "~" H 5000 4100 50  0001 C CNN
 	1    5000 4100
 	1    0    0    -1  
@@ -102,7 +102,7 @@ AR Path="/5E7957F4/5E7DAE4C" Ref="R?"  Part="1"
 AR Path="/5E7D877F/5E7DAE4C" Ref="R1"  Part="1" 
 F 0 "R1" V 5100 3450 59  0000 L BNN
 F 1 "10k" V 5000 3400 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4850 3500 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4850 3500 50  0001 C CNN
 F 3 "" H 4850 3500 50  0001 C CNN
 	1    4850 3500
 	0    -1   -1   0   

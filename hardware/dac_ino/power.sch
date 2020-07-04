@@ -22,7 +22,7 @@ AR Path="/5E8A5A56" Ref="J?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5A56" Ref="J9"  Part="1" 
 F 0 "J9" H 4000 4297 60  0000 C CNN
 F 1 "EURO_PWR_2x5" H 4000 4191 60  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 4000 3850 60  0001 C CNN
+F 2 "ao_tht:Power_Header" H 4000 3850 60  0001 C CNN
 F 3 "" H 4000 3850 60  0000 C CNN
 	1    4000 3850
 	1    0    0    -1  
@@ -36,7 +36,7 @@ AR Path="/5E8A5A5C" Ref="C?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5A5C" Ref="C7"  Part="1" 
 F 0 "C7" H 6768 3746 50  0000 L CNN
 F 1 "10uF" H 6768 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6688 3550 50  0001 C CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 6688 3550 50  0001 C CNN
 F 3 "~" H 6650 3700 50  0001 C CNN
 	1    6650 3700
 	1    0    0    -1  
@@ -50,7 +50,7 @@ AR Path="/5E8A5A62" Ref="C?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5A62" Ref="C8"  Part="1" 
 F 0 "C8" H 6768 4046 50  0000 L CNN
 F 1 "10uF" H 6768 3955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6688 3850 50  0001 C CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 6688 3850 50  0001 C CNN
 F 3 "~" H 6650 4000 50  0001 C CNN
 	1    6650 4000
 	1    0    0    -1  
@@ -151,7 +151,7 @@ AR Path="/5E8A5AB1" Ref="D?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5AB1" Ref="D1"  Part="1" 
 F 0 "D1" H 5150 3434 50  0000 C CNN
 F 1 "1N5817" H 5150 3525 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3475 50  0001 C CNN
+F 2 "ao_tht:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5150 3650 50  0001 C CNN
 	1    5150 3650
 	-1   0    0    1   
@@ -167,7 +167,7 @@ AR Path="/5E8A5AB8" Ref="D?"  Part="1"
 AR Path="/5E8A3CCB/5E8A5AB8" Ref="D2"  Part="1" 
 F 0 "D2" H 5150 4266 50  0000 C CNN
 F 1 "1N5817" H 5150 4175 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3875 50  0001 C CNN
+F 2 "ao_tht:D_DO-41_SOD81_P7.62mm_Horizontal" H 5150 3875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5150 4050 50  0001 C CNN
 	1    5150 4050
 	1    0    0    -1  

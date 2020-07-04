@@ -38,7 +38,7 @@ AR Path="/5E7957F4/5E7E4E98" Ref="R?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4E98" Ref="R6"  Part="1" 
 F 0 "R6" V 6450 2550 59  0000 L BNN
 F 1 "100k" V 6350 2500 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 2600 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 2600 50  0001 C CNN
 F 3 "" H 6200 2600 50  0001 C CNN
 	1    6200 2600
 	0    -1   -1   0   
@@ -52,7 +52,7 @@ AR Path="/5E7E4E9E" Ref="J?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4E9E" Ref="J1"  Part="1" 
 F 0 "J1" V 4962 2894 50  0000 L CNN
 F 1 "Conn_01x03_Male" V 5053 2894 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4900 2750 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x03_P2.54mm_Vertical" H 4900 2750 50  0001 C CNN
 F 3 "~" H 4900 2750 50  0001 C CNN
 	1    4900 2750
 	0    1    1    0   
@@ -82,7 +82,7 @@ AR Path="/5E7E4EAB" Ref="J?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EAB" Ref="J2"  Part="1" 
 F 0 "J2" V 4962 4294 50  0000 L CNN
 F 1 "Conn_01x03_Male" V 5053 4294 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4900 4150 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x03_P2.54mm_Vertical" H 4900 4150 50  0001 C CNN
 F 3 "~" H 4900 4150 50  0001 C CNN
 	1    4900 4150
 	0    1    1    0   
@@ -117,7 +117,7 @@ AR Path="/5E7957F4/5E7E4EBA" Ref="R?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EBA" Ref="R2"  Part="1" 
 F 0 "R2" V 5450 3300 59  0000 L BNN
 F 1 "91k" V 5350 3250 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 3350 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 3350 50  0001 C CNN
 F 3 "" H 5200 3350 50  0001 C CNN
 	1    5200 3350
 	0    -1   -1   0   
@@ -132,7 +132,7 @@ AR Path="/5E7957F4/5E7E4EC0" Ref="R?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EC0" Ref="R3"  Part="1" 
 F 0 "R3" V 5450 4700 59  0000 L BNN
 F 1 "91k" V 5350 4650 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 4750 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 4750 50  0001 C CNN
 F 3 "" H 5200 4750 50  0001 C CNN
 	1    5200 4750
 	0    -1   -1   0   
@@ -153,7 +153,7 @@ AR Path="/5E7957F4/5E7E4EC9" Ref="R?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EC9" Ref="R8"  Part="1" 
 F 0 "R8" V 7150 3400 59  0000 L BNN
 F 1 "1k" V 7050 3350 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 3450 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 3450 50  0001 C CNN
 F 3 "" H 6900 3450 50  0001 C CNN
 	1    6900 3450
 	0    -1   -1   0   
@@ -174,7 +174,7 @@ AR Path="/5E7E4ED3" Ref="U?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4ED3" Ref="U2"  Part="1" 
 F 0 "U2" H 6225 3125 50  0000 C CNN
 F 1 "TL072" H 6250 3200 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 3450 50  0001 C CNN
+F 2 "ao_tht:DIP-8_W7.62mm_Socket_LongPads" H 6200 3450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 6200 3450 50  0001 C CNN
 	1    6200 3450
 	1    0    0    1   
@@ -188,7 +188,7 @@ AR Path="/5E7E4ED9" Ref="U?"  Part="2"
 AR Path="/5E7E1DC7/5E7E4ED9" Ref="U2"  Part="2" 
 F 0 "U2" H 6225 4575 50  0000 C CNN
 F 1 "TL072" H 6225 4650 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6200 4850 50  0001 C CNN
+F 2 "ao_tht:DIP-8_W7.62mm_Socket_LongPads" H 6200 4850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 6200 4850 50  0001 C CNN
 	2    6200 4850
 	1    0    0    1   
@@ -202,7 +202,7 @@ AR Path="/5E7E4EDF" Ref="C?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EDF" Ref="C5"  Part="1" 
 F 0 "C5" V 5998 2950 50  0000 C CNN
 F 1 "47pF" V 6089 2950 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6288 2800 50  0001 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6288 2800 50  0001 C CNN
 F 3 "~" H 6250 2950 50  0001 C CNN
 	1    6250 2950
 	0    1    1    0   
@@ -240,7 +240,7 @@ AR Path="/5E7957F4/5E7E4EF2" Ref="R?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EF2" Ref="R7"  Part="1" 
 F 0 "R7" V 6450 3950 59  0000 L BNN
 F 1 "100k" V 6350 3900 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 4000 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6200 4000 50  0001 C CNN
 F 3 "" H 6200 4000 50  0001 C CNN
 	1    6200 4000
 	0    -1   -1   0   
@@ -258,7 +258,7 @@ AR Path="/5E7E4EFA" Ref="C?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4EFA" Ref="C6"  Part="1" 
 F 0 "C6" V 5998 4350 50  0000 C CNN
 F 1 "47pF" V 6089 4350 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6288 4200 50  0001 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6288 4200 50  0001 C CNN
 F 3 "~" H 6250 4350 50  0001 C CNN
 	1    6250 4350
 	0    1    1    0   
@@ -284,7 +284,7 @@ AR Path="/5E7957F4/5E7E4F06" Ref="R?"  Part="1"
 AR Path="/5E7E1DC7/5E7E4F06" Ref="R9"  Part="1" 
 F 0 "R9" V 7150 4800 59  0000 L BNN
 F 1 "1k" V 7050 4750 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 4850 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 4850 50  0001 C CNN
 F 3 "" H 6900 4850 50  0001 C CNN
 	1    6900 4850
 	0    -1   -1   0   
@@ -319,7 +319,7 @@ AR Path="/5E795811/5E7F27A0" Ref="J?"  Part="1"
 AR Path="/5E7E1DC7/5E7F27A0" Ref="J4"  Part="1" 
 F 0 "J4" H 9130 4142 50  0000 L CNN
 F 1 "Molex 2 pin CV OUT" H 9130 4051 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 4150 50  0001 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 4150 50  0001 C CNN
 F 3 "~" H 9050 4150 50  0001 C CNN
 	1    9050 4150
 	1    0    0    -1  
@@ -332,7 +332,7 @@ AR Path="/5E795811/5E7F27A6" Ref="J?"  Part="1"
 AR Path="/5E7E1DC7/5E7F27A6" Ref="J3"  Part="1" 
 F 0 "J3" H 9130 3692 50  0000 L CNN
 F 1 "Molex 2 pin CV OUT" H 9130 3601 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 3700 50  0001 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 3700 50  0001 C CNN
 F 3 "~" H 9050 3700 50  0001 C CNN
 	1    9050 3700
 	1    0    0    -1  
@@ -372,7 +372,7 @@ AR Path="/5E8AE4CE" Ref="C?"  Part="1"
 AR Path="/5E7E1DC7/5E8AE4CE" Ref="C3"  Part="1" 
 F 0 "C3" H 4865 5846 50  0000 L CNN
 F 1 "0.1uF" H 4865 5755 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4788 5650 50  0001 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4788 5650 50  0001 C CNN
 F 3 "~" H 4750 5800 50  0001 C CNN
 	1    4750 5800
 	1    0    0    -1  
@@ -386,7 +386,7 @@ AR Path="/5E8AE4D4" Ref="C?"  Part="1"
 AR Path="/5E7E1DC7/5E8AE4D4" Ref="C4"  Part="1" 
 F 0 "C4" H 4865 6146 50  0000 L CNN
 F 1 "0.1uF" H 4865 6055 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4788 5950 50  0001 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4788 5950 50  0001 C CNN
 F 3 "~" H 4750 6100 50  0001 C CNN
 	1    4750 6100
 	1    0    0    -1  
@@ -400,7 +400,7 @@ AR Path="/5E8AE4DB" Ref="U?"  Part="3"
 AR Path="/5E7E1DC7/5E8AE4DB" Ref="U2"  Part="3" 
 F 0 "U2" H 5258 5996 50  0000 L CNN
 F 1 "TL072" H 5258 5905 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5300 5950 50  0001 C CNN
+F 2 "ao_tht:DIP-8_W7.62mm_Socket_LongPads" H 5300 5950 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf" H 5300 5950 50  0001 C CNN
 	3    5300 5950
 	1    0    0    -1  
@@ -453,7 +453,7 @@ U 1 1 5EA3D54F
 P 5550 3350
 F 0 "R4" V 5343 3350 50  0000 C CNN
 F 1 "20k" V 5434 3350 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" V 5480 3350 50  0001 C CNN
+F 2 "ao_tht:Potentiometer_Bourns_3296W_Vertical" V 5480 3350 50  0001 C CNN
 F 3 "~" H 5550 3350 50  0001 C CNN
 	1    5550 3350
 	0    1    1    0   
@@ -466,7 +466,7 @@ U 1 1 5EA3F5D2
 P 5550 4750
 F 0 "R5" V 5343 4750 50  0000 C CNN
 F 1 "20k" V 5434 4750 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" V 5480 4750 50  0001 C CNN
+F 2 "ao_tht:Potentiometer_Bourns_3296W_Vertical" V 5480 4750 50  0001 C CNN
 F 3 "~" H 5550 4750 50  0001 C CNN
 	1    5550 4750
 	0    1    1    0   
@@ -489,7 +489,7 @@ U 5 1 5EC43358
 P 9050 4775
 F 0 "J14" H 9130 4817 50  0000 L CNN
 F 1 "Conn_01x01_Units" H 9130 4726 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9050 4775 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 9050 4775 50  0001 C CNN
 F 3 "~" H 9050 4775 50  0001 C CNN
 	5    9050 4775
 	1    0    0    -1  
@@ -504,7 +504,7 @@ U 6 1 5EC45E3E
 P 9050 5125
 F 0 "J14" H 9130 5167 50  0000 L CNN
 F 1 "Conn_01x01_Units" H 9130 5076 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9050 5125 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 9050 5125 50  0001 C CNN
 F 3 "~" H 9050 5125 50  0001 C CNN
 	6    9050 5125
 	1    0    0    -1  

@@ -112,7 +112,7 @@ U 1 1 5E8D2F88
 P 6450 5200
 F 0 "H1" H 6550 5246 50  0000 L CNN
 F 1 "MountingHole" H 6550 5155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5200 50  0001 C CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 6450 5200 50  0001 C CNN
 F 3 "~" H 6450 5200 50  0001 C CNN
 	1    6450 5200
 	1    0    0    -1  
@@ -123,7 +123,7 @@ U 1 1 5E8D422B
 P 6450 5400
 F 0 "H2" H 6550 5446 50  0000 L CNN
 F 1 "MountingHole" H 6550 5355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5400 50  0001 C CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 6450 5400 50  0001 C CNN
 F 3 "~" H 6450 5400 50  0001 C CNN
 	1    6450 5400
 	1    0    0    -1  
@@ -134,7 +134,7 @@ U 1 1 5E8D4380
 P 6450 5600
 F 0 "H3" H 6550 5646 50  0000 L CNN
 F 1 "MountingHole" H 6550 5555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5600 50  0001 C CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 6450 5600 50  0001 C CNN
 F 3 "~" H 6450 5600 50  0001 C CNN
 	1    6450 5600
 	1    0    0    -1  
@@ -145,7 +145,7 @@ U 1 1 5E8D4646
 P 6450 5800
 F 0 "H4" H 6550 5846 50  0000 L CNN
 F 1 "MountingHole" H 6550 5755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6450 5800 50  0001 C CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 6450 5800 50  0001 C CNN
 F 3 "~" H 6450 5800 50  0001 C CNN
 	1    6450 5800
 	1    0    0    -1  

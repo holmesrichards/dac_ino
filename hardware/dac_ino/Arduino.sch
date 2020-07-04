@@ -25,7 +25,7 @@ AR Path="/5E7957F4/5E89358E" Ref="R?"  Part="1"
 AR Path="/5E8923A6/5E89358E" Ref="R14"  Part="1" 
 F 0 "R14" H 4550 3750 59  0000 L BNN
 F 1 "10k" H 4550 3650 59  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4450 3700 50  0001 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4450 3700 50  0001 C CNN
 F 3 "" H 4450 3700 50  0001 C CNN
 	1    4450 3700
 	-1   0    0    -1  
@@ -97,7 +97,7 @@ AR Path="/5E8935BE" Ref="A?"  Part="1"
 AR Path="/5E8923A6/5E8935BE" Ref="A1"  Part="1" 
 F 0 "A1" H 5750 2500 50  0000 C CNN
 F 1 "Arduino_Nano_v3.x 5V" H 5850 2400 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 5850 3650 50  0001 C CIN
+F 2 "ao_tht:Arduino_Nano" H 5850 3650 50  0001 C CIN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5850 3650 50  0001 C CNN
 	1    5850 3650
 	1    0    0    -1  
@@ -137,7 +137,7 @@ AR Path="/5E8935D8" Ref="J?"  Part="1"
 AR Path="/5E8923A6/5E8935D8" Ref="J8"  Part="1" 
 F 0 "J8" H 4368 3017 50  0000 C CNN
 F 1 "Molex 2 pin VCC " H 4368 2926 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4450 2800 50  0001 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4450 2800 50  0001 C CNN
 F 3 "~" H 4450 2800 50  0001 C CNN
 	1    4450 2800
 	-1   0    0    -1  
@@ -202,7 +202,7 @@ AR Path="/5E86BFC7/5E845115/5EC35EDB" Ref="J?"  Part="2"
 AR Path="/5E8923A6/5EC35EDB" Ref="J7"  Part="2" 
 F 0 "J7" H 3218 2525 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 3218 2616 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 2750 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 3300 2750 50  0001 C CNN
 F 3 "~" H 3300 2750 50  0001 C CNN
 	2    3300 2750
 	-1   0    0    1   
@@ -220,7 +220,7 @@ AR Path="/5E86BFC7/5E845115/5EC3679D" Ref="J?"  Part="2"
 AR Path="/5E8923A6/5EC3679D" Ref="J7"  Part="1" 
 F 0 "J7" H 3218 2875 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 3218 2966 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3100 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 3300 3100 50  0001 C CNN
 F 3 "~" H 3300 3100 50  0001 C CNN
 	1    3300 3100
 	-1   0    0    1   
@@ -254,7 +254,7 @@ AR Path="/5E86BFC7/5E845115/5EC4878D" Ref="J?"  Part="2"
 AR Path="/5E8923A6/5EC4878D" Ref="J14"  Part="7" 
 F 0 "J14" H 3218 3400 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 3218 3491 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3625 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 3300 3625 50  0001 C CNN
 F 3 "~" H 3300 3625 50  0001 C CNN
 	7    3300 3625
 	-1   0    0    1   
@@ -272,7 +272,7 @@ AR Path="/5E86BFC7/5E845115/5EC48794" Ref="J?"  Part="2"
 AR Path="/5E8923A6/5EC48794" Ref="J14"  Part="8" 
 F 0 "J14" H 3218 3750 50  0000 C CNN
 F 1 "Conn_01x01_Units" H 3218 3841 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3300 3975 50  0001 C CNN
+F 2 "ao_tht:PinHeader_1x08_P2.54mm_Vertical" H 3300 3975 50  0001 C CNN
 F 3 "~" H 3300 3975 50  0001 C CNN
 	8    3300 3975
 	-1   0    0    1   

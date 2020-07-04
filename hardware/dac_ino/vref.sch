@@ -19,7 +19,7 @@ U 1 1 5E7D472A
 P 5450 3650
 F 0 "U3" H 5500 4050 50  0000 L CNN
 F 1 "REF02CP+" H 5500 3950 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5400 3700 50  0001 C CIN
+F 2 "ao_tht:DIP-8_W7.62mm_Socket_LongPads" H 5400 3700 50  0001 C CIN
 F 3 "https://datasheets.maximintegrated.com/en/ds/REF01-REF02.pdf" H 5400 3700 50  0001 C CIN
 	1    5450 3650
 	1    0    0    -1  
