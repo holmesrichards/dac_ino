@@ -1,5 +1,6 @@
 # dac/ino build notes
 
+## General build notes
 The main thing to say about building this board is that it is very modular. Most components are associated with one particular input or output and if that input/output is not needed, those components can be omitted.
 
 For example (for the full dac/ino board, similar ideas apply to dac/ino lite):
@@ -15,6 +16,11 @@ If you do not need CV Out B you can omit C6, J2, J4, R3, R5, R7, R9 (use a wire 
 Note that R14 is placed near the CV inputs but is not associated with them and should always be installed.
 
 ## Full dac/ino
+
+### Silkscreen error
+In version 1.0.2, the silkscreened values for R28 and R29 are reversed. R28 should be 100k and R29 should be 1M.
+
+### dac/ino build notes
 
 The two 1x8 pin headers J7 and J14 duplicate the Molex connectors; either or both can be installed and either can be used to connect to the Gate and CV inputs and outputs, and to access VCC and ground. Pin headers J10 and J11 provide access to two additional digital pins and four additional analog pins; these can be used for e.g. panel switches and pots where input protection and conditioning is not needed. Of course you can also omit any of the Molex connectors or pin headers and solder wires directly between the panel and board.
 
