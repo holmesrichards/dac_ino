@@ -18,7 +18,7 @@ Note that R14 is placed near the CV inputs but is not associated with them and s
 ## Full dac/ino
 
 ### Silkscreen error
-In version 1.0.2, the silkscreened values for R28 and R29 are reversed. R28 should be 100k and R29 should be 1M.
+In version 1.3, the silkscreened values for R28 and R29 are reversed. R28 should be 100k and R29 should be 1M.
 
 ### dac/ino build notes
 
