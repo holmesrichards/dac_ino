@@ -315,6 +315,7 @@ void dac_ino::writeGate(GateOutChannel channel_, bool state_)
 
 void dac_ino::gateInputInterrupt(GateInChannel channel_, void (*callback_)(void), GateInterrupt mode_)
 {
+  // Note that nano interrupts are only pins 2, 3
   switch (channel_)
   {
     case GateInChannel::A:
@@ -325,26 +326,6 @@ void dac_ino::gateInputInterrupt(GateInChannel channel_, void (*callback_)(void)
     case GateInChannel::B:
     {
       attachInterrupt(digitalPinToInterrupt(k_pinGateInB), callback_, static_cast<uint32_t>(mode_));
-      break;
-    }
-    case GateInChannel::C:
-    {
-      attachInterrupt(digitalPinToInterrupt(k_pinGateInC), callback_, static_cast<uint32_t>(mode_));
-      break;
-    }
-    case GateInChannel::D:
-    {
-      attachInterrupt(digitalPinToInterrupt(k_pinGateInD), callback_, static_cast<uint32_t>(mode_));
-      break;
-    }
-    case GateInChannel::E:
-    {
-      attachInterrupt(digitalPinToInterrupt(k_pinGateInE), callback_, static_cast<uint32_t>(mode_));
-      break;
-    }
-    case GateInChannel::F:
-    {
-      attachInterrupt(digitalPinToInterrupt(k_pinGateInF), callback_, static_cast<uint32_t>(mode_));
       break;
     }
     default:
