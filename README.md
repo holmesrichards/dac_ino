@@ -18,16 +18,17 @@ Differences between these and Synapse are:
 - 2 x control voltage outputs, individually configurable as 0 to 10V or -5 to 5V via jumpers, with 12 bits of resolution
 - 4 x gate inputs (with interrupt)
 - 2 x gate outputs
-- Pads for additional inputs/outputs: 4 analog, 2 digital
-- All above inputs/outputs also available via pin headers for daughterboards
+- Additional inputs/outputs (direct connections to Arduino): 4 analog, 2 digital
+- All above inputs/outputs connect via Molex connectors or solder pads, or via pin headers for daughterboards
 - Voltage reference chip
 - 1 x eurorack power connector (10 pin)
 
 ### dac/ino lite has
 - 2 x control voltage outputs, 0 to 5V, with 12 bits of resolution
 - 1 x gate output
-- Pads for additional inputs/outputs: 4 analog, 4 digital
-- 1 x Molex connector for 6–12V battery or unipolar power supply
+- Additional inputs/outputs (direct connections to Arduino): 4 analog, 2 digital
+- All above inputs/outputs connect via Molex connectors or solder pads
+- 6–12V battery or unipolar power supply
 
 ## Compatible Arduinos
 The PCB layout is for an Arduino Nano (5V).
