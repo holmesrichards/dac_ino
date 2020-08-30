@@ -42,3 +42,5 @@ The PCB layout is for an Arduino Nano (5V).
 - [Build notes](docs/Build_notes.md)
 - [dac/ino schematic](docs/dac_ino.pdf) (A bit confusing because the repetitive parts of the circuit are handled with KiCad heirarchical pages, so you have lots of pages with only a few components on each.)
 - [dac/ino PCB layout](docs/dac_ino_pcb.pdf)
+- [dac/ino BOM](docs/dac_ino_bom.md)
+
