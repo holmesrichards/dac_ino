@@ -80,7 +80,7 @@ void dac_ino::begin(unsigned spiDivider_)
 
 //--------------------------------------------------------------------------------------------------
 
-void dac_ino::setGateToOutput (GateOutChannel channel_);
+void dac_ino::setGateToOutput (GateOutChannel channel_)
 {
   switch (channel_)
     {
@@ -101,7 +101,7 @@ void dac_ino::setGateToOutput (GateOutChannel channel_);
   
 //--------------------------------------------------------------------------------------------------
 
-void dac_ino::setGateToInput (GateInChannel channel_);
+void dac_ino::setGateToInput (GateInChannel channel_)
 {
   switch (channel_)
     {
@@ -158,12 +158,12 @@ void dac_ino::writeCV(CVOutChannel channel_, uint16_t value_)
   {
     case CVOutChannel::A:
     {
-      msg1 |= k_writeOutChannelA;
+      msg1 |= k_writeChannelA;
       break;
     }
     case CVOutChannel::B:
     {
-      msg1 |= k_writeOutChannelB;
+      msg1 |= k_writeChannelB;
       break;
     }
     default:

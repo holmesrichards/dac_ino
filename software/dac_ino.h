@@ -182,10 +182,10 @@ private:
   static constexpr uint8_t  k_pinGateOutC = 8;
   static constexpr uint8_t  k_pinGateOutD = 9;
 
-  static bool m_gateInEEnabled = false;
-  static bool m_gateInFEnabled = false;
-  static bool m_gateOutCEnabled = false;
-  static bool m_gateOutDEnabled = false;
+  bool m_gateInEEnabled;
+  bool m_gateInFEnabled;
+  bool m_gateOutCEnabled;
+  bool m_gateOutDEnabled;
     
   void setSPIDivider(unsigned spiDivider_);
   
