@@ -24,13 +24,13 @@ In version 1.3, the silkscreened reference numbers R28 and R29 are reversed. R29
 
 The two 1x8 pin headers J7 and J14 duplicate the 2-pin Molex connectors; either or both can be installed and either can be used to connect to the Gate and CV inputs and outputs, and to access VCC and ground. 8-pin Molex connector J21, or in headers J10 and J11, provide access to two additional digital pins and four additional analog pins; these can be used for e.g. panel switches and pots where input protection and conditioning is not needed. Of course you can also omit any of the Molex connectors or pin headers and solder wires directly between the panel and board.
 
-Pin headers J1 and J2 are for output CV range selection. Use a jumper to connect the middle pin to the pin toward the power header edge of the board to get 0–10V, or the middle pin to the pin toward the CV In edge of the board to get ±5V. Use trimmers R4 and R5 to adjust the output gain.
+Pin headers J1 and J2 are for output CV range selection. Use a jumper to connect the middle pin to the pin toward the power header edge of the board to get 0–10 V, or the middle pin to the pin toward the CV In edge of the board to get ±5 V; omit the jumper to get 0–5 V. Use trimmers R4 and R5 to adjust the output gain.
 
 Orient the Arduino Nano with the USB connector pointing toward the Analog Output logo.
 
 ## dac/ino lite
 
-Provide power to this board by connecting a 6 to 20V DC source to J9. The "+" on the silkscreen indicates which pin receives voltage, the other is ground.
+Provide power to this board by connecting a 6 to 12 V DC source to J9. The "+" on the silkscreen indicates which pin receives voltage, the other is ground.
 
 There are no Gate or CV inputs provided; there are solder pads for direct connection to four digital and four analog pins.
 

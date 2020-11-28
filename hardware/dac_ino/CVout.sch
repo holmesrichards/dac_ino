@@ -445,8 +445,6 @@ Text Label 7250 4850 0    50   ~ 0
 CV_OUT_B
 Text Notes 7100 7050 0    100  ~ 0
 cc-ba-sa\nVincezno Pacella shadux@shaduzlabs.com\nRich Holmes rs.holmes@gmail.com
-Text Notes 6450 3800 0    50   ~ 0
-Omit 1k resistors if 1V/oct output critical
 $Comp
 L Device:R_POT_TRIM R4
 U 1 1 5EA3D54F
