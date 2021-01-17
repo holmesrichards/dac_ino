@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name dac_ino)(type KiCad)(uri ${KIPRJMOD}/dac_ino.pretty)(options "")(descr ""))
+  (lib (name ao_tht)(type KiCad)(uri ${KIPRJMOD}/ao_tht.pretty)(options "")(descr ""))
+)

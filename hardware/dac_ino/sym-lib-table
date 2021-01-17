@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name synapse-eagle-import)(type Legacy)(uri ${KIPRJMOD}/synapse-eagle-import.lib)(options "")(descr ""))
+  (lib (name EurorackRSH)(type Legacy)(uri ${KIPRJMOD}/EurorackRSH.lib)(options "")(descr ""))
+  (lib (name dac_ino)(type Legacy)(uri ${KIPRJMOD}/dac_ino.lib)(options "")(descr ""))
+)
