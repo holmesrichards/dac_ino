@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_01x01_Units
+D Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP REF02CP+
+D High Precision, 5V Reference, DIP-8, SO-8
+K voltage reference
+F https://datasheets.maximintegrated.com/en/ds/REF01-REF02.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -4,7 +4,6 @@ fp-info-cache
 Narrow
 *~
 *.bck
-*.dcm
 *.zip
 *.DS_Store
 *~
