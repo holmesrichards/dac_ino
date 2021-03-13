@@ -18,8 +18,9 @@ Note that R14 is placed near the CV inputs but is not associated with them and s
 ## Full dac/ino
 
 ### Silkscreen error
-In version 1.3, the silkscreened reference numbers R28 and R29 are reversed. R29 is the 1M between R28 and R30. Fixed in version 1.31.
+In version 1.3, the silkscreened reference numbers and values for R28 and R29 are reversed. R29 (1M) should be between R28 (100k) and R30 (10k). Fixed in version 1.31. Corrected version looks like this:
 
+![R28 and R29 correct positions](R28R29.png) 
 ### dac/ino build notes
 
 The two 1x8 pin headers J7 and J14 duplicate the 2-pin Molex connectors; either or both can be installed and either can be used to connect to the Gate and CV inputs and outputs, and to access VCC and ground. 8-pin Molex connector J21, or in headers J10 and J11, provide access to two additional digital pins and four additional analog pins; these can be used for e.g. panel switches and pots where input protection and conditioning is not needed. Of course you can also omit any of the Molex connectors or pin headers and solder wires directly between the panel and board.
